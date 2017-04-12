@@ -1,0 +1,19 @@
+{
+    "legend": ["Member Registered"],
+    "xAxis": ["Aug 9", "Aug 10", "Aug 11", "Aug 12", "Aug 13", "Aug 14", "Aug 15"],
+    "series": [{
+        "name": "Member",
+        "type": "line",
+        "smooth": true,
+        "itemStyle": {
+            "normal": {
+                "color":"#000000",
+                "areaStyle": {
+                    "color": "rgba(0,0,0,0.4)",
+                    "type": "default"
+                }
+            }
+        },
+        "data": [10, 12, 21, 54, 260, 830, 710]
+    }]
+}

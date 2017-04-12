@@ -1,0 +1,11 @@
+{
+    "startdate": 1449162000000,
+    "enddate": 1456727346294,
+    "chart_stack": {
+        "name": "Leave Contact",
+        "legend": ["Members"],
+        "category": [""],
+        "colorlist": ["#0096A9", "#00546c", "#a4843b", "#FFCC00", "#01A0E2", "#8AC633", "#BBBBBB", "#ED0677"],
+        "series": [412, 1804, 2275, 847, 163, 729, 350, 325]
+    }
+}

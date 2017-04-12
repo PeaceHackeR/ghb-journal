@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>User Details - Tokio Marine</title>
+	<link rel="shortcut icon" href="favicon.png">
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/core.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/icweb.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="assets/js/plugins/media/fancybox.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/jasny_bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/forms/selects/select2.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/forms/validation/validate.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/uploaders/fileinput.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/pickers/pickadate/picker.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/pickers/pickadate/picker.date.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/pickers/pickadate/picker.time.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/extensions/cookie.js"></script>
+
+	<script type="text/javascript" src="assets/js/core/app.js"></script>
+	<script type="text/javascript" src="assets/js/pages/11_users_detail.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body>
+
+	<!-- Main navbar -->
+	<?php include 'ssi/main-navbar.php'; ?>
+	<!-- /main navbar -->
+
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main sidebar -->
+			<div class="sidebar sidebar-main">
+				<div class="sidebar-content">
+
+					<!-- Main navigation -->
+					<?php include 'ssi/main-navigation.php' ?>
+					<!-- /main navigation -->
+
+				</div>
+			</div>
+			<!-- /main sidebar -->
+
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+
+				<!-- Page header -->
+                <div class="page-header">
+                    <div class="page-header-content">
+                        <div class="page-title">
+                            <h4><a href="#" onclick="window.history.back();"><i class="icon-arrow-left52 position-left"></i></a> <span class="text-semibold">Account Details</span></h4>
+                        </div>
+                    </div>
+                </div>
+				<!-- /page header -->
+
+
+				<!-- Content area -->
+				<div class="content">
+                    
+                    <div class="row">
+                        <div class="col-md-12 float-md-left">
+                            <div class="panel panel-flat">
+                                <div class="panel-heading border-bottom">
+                                    <h4><span class="text-semibold">Carl Matthews</span></h4>
+                                    <div class="heading-elements">
+                                        <a href="11_users_form_password.php" class="btn btn-default btn-xs heading-btn"><i class="icon-key position-left"></i> Change password</a>
+                                        <a href="11_users_form_edit.php" class="btn btn-default btn-xs heading-btn"><i class="icon-pencil position-left"></i> Edit</a>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+<!--                                    <div class="h-title">Status</div>-->
+                                    <br><br>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="h-field">User ID</div>
+                                            <p>1</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="h-field">Name</div>
+                                            <p>Carl Matthews</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="h-field">E-mail</div>
+                                            <p>carl.matthews1234@rhb.co.th</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="h-field">Telephone</div>
+                                            <p>085-165-5163</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="h-field">Last Login</div>
+                                            <p>18 Apr 2016 at 18:24</p>
+                                        </div>
+                                        
+                                        <div class="col-md-6">
+                                            <div class="h-field">Create Date</div>
+                                            <p>24 Feb 2015</p>
+                                        </div>
+                                    </div>
+                                    <br><br>
+                                    <div class="h-title">Account Status</div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="h-field">Group</div>
+                                            <p>Administrator</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="h-field">Status</div>
+                                            <p><span class="label label-success label-fit">Active</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+
+                    </div>
+                    
+					<!-- Footer -->
+					<?php include 'ssi/footer.php'; ?>
+					<!-- /footer -->
+
+				</div>
+				<!-- /content area -->
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+</body>
+</html>
