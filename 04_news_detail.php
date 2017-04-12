@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>News Detail - GHB Journals</title>
-	<link rel="shortcut icon" href="favicon.png">
+	<link rel="shortcut icon" href="favicon.ico">
 
 	<!-- Global stylesheets -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
@@ -83,9 +83,10 @@
                                 <div class="panel-heading border-bottom">
                                     <h4><span class="text-semibold">{{News ID}}</span></h4>
                                     <div class="heading-elements">
-                                        <a href="#" class="btn btn-default btn-xs heading-btn"><i class="icon-images2 position-left"></i> Manage gallery  (8)</a>
-                                        <a href="#" class="btn btn-default btn-xs heading-btn"><i class="icon-file-eye position-left"></i> Set recommend</a>
-                                        <a href="01_highlight_add.php" class="btn btn-default btn-xs heading-btn"><i class="icon-pencil position-left"></i> Edit</a>
+                                        <a href="#" class="btn btn-default btn-xs heading-btn"><i class="icon-file-eye position-left"></i> Preview</a>
+                                        <span>&nbsp;&nbsp;&nbsp;</span>
+                                        <a href="04_news_gallery.php" class="btn btn-default btn-xs heading-btn"><i class="icon-images2 position-left"></i> Manage gallery  (8)</a>
+                                        <a href="04_news_add.php" class="btn btn-default btn-xs heading-btn"><i class="icon-pencil position-left"></i> Edit</a>
                                     </div>
                                 </div>
                                 <div class="panel-body">
@@ -127,23 +128,9 @@
                                             <p>8</p>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <br>
-                                        <div class="col-md-12"><strong>Link</strong></div>
-                                        <br>
-                                        <div class="col-md-6">
-                                            <div class="h-field">URL / Youtube Video ID</div>
-                                            <p>
-                                                <a href="http://www.ghbank.co.th/th/services_loan_detail.php?cms_id=241&cms_cate_id=5&parent=services_loan.php?cms_cate_id=5" target="_blank">http://www.ghbank.co.th/th/services_loan_detail.php?cms_id=241&amp;cms_cate_id=5&amp;parent=services_loan.php?cms_cate_id=5</a>
-                                            </p>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="h-field">Target</div>
-                                            <p>Self</p>
-                                        </div>
-                                    </div>
                                     
-                                    <br><br>
+                                    
+                                    <br>
                                     <div class="h-title">Publish setting</div>
                                     <div class="row">
                                         <div class="col-md-12">
@@ -159,6 +146,59 @@
                                         <div class="col-md-6">
                                             <div class="h-field">Last modified</div>
                                             <p>29 Apr 2017 at 17:07 by Carl Matthews</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <br><br><br>
+                                    <div class="h-title">Manage Recommend</div>
+                                    <fieldset class="content-group">
+                                        <div class="row">
+                                            <div class="form-group col-md-6 clearfix">
+                                                <label class="control-label">Set to recommend</label>
+                                                <div class="input-group">
+                                                    <label class="radio-inline">
+                                                        <input value="1" type="radio" name="fx-template" class="styled"> Yes
+                                                    </label>
+                                                    <label class="radio-inline">
+                                                        <input value="0" type="radio" name="fx-template" class="styled" checked> No
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col-md-6">
+                                                <label class="control-label">Start</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="icon-calendar22"></i></span>
+                                                    <input type="text" class="form-control pickadate" placeholder="Pick a date&hellip;">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label class="control-label">Time</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="icon-alarm"></i></span>
+                                                    <input type="text" class="form-control pickatime" placeholder="Time">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label class="control-label">End</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="icon-calendar22"></i></span>
+                                                    <input type="text" class="form-control pickadate" placeholder="Pick a date&hellip;">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label class="control-label">Time</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="icon-alarm"></i></span>
+                                                    <input type="text" class="form-control pickatime" placeholder="Time">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <div class="row">
+                                        <div class="form-group col-md-12">
+                                            <button type="butmit" class="btn btn-primary">Submit</button>
                                         </div>
                                     </div>
                                 </div>
