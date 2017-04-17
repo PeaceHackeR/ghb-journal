@@ -1,48 +1,3 @@
-$.fn.extend({
-    insertAtCaret: function (myValue) {
-        return this.each(function (i) {
-            if (document.selection) {
-                this.focus();
-                var sel = document.selection.createRange();
-                sel.text = myValue;
-                this.focus();
-            } else if (this.selectionStart || this.selectionStart == '0') {
-                var startPos = this.selectionStart;
-                var endPos = this.selectionEnd;
-                var scrollTop = this.scrollTop;
-                this.value = this.value.substring(0, startPos) + myValue + this.value.substring(endPos, this.value.length);
-                this.focus();
-                this.selectionStart = startPos + myValue.length;
-                this.selectionEnd = startPos + myValue.length;
-                this.scrollTop = scrollTop;
-            } else {
-                this.value += myValue;
-                this.focus();
-            }
-        });
-    }
-});
-String.prototype.shuffle = function () {
-    var a = this.split(""),
-        n = a.length;
-
-    for (var i = n - 1; i > 0; i--) {
-        var j = Math.floor(Math.random() * (i + 1));
-        var tmp = a[i];
-        a[i] = a[j];
-        a[j] = tmp;
-    }
-    return a.join("");
-}
-//
-moment.locale('en', {
-    months : [
-        'January', 'February', 'March', 'April', 'May', 'June',
-        'July', 'August', 'September', 'October', 'November', 'December'
-    ]
-});
-
-//
 $(function () {
     // Form
     $('.select').select2({
@@ -86,15 +41,9 @@ $(function () {
         radioClass: 'choice'
     });
 
-    /* Date Picker */
-    $('.pickadate').pickadate({
-        formatSubmit: 'dd/mm/yyyy',
-        format : 'd mmmm yyyy'
-    });
-    $('.pickatime').pickatime({
-        format: 'HH:i',
-        formatSubmit: 'HH:i',
-        formatLabel: 'HH:i'
+    /* Fancybox */
+    $('[data-popup="lightbox"]').fancybox({
+        padding: 3
     });
     
     /* UPLOAD */
