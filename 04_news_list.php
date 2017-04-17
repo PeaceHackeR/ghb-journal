@@ -95,7 +95,7 @@
                                         </div>
                                     </div>
                                     <div class="heading-elements">
-                                        <a href="01_highlight_reorder.php" class="btn btn-primary">
+                                        <a href="04_news_reorder.php" class="btn btn-primary">
                                             <i class="icon-sort-numeric-asc position-left"></i> Manage recommeded
                                         </a>
                                         <a id="px-addMore" href="04_news_add.php" class="btn btn-primary">
@@ -216,7 +216,7 @@
                                                     28 Apr 2017
                                                 </td>
                                                 <td class="text-center">
-                                                    <a href="#" class="text-ci"><u>8</u></a>
+                                                    <a href="04_news_gallery.php" class="text-ci"><u>8</u></a>
                                                 </td>
                                                 <td class="text-center">
                                                     Anna Thompson<br>
@@ -265,7 +265,7 @@
                                                     26 Mar 2017
                                                 </td>
                                                 <td class="text-center">
-                                                    <a href="#" class="text-ci"><u>15</u></a>
+                                                    <a href="04_news_gallery.php" class="text-ci"><u>15</u></a>
                                                 </td>
                                                 <td class="text-center">
                                                     Anna Thompson<br>
@@ -358,7 +358,7 @@
                                                     10 Feb 2017
                                                 </td>
                                                 <td class="text-center">
-                                                    <a href="#" class="text-ci"><u>2</u></a>
+                                                    <a href="04_news_gallery.php" class="text-ci"><u>2</u></a>
                                                 </td>
                                                 <td class="text-center">
                                                     Carl Matthews<br>

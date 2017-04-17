@@ -76,7 +76,7 @@
                     <!-- Form -->
                     <div class="panel panel-flat">
                         <div class="panel-heading border-bottom">
-                            <h4 class="panel-title">News photos</h4>
+                            <h4 class="panel-title">{{ News ID }}</h4>
                         </div>
                         <div class="panel-body">
                             <br>
@@ -91,7 +91,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="h-field">Number of photos</div>
-                                    <p>7</p>
+                                    <p>8</p>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="h-field">Last modified</div>
@@ -226,6 +226,23 @@
 
                                             <div class="caption">
                                                 <h6 class="no-margin"><a href="#" class="text-default">photo_07.jpg</a> <a href="#" class="text-muted"><i class="icon-bin pull-right"></i></a></h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="thumbnail">
+                                            <div class="thumb">
+                                                <img src="dat/img-720x480.png" alt="">
+                                                <div class="caption-overflow">
+                                                    <span>
+                                                    <a href="assets/images/placeholder.jpg" data-popup="lightbox" class="btn border-white text-white btn-flat btn-icon btn-rounded"><i class="icon-plus3"></i></a>
+                                                    <a href="#" class="btn border-white text-white btn-flat btn-icon btn-rounded ml-5"><i class="icon-link2"></i></a>
+                                                </span>
+                                                </div>
+                                            </div>
+
+                                            <div class="caption">
+                                                <h6 class="no-margin"><a href="#" class="text-default">photo_08.jpg</a> <a href="#" class="text-muted"><i class="icon-bin pull-right"></i></a></h6>
                                             </div>
                                         </div>
                                     </div>
