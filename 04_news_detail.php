@@ -150,7 +150,7 @@
                                     </div>
                                     
                                     <br><br><br>
-                                    <div class="h-title">Manage Recommend</div>
+                                    <div class="h-title">Publish Recommend</div>
                                     <fieldset class="content-group">
                                         <div class="row">
                                             <div class="form-group col-md-6 clearfix">

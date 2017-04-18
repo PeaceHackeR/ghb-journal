@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>News - GHB Journals</title>
+	<title>Articels - GHB Journals</title>
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<!-- Global stylesheets -->
@@ -21,7 +21,7 @@
 	<!-- Core JS files -->
 	<?php include "ssi/js-list.php"; ?>
 	
-	<script type="text/javascript" src="assets/js/pages/04_news_list.js"></script>
+	<script type="text/javascript" src="assets/js/pages/03_articles_list.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -59,7 +59,7 @@
                 <div class="page-header">
                     <div class="page-header-content">
                         <div class="page-title">
-                            <h4><span class="text-semibold">News</span></h4>
+                            <h4><span class="text-semibold">Articels</span></h4>
                         </div>
 
                         <div class="heading-elements">
@@ -188,7 +188,7 @@
                                                 <th class="text-center">Thumbnail</th>
                                                 <th data-toggle="true">Title</th>
                                                 <th class="text-center">Category</th>
-                                                <th class="text-center nowrap" data-hide="phone,tablet">Event Date</th>
+                                                <th class="text-center nowrap" data-hide="phone,tablet">PDF</th>
                                                 <th class="text-center">Gallery</th>
                                                 <th class="text-center" data-hide="phone,tablet">Created</th>
                                                 <th class="text-center" data-hide="phone">Status</th>
@@ -200,22 +200,22 @@
                                                 <td class="text-left">
                                                     <label><input type="checkbox" class="styled fxcond-bulk-check" value="-1"></label>
                                                 </td>
-                                                <td><a href="04_news_detail.php" class="text-ci">NEWS17J4</a></td>
+                                                <td><a href="04_news_detail.php" class="text-ci">AT17J4</a></td>
                                                 <td class="text-center px-imgfill">
                                                     <div class="px-tb-image">
                                                         <a href="04_news_detail.php"><img src="dat/hlx-01.jpg"></a>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <a href="04_news_detail.php" class="text-ci">ธอส. ออกมาตรการใหม่ด้านสินเชื่อและการประนอมหนี้</a><br>
+                                                    <a href="04_news_detail.php" class="text-ci">"Proxy or nominee" property - purchase policies clarified by government</a><br>
                                                     <span class="label label-fit bg-ci">Recommended</span>&nbsp;&nbsp;&nbsp;
                                                     <span class="colr-minor tg-offset"><i class="icon-calendar2"></i>&nbsp;1 Jun 2017 - 30 Nov 2017</span>
                                                 </td>
                                                 <td class="text-center nowrap">
-                                                    ข่าวสาร ธอส.
+                                                    บ้าน
                                                 </td>
-                                                <td class="text-center nowrap">
-                                                    28 Apr 2017
+                                                <td class="text-center">
+                                                    <a href="#" class="text-ci txt-upsize"><i class="icon-file-pdf"></i></a>
                                                 </td>
                                                 <td class="text-center">
                                                     <a href="04_news_gallery.php" class="text-ci"><u>8</u></a>
@@ -249,19 +249,19 @@
                                                 <td class="text-left">
                                                     <label><input type="checkbox" class="styled fxcond-bulk-check" value="-1"></label>
                                                 </td>
-                                                <td><a href="04_news_detail.php" class="text-ci">NEWS17J3</a></td>
+                                                <td><a href="04_news_detail.php" class="text-ci">AT17J3</a></td>
                                                 <td class="text-center px-imgfill">
                                                     <div class="px-tb-image">
                                                         <a href="04_news_detail.php"><img src="dat/hlx-06.jpg"></a>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <a href="04_news_detail.php" class="text-ci">ธอส. ส่งมอบโครงการ CSR ปรับปรุงภูมิทัศน์และพัฒนาแหล่งเรียนรู้ ให้แก่โรงเรียนเทศบาลปลายบางวัดโบสถ์ จ.นนทบุรี</a><br>
+                                                    <a href="04_news_detail.php" class="text-ci">ธอส. ออกมาตรการใหม่ด้านสินเชื่อและการประนอมหนี้</a><br>
                                                     <span class="label label-fit bg-ci">Recommended</span>&nbsp;&nbsp;&nbsp;
                                                     <span class="colr-minor tg-offset"><i class="icon-calendar2"></i>&nbsp;3 Apr 2017 - 31 Dec 2017</span>
                                                 </td>
                                                 <td class="text-center nowrap">
-                                                    กิจกรรมเพื่อสังคม
+                                                    กฏหมาย
                                                 </td>
                                                 <td class="text-center nowrap">
                                                     26 Mar 2017
@@ -298,17 +298,17 @@
                                                 <td class="text-left">
                                                     <label><input type="checkbox" class="styled fxcond-bulk-check" value="-1"></label>
                                                 </td>
-                                                <td><a href="04_news_detail.php" class="text-ci">NEWS17H2</a></td>
+                                                <td><a href="04_news_detail.php" class="text-ci">AT17H2</a></td>
                                                 <td class="text-center px-imgfill">
                                                     <div class="px-tb-image">
                                                         <a href="04_news_detail.php"><img src="dat/hlx-02.jpg"></a>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <a href="04_news_detail.php" class="text-ci">เงินฝากออมทรัพย์ Flexi</a><br>
+                                                    <a href="04_news_detail.php" class="text-ci">หลักเกณฑ์และเงื่อนไขการให้สินเชื่อรายย่อย (Post-Finance) โครงการบ้านเอื้ออาทร</a><br>
                                                 </td>
                                                 <td class="text-center nowrap">
-                                                    ธนาคารอาคารสงเคราะห์
+                                                    สินเชื่อ
                                                 </td>
                                                 <td class="text-center nowrap">
                                                     15 Mar 2017
@@ -344,14 +344,14 @@
                                                 <td class="text-left">
                                                     <label><input type="checkbox" class="styled fxcond-bulk-check" value="-1"></label>
                                                 </td>
-                                                <td><a href="04_news_detail.php" class="text-ci">NEWS17G2</a></td>
+                                                <td><a href="04_news_detail.php" class="text-ci">AT17G2</a></td>
                                                 <td class="text-center px-imgfill">
                                                     <div class="px-tb-image">
                                                         <a href="04_news_detail.php"><img src="dat/hlx-03.jpg"></a>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <a href="04_news_detail.php" class="text-ci">โครงการเงินฝากออมทรัพย์ New Gen (ทดสอบ)</a><br>
+                                                    <a href="04_news_detail.php" class="text-ci">คุณเพียงใจ หาญพาณิชย์ หญิงเหล็ก...นักพัฒนาที่ดินรุ่นลายครามของไทย</a><br>
                                                 </td>
                                                 <td class="text-center nowrap">
                                                     N/A
@@ -391,17 +391,17 @@
                                                 <td class="text-left">
                                                     <label><input type="checkbox" class="styled fxcond-bulk-check" value="-1"></label>
                                                 </td>
-                                                <td><a href="04_news_detail.php" class="text-ci">NEWS17G1</a></td>
+                                                <td><a href="04_news_detail.php" class="text-ci">AT17G1</a></td>
                                                 <td class="text-center px-imgfill">
                                                     <div class="px-tb-image">
                                                         <a href="04_news_detail.php"><img src="dat/hlx-03.jpg"></a>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <a href="04_news_detail.php" class="text-ci">โครงการเงินฝากออมทรัพย์ New Gen</a><br>
+                                                    <a href="04_news_detail.php" class="text-ci">Evolution of accommodations and facilities in Thailand's National Parks</a><br>
                                                 </td>
                                                 <td class="text-center nowrap">
-                                                    ข่าวสาร ธอส.
+                                                    ธนาคารอาคารสงเคราะห์
                                                 </td>
                                                 <td class="text-center nowrap">
                                                     10 Feb 2017
