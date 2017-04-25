@@ -21,9 +21,6 @@
     <!-- Core JS files -->
     <?php include "ssi/js-list.php"; ?>
 
-    <script type="text/javascript" src="assets/js/pages/04_category_reorder.js"></script>
-    <!-- /theme JS files -->
-
 </head>
 
 <body>

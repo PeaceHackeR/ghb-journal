@@ -20,9 +20,6 @@
 
 	<!-- Core JS files -->
 	<?php include 'ssi/js-detail.php'; ?>
-	
-	<script type="text/javascript" src="assets/js/pages/11_group_detail.js"></script>
-	<!-- /theme JS files -->
 
 </head>
 
@@ -305,7 +302,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td><span class="px-iconicbox-sub">&nbsp;</span>Writers</td>
+                                                    <td><span class="px-iconicbox-sub">&nbsp;</span>Authors</td>
                                                     <td class="text-center">
                                                         <i class="icon-checkmark4"></i>
                                                     </td>

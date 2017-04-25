@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
 
 	<meta charset="utf-8">
@@ -19,9 +19,7 @@
 	<!-- /global stylesheets -->
 
 	<!-- Core JS files -->
-    <?php include 'ssi/js-list.php'; ?>
-    
-	<script type="text/javascript" src="assets/js/pages/11_log-users_list.js"></script>
+	<?php include 'ssi/js-list.php'; ?>
 
 </head>
 

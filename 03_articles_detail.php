@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>News Detail - GHB Journals</title>
+	<title>Article Detail - GHB Journals</title>
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<!-- Global stylesheets -->
@@ -57,7 +57,7 @@
                 <div class="page-header">
                     <div class="page-header-content">
                         <div class="page-title">
-                            <h4><a href="#" onclick="window.history.back();"><i class="icon-arrow-left52 position-left"></i></a> <span class="text-semibold">News Details</span></h4>
+                            <h4><a href="#" onclick="window.history.back();"><i class="icon-arrow-left52 position-left"></i></a> <span class="text-semibold">Article Details</span></h4>
                         </div>
                     </div>
                 </div>
@@ -71,12 +71,11 @@
                         <div class="col-md-12 float-md-left">
                             <div class="panel panel-flat">
                                 <div class="panel-heading border-bottom">
-                                    <h4><span class="text-semibold">{{News ID}}</span></h4>
+                                    <h4><span class="text-semibold">{{Article ID}}</span></h4>
                                     <div class="heading-elements">
                                         <a href="#" class="btn btn-default btn-xs heading-btn"><i class="icon-file-eye position-left"></i> Preview</a>
                                         <span>&nbsp;&nbsp;&nbsp;</span>
-                                        <a href="04_news_gallery.php" class="btn btn-default btn-xs heading-btn"><i class="icon-images2 position-left"></i> Manage gallery  (8)</a>
-                                        <a href="04_news_add.php" class="btn btn-default btn-xs heading-btn"><i class="icon-pencil position-left"></i> Edit</a>
+                                        <a href="03_articles_add.php" class="btn btn-default btn-xs heading-btn"><i class="icon-pencil position-left"></i> Edit</a>
                                     </div>
                                 </div>
                                 <div class="panel-body">
@@ -100,28 +99,32 @@
                                             <p>ธอส. ออกมาตรการใหม่ด้านสินเชื่อและการประนอมหนี้</p>
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="h-field">Event Date</div>
-                                            <p>28 Apr 2017</p>
+                                            <div class="h-field">Author</div>
+                                            <p>ธนาคารอาคารสงเคราะห์, พัลลภ กฤตยานวัช</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="h-field">Issue</div>
+                                            <p>ฉบับที่ 87</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="h-field">Issue Date</div>
+                                            <p>ปีที่ 22 ตุลาคม - ธันวาคม 2559</p>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="h-field">Category</div>
-                                            <p>ข่าวสาร ธอส.</p>
+                                            <p>บ้าน</p>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="h-field">Subcategory</div>
                                             <p>ผลิตภัณฑ์เพื่อผู้กู้รายย่อย</p>
                                         </div>
-                                        <div class="col-md-6">
-                                            <div class="h-field">No. image</div>
-                                            <p>8</p>
-                                        </div>
                                     </div>
                                     
                                     
                                     <br>
-                                    <div class="h-title">Publish setting</div>
+                                    <div class="h-title">Publish Status</div>
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="h-field">Status</div>

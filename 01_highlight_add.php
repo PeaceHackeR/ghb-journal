@@ -22,9 +22,6 @@
 	<!-- Core JS files -->
 	<?php include "ssi/js-form.php"; ?>
 
-	<script type="text/javascript" src="assets/js/pages/01_highlight_add.js"></script>
-	<!-- /theme JS files -->
-
 </head>
 
 <body>

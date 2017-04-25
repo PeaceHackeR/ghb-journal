@@ -252,7 +252,7 @@
                 <td class="text-center">&nbsp;</td>
             </tr>
             <tr>
-                <td>3.3 Writers</td>
+                <td>3.3 Authors</td>
                 <td class="text-center"><i class="icon-checkmark4"></i></td>
                 <td class="text-center"><i class="icon-checkmark4"></i></td>
                 <td class="text-center"><i class="icon-checkmark4"></i></td>

@@ -1,5 +1,14 @@
 $(function () {
+    
+    // Lightbox
+    $('[data-popup="lightbox"]').fancybox({
+        padding: 3
+    });
+
     // Styles checkboxes, radios
+    $('.select').select2({
+        minimumResultsForSearch: "-1"
+    });
     $('.styled').uniform({
         radioClass: 'choice'
     });
@@ -14,4 +23,5 @@ $(function () {
         formatSubmit: 'HH:i',
         formatLabel: 'HH:i'
     });
+
 });

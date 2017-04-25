@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Add News - GHB Journals</title>
+	<title>Add Author - GHB Journals</title>
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<!-- Global stylesheets -->
@@ -60,7 +60,7 @@
                 <div class="page-header">
                     <div class="page-header-content">
                         <div class="page-title">
-                            <h4><a href="javascript:window.history.back();"><i class="icon-arrow-left52 position-left"></i></a> <span class="text-semibold">Add News</span></h4>
+                            <h4><a href="javascript:window.history.back();"><i class="icon-arrow-left52 position-left"></i></a> <span class="text-semibold">Add Author</span></h4>
                         </div>
 
                         <div class="heading-elements">
@@ -76,44 +76,52 @@
                     <!-- Form -->
                     <div class="panel panel-flat">
                         <div class="panel-heading border-bottom">
-                            <h4 class="panel-title">News Detail</h4>
+                            <h4 class="panel-title">Author Information</h4>
                         </div>
                         <div class="panel-body">
                             <br><br>
                             <fieldset class="content-group">
-                               
+                                <legend class="text-bold">Personal Information</legend>
                                 <div class="row">
-                                    <div class="form-group col-md-9">
-                                        <label class="control-label">Title</label>
-                                        <input type="text" class="form-control" placeholder="- Title -">
+                                    <div class="form-group col-md-6">
+                                        <label class="control-label">Type</label>
+                                        <select class="select">
+                                            <option value="">บุคคล</option>
+                                            <option value="">หน่วยงาน</option>
+                                        </select>
                                     </div>
-                                    
-                                    <div class="form-group col-md-3">
-                                        <label class="control-label">Event Date</label>
-                                        <div class="input-group">
-                                            <span class="input-group-addon"><i class="icon-calendar22"></i></span>
-                                            <input type="text" class="form-control pickadate" placeholder="Pick a date&hellip;">
-                                        </div>
+                                    <div class="form-group col-md-6">
+                                        <label class="control-label">Position <span class="txt-colrMinor">(optional)</span></label>
+                                        <input type="text" class="form-control" placeholder="- Title -">
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-group col-md-6">
-                                        <label class="control-label">Category</label>
-                                        <select data-cond="brand" class="select">
-                                            <option value="">ข่าวสาร ธอส.</option>
-                                            <option value="">กิจกรรมเพื่อสังคม</option>
-                                            <option value="">ข่าวจัดซื้อจัดจ้าง</option>
-                                            <option value="">** Metadata **</option>
-                                        </select>
+                                        <label class="control-label">Name TH</label>
+                                        <input type="text" class="form-control" placeholder="- Name TH -">
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label class="control-label">Subcategory</label>
-                                        <input type="text" class="form-control" placeholder="- Subtitle -">
+                                        <label class="control-label">Name EN</label>
+                                        <input type="text" class="form-control" placeholder="- Name EN -">
                                     </div>
+                                    <div class="form-group col-md-6">
+                                        <label class="control-label">E-mail <span class="txt-colrMinor">(optional)</span></label>
+                                        <input type="text" class="form-control" placeholder="- Title -">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label class="control-label">Telephone <span class="txt-colrMinor">(optional)</span></label>
+                                        <input type="text" class="form-control" placeholder="- Title -">
+                                    </div>
+                                </div>
+                                
+                            </fieldset>
+                            <fieldset class="content-group">
+                                <legend class="text-bold">History Profile</legend>
+                                <div class="row">
                                     <div class="form-group col-md-12">
                                         <div class="px-editor">
                                             <div class="px-editor-tools clearfix">
-                                                <label class="">Detail</label>
+                                                <label class="">Detail <span class="txt-colrMinor">(optional)</span></label>
                                                 <div class="pull-right">
                                                     <button type="button" class="btn btn-default btn-md px-editor-viewsource"><i class="icon-embed position-left"></i> View source</button>
                                                     <button type="button" class="btn btn-default btn-md px-editor-norm"><i class="icon-gallery position-left"></i> Visual</button>
@@ -134,19 +142,15 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="form-group col-md-12">
-                                        <label class="control-label">Tags</label>
-                                        <input type="hidden" class="select-multiple-tags" value="" data-default-tags="บ้าน,กฏหมาย,สินเชื่อ,ออมทรัพย์,โปรโมชั่น,**Metadata**">
-                                    </div>
                                 </div>
                             </fieldset>
                             <fieldset class="content-group">
                                 <legend class="text-bold">Image</legend>
                                 <div class="row">
                                     <div class="form-group col-md-6">
-                                        <label class="control-label">Thumbnail</label>
+                                        <label class="control-label">Upload</label>
                                         <input type="file" class="file-input-custom" accept="image/*" data-show-upload="false">
-                                        <span class="help-block">JPEG, PNG at 720x480 px.</span>
+                                        <span class="help-block">JPEG, PNG at 240x240 px.</span>
                                     </div>
                                 </div>
                             </fieldset>
@@ -166,16 +170,6 @@
                             <fieldset class="content-group">
                                 <legend class="text-bold">Publish Settings</legend>
                                 <div class="row">
-                                    <div class="form-group col-md-12">
-                                        <label class="control-label">URL Name</label>
-                                        <div class="input-group">
-                                            <input id="fx-urlinput" type="text" class="form-control" placeholder="- URL -" pattern="[\w\d]{2,}">
-                                            <span class="input-group-btn">
-                                                <button class="btn bg-grey-300" type="button">Check</button>
-                                            </span>
-                                        </div>
-                                        <span class="help-block">Sample&nbsp;&nbsp;http://www.domain.com/news/<span id="fx-urlsample">URL</span></span>
-                                    </div>
                                     <div class="form-group col-md-6 clearfix">
                                         <label class="display-block">Status</label>
                                         <label class="radio-inline">

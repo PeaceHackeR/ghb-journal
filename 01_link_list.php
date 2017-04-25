@@ -19,10 +19,7 @@
 	<!-- /global stylesheets -->
 
 	<!-- Core JS files -->
-	<?php include "ssi/js-list.php"; ?>
-	
-	<script type="text/javascript" src="assets/js/pages/01_highlight_list.js"></script>
-	<!-- /theme JS files -->
+	<?php include 'ssi/js-list.php'; ?>
 
 </head>
 

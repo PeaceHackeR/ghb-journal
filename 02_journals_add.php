@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Add News - GHB Journals</title>
+	<title>Add Journal - GHB Journals</title>
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<!-- Global stylesheets -->
@@ -60,7 +60,7 @@
                 <div class="page-header">
                     <div class="page-header-content">
                         <div class="page-title">
-                            <h4><a href="javascript:window.history.back();"><i class="icon-arrow-left52 position-left"></i></a> <span class="text-semibold">Add News</span></h4>
+                            <h4><a href="javascript:window.history.back();"><i class="icon-arrow-left52 position-left"></i></a> <span class="text-semibold">Add Journals</span></h4>
                         </div>
 
                         <div class="heading-elements">
@@ -76,40 +76,48 @@
                     <!-- Form -->
                     <div class="panel panel-flat">
                         <div class="panel-heading border-bottom">
-                            <h4 class="panel-title">News Detail</h4>
+                            <h4 class="panel-title">Journal Detail</h4>
                         </div>
                         <div class="panel-body">
                             <br><br>
                             <fieldset class="content-group">
-                               
-                                <div class="row">
-                                    <div class="form-group col-md-9">
-                                        <label class="control-label">Title</label>
-                                        <input type="text" class="form-control" placeholder="- Title -">
-                                    </div>
-                                    
-                                    <div class="form-group col-md-3">
-                                        <label class="control-label">Event Date</label>
-                                        <div class="input-group">
-                                            <span class="input-group-addon"><i class="icon-calendar22"></i></span>
-                                            <input type="text" class="form-control pickadate" placeholder="Pick a date&hellip;">
-                                        </div>
-                                    </div>
-                                </div>
                                 <div class="row">
                                     <div class="form-group col-md-6">
                                         <label class="control-label">Category</label>
-                                        <select data-cond="brand" class="select">
-                                            <option value="">ข่าวสาร ธอส.</option>
-                                            <option value="">กิจกรรมเพื่อสังคม</option>
-                                            <option value="">ข่าวจัดซื้อจัดจ้าง</option>
-                                            <option value="">** Metadata **</option>
+                                        <select class="select">
+                                            <option value="">วารสาร ธอส.</option>
+                                            <option value="">Asia-Pacific Housing Journal (APHJ)</option>
                                         </select>
+                                        <span class="help-block">
+                                            * วารสาร ธอส. ให้ใช้ Year เป็นปี พ.ศ.<br>
+                                            &nbsp;&nbsp;Asia-Pacific Housing Journal (APHJ) ให้ใช้ Year เป็นปี ค.ศ.
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-xs-4 col-md-2">
+                                        <label class="control-label">No. of Issue</label>
+                                        <input type="text" class="form-control" placeholder="- Issue -">
+                                    </div>
+                                    <div class="form-group col-xs-4 col-md-2">
+                                        <label class="control-label">Volume</label>
+                                        <input type="text" class="form-control" placeholder="- Volume -">
+                                    </div>
+                                    <div class="form-group col-xs-4 col-md-2">
+                                        <label class="control-label">Year</label>
+                                        <input type="text" class="form-control" placeholder="- Year -">
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label class="control-label">Subcategory</label>
-                                        <input type="text" class="form-control" placeholder="- Subtitle -">
+                                        <label class="control-label">Date</label>
+                                        <select class="select">
+                                            <option value="">Q1&nbsp;&nbsp;|&nbsp;&nbsp;มกราคม - มีนาคม</option>
+                                            <option value="">Q2&nbsp;&nbsp;|&nbsp;&nbsp;เมษายน - มิถุนายน</option>
+                                            <option value="">Q3&nbsp;&nbsp;|&nbsp;&nbsp;กรกฏาคม - กันยายน</option>
+                                            <option value="">Q4&nbsp;&nbsp;|&nbsp;&nbsp;ตุลาคม - ธันวาคม</option>
+                                        </select>
                                     </div>
+                                </div>
+                                <div class="row">
                                     <div class="form-group col-md-12">
                                         <div class="px-editor">
                                             <div class="px-editor-tools clearfix">
@@ -130,7 +138,6 @@
                                                     <textarea class="px-editor-textsource"></textarea>
                                                     <div class="mce-panel box-bottom"></div>
                                                 </div>
-                                                <span class="help-block">* Image width migth be larger than 750 px for best view.</span>
                                             </div>
                                         </div>
                                     </div>
@@ -146,7 +153,7 @@
                                     <div class="form-group col-md-6">
                                         <label class="control-label">Thumbnail</label>
                                         <input type="file" class="file-input-custom" accept="image/*" data-show-upload="false">
-                                        <span class="help-block">JPEG, PNG at 720x480 px.</span>
+                                        <span class="help-block">JPEG, PNG at 720x1005 px.</span>
                                     </div>
                                 </div>
                             </fieldset>
@@ -166,16 +173,6 @@
                             <fieldset class="content-group">
                                 <legend class="text-bold">Publish Settings</legend>
                                 <div class="row">
-                                    <div class="form-group col-md-12">
-                                        <label class="control-label">URL Name</label>
-                                        <div class="input-group">
-                                            <input id="fx-urlinput" type="text" class="form-control" placeholder="- URL -" pattern="[\w\d]{2,}">
-                                            <span class="input-group-btn">
-                                                <button class="btn bg-grey-300" type="button">Check</button>
-                                            </span>
-                                        </div>
-                                        <span class="help-block">Sample&nbsp;&nbsp;http://www.domain.com/news/<span id="fx-urlsample">URL</span></span>
-                                    </div>
                                     <div class="form-group col-md-6 clearfix">
                                         <label class="display-block">Status</label>
                                         <label class="radio-inline">

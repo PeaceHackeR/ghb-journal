@@ -20,10 +20,7 @@
     <!-- /global stylesheets -->
 
     <!-- Core JS files -->
-    <?php include "ssi/js-list.php"; ?>
-
-    <script type="text/javascript" src="assets/js/pages/04_category_list.js"></script>
-    <!-- /theme JS files -->
+	<?php include 'ssi/js-list.php'; ?>
 
 </head>
 
@@ -174,6 +171,7 @@
                                                 </th>
                                                 <th>ID</th>
                                                 <th data-toggle="true">Name</th>
+                                                <th data-toggle="true">URL Name</th>
                                                 <th class="text-center">Total news</th>
                                                 <th class="text-center">On top</th>
                                                 <th class="text-center" data-hide="tablet,phone">Last modified</th>
@@ -190,7 +188,9 @@
                                                 <td>
                                                     ข่าวสาร ธอส.
                                                 </td>
-
+                                                <td>
+                                                    /ghbank
+                                                </td>
                                                 <td class="text-center">
                                                     <a href="04_news_list.php?cate=1" class="text-ci"><u>118</u></a>
                                                 </td>
@@ -209,7 +209,7 @@
                                                                 <i class="icon-menu9"></i>
                                                             </a>
                                                             <ul class="dropdown-menu dropdown-menu-right">
-                                                                <li><a href="#"><i class="icon-pushpin"></i> Set to Menu</a></li>
+                                                                <li><a href="#"><i class="icon-pushpin"></i> Set to On Top</a></li>
                                                                 <li class="divider"></li>
                                                                 <li><a href="#"><i class="icon-eye"></i> View</a></li>
                                                                 <li><a href="#"><i class="icon-checkmark4"></i> Enable</a></li>
@@ -227,7 +227,9 @@
                                                 <td>
                                                     กิจกรรมเพื่อสังคม
                                                 </td>
-
+                                                <td>
+                                                    /csr
+                                                </td>
                                                 <td class="text-center">
                                                     <a href="04_news_list.php?cate=1" class="text-ci"><u>57</u></a>
                                                 </td>
@@ -246,7 +248,7 @@
                                                                 <i class="icon-menu9"></i>
                                                             </a>
                                                             <ul class="dropdown-menu dropdown-menu-right">
-                                                                <li><a href="#"><i class="icon-pushpin"></i> Set to Menu</a></li>
+                                                                <li><a href="#"><i class="icon-pushpin"></i> Set to On Top</a></li>
                                                                 <li class="divider"></li>
                                                                 <li><a href="#"><i class="icon-eye"></i> View</a></li>
                                                                 <li><a href="#"><i class="icon-checkmark4"></i> Enable</a></li>
@@ -263,6 +265,9 @@
                                                 <td><a href="04_category_detail.php" class="text-ci">CNEWS-CT-3</a></td>
                                                 <td>
                                                     ข่าวจัดซื้อจัดจ้าง
+                                                </td>
+                                                <td>
+                                                    /procurement
                                                 </td>
                                                 <td class="text-center">
                                                     <a href="04_news_list.php?cate=1" class="text-ci"><u>19</u></a>
@@ -284,7 +289,7 @@
                                                                 <i class="icon-menu9"></i>
                                                             </a>
                                                             <ul class="dropdown-menu dropdown-menu-right">
-                                                                <li><a href="#"><i class="icon-pushpin"></i> Set to Menu</a></li>
+                                                                <li><a href="#"><i class="icon-pushpin"></i> Set to On Top</a></li>
                                                                 <li class="divider"></li>
                                                                 <li><a href="#"><i class="icon-eye"></i> View</a></li>
                                                                 <li><a href="#"><i class="icon-checkmark4"></i> Enable</a></li>
@@ -301,6 +306,9 @@
                                                 <td><a href="04_category_detail.php" class="text-ci">CNEWS-CT-2</a></td>
                                                 <td>
                                                     ประเมินค่าทรัพย์สิน
+                                                </td>
+                                                <td>
+                                                    /finacial
                                                 </td>
                                                 <td class="text-center">
                                                     <a href="04_news_list.php?cate=1" class="text-ci"><u>6</u></a>
@@ -320,7 +328,7 @@
                                                                 <i class="icon-menu9"></i>
                                                             </a>
                                                             <ul class="dropdown-menu dropdown-menu-right">
-                                                                <li><a href="#"><i class="icon-pushpin"></i> Set to Menu</a></li>
+                                                                <li><a href="#"><i class="icon-pushpin"></i> Set to On Top</a></li>
                                                                 <li class="divider"></li>
                                                                 <li><a href="#"><i class="icon-eye"></i> View</a></li>
                                                                 <li><a href="#"><i class="icon-checkmark4"></i> Enable</a></li>
@@ -338,7 +346,9 @@
                                                 <td>
                                                     รับสร้างบ้าน
                                                 </td>
-
+                                                <td>
+                                                    /build
+                                                </td>
                                                 <td class="text-center">
                                                     <a href="04_news_list.php?cate=1" class="text-ci"><u>12</u></a>
                                                 </td>

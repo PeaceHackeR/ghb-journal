@@ -42,7 +42,7 @@
                         <a href="#">Overview</a>
                     </li>
                     <li>
-                        <a href="#">Post</a>
+                        <a href="02_journals_list.php">Post</a>
                     </li>
                 </ul>
             </li>
@@ -59,10 +59,10 @@
                         <a href="03_articles_list.php">Post</a>
                     </li>
                     <li>
-                        <a href="#">Writers</a>
+                        <a href="03_authors_list.php">Authors</a>
                     </li>
                     <li>
-                        <a href="#">Category Management</a>
+                        <a href="03_category_list.php">Category Management</a>
                     </li>
                 </ul>
             </li>

@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Articels - GHB Journals</title>
+	<title>Journals - GHB Journals</title>
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<!-- Global stylesheets -->
@@ -56,7 +56,7 @@
                 <div class="page-header">
                     <div class="page-header-content">
                         <div class="page-title">
-                            <h4><span class="text-semibold">Articels</span></h4>
+                            <h4><span class="text-semibold">Journals</span></h4>
                         </div>
 
                         <div class="heading-elements">
@@ -92,10 +92,7 @@
                                         </div>
                                     </div>
                                     <div class="heading-elements">
-                                        <a href="03_articles_reorder.php" class="btn btn-primary">
-                                            <i class="icon-sort-numeric-asc position-left"></i> Manage Recommended
-                                        </a>
-                                        <a id="px-addMore" href="03_articles_add.php" class="btn btn-primary">
+                                        <a id="px-addMore" href="02_journals_add.php" class="btn btn-primary">
                                             <i class="icon-plus3 position-left"></i> Add
                                         </a>
                                     </div>
@@ -204,10 +201,11 @@
                                                 <th>ID</th>
                                                 <th class="text-center">Thumbnail</th>
                                                 <th data-toggle="true">Title</th>
-                                                <th class="text-center" data-hide="phone" >Author</th>
-                                                <th class="text-center" data-hide="phone,tablet" >Category</th>
                                                 <th class="text-center" data-hide="phone,tablet" data-toggle="true">Issue date</th>
-                                                <th class="text-center nowrap" data-hide="phone,tablet">PDF</th>
+                                                <th class="text-center" data-hide="phone,tablet" data-toggle="true">Category</th>
+                                                <th class="text-center nowrap" data-hide="phone,tablet">Page View</th>
+                                                <th class="text-center nowrap" data-hide="phone,tablet">D/PDF</th>
+                                                <th class="text-center nowrap" data-hide="phone,tablet">D/Ebook</th>
                                                 <th class="text-center" data-hide="phone,tablet">Created</th>
                                                 <th class="text-center" data-hide="phone">Status</th>
                                                 <th class="text-right" data-hide="phone" data-name="Action"><i class="icon-cog7"></i>&nbsp;&nbsp;</th>
@@ -218,28 +216,28 @@
                                                 <td class="text-left">
                                                     <label><input type="checkbox" class="styled fxcond-bulk-check" value="-1"></label>
                                                 </td>
-                                                <td><a href="03_articles_detail.php" class="text-ci">AT17M02</a></td>
-                                                <td class="text-center px-imgfill">
+                                                <td><a href="02_journals_detail.php" class="text-ci">JN16Z</a></td>
+                                                <td class="text-center px-imgfill bigImg">
                                                     <div class="px-tb-image">
-                                                        <a href="dat/hlx-01.jpg" data-popup="lightbox"><img src="dat/hlx-01.jpg"></a>
+                                                        <a href="dat/img-js01.jpg" data-popup="lightbox"><img src="dat/img-js01.jpg"></a>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <a href="03_articles_detail.php" class="text-ci">"Proxy or nominee" property - purchase policies clarified by government</a><br>
-                                                    <span class="label label-fit bg-ci">Recommended</span>&nbsp;&nbsp;&nbsp;
-                                                    <span class="colr-minor tg-offset"><i class="icon-calendar2"></i>&nbsp;1 Jun 2017 - 30 Nov 2017</span>
-                                                </td>
-                                                <td class="text-center">
-                                                    ธนาคารอาคารสงเคราะห์
+                                                    <a href="02_journals_detail.php" class="text-ci">ฉบับที่ 87 ปีที่ 22</a><br>
+                                                    <span class="colr-minor tg-offset">ตุลาคม - ธันวาคม 2559</span>
                                                 </td>
                                                 <td class="text-center nowrap">
-                                                    บ้าน
+                                                    Q4/2559
+                                                </td>
+                                                <td class="text-center nowrap">วารสาร ธอส.</td>
+                                                <td class="text-center nowrap">
+                                                    118
                                                 </td>
                                                 <td class="text-center nowrap">
-                                                    Q2/2560
+                                                    12
                                                 </td>
-                                                <td class="text-center">
-                                                    <a href="dat/pdf-sample.pdf" class="text-ci" target="_blank" download="AT17M02.pdf"><i class="icon-file-pdf txt-upsize"></i></a>
+                                                <td class="text-center nowrap">
+                                                    <span class="colr-minor tg-offset">N/A</span>
                                                 </td>
                                                 <td class="text-center">
                                                     Anna Thompson<br>
@@ -253,9 +251,7 @@
                                                                 <i class="icon-menu9"></i>
                                                             </a>
                                                             <ul class="dropdown-menu dropdown-menu-right">
-                                                                <li><a href="#" data-toggle="modal" data-target="#action-Recommend"><i class="icon-pushpin"></i> Publish Recommend</a></li>
-                                                                <li class="divider"></li>
-                                                                <li><a href="dat/pdf-sample.pdf" download="AT17M02.pdf"><i class="icon-file-download"></i> Download PDF</a></li>
+                                                                <li><a href="dat/pdf-sample.pdf" download="JN16Z.pdf"><i class="icon-file-download"></i> Download PDF</a></li>
                                                                 <li class="divider"></li>
                                                                 <li><a href="#"><i class="icon-eye"></i> View</a></li>
                                                                 <li><a href="#"><i class="icon-checkmark4"></i> Enable</a></li>
@@ -271,32 +267,32 @@
                                                 <td class="text-left">
                                                     <label><input type="checkbox" class="styled fxcond-bulk-check" value="-1"></label>
                                                 </td>
-                                                <td><a href="03_articles_detail.php" class="text-ci">AT17M01</a></td>
-                                                <td class="text-center px-imgfill">
+                                                <td><a href="02_journals_detail.php" class="text-ci">JN16U</a></td>
+                                                <td class="text-center px-imgfill bigImg">
                                                     <div class="px-tb-image">
-                                                       <a href="dat/hlx-06.jpg" data-popup="lightbox"><img src="dat/hlx-06.jpg"></a>
+                                                        <a href="dat/img-js02.jpg" data-popup="lightbox"><img src="dat/img-js02.jpg"></a>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <a href="03_articles_detail.php" class="text-ci">ธอส. ออกมาตรการใหม่ด้านสินเชื่อและการประนอมหนี้</a><br>
-                                                    <span class="label label-fit bg-ci">Recommended</span>&nbsp;&nbsp;&nbsp;
-                                                    <span class="colr-minor tg-offset"><i class="icon-calendar2"></i>&nbsp;3 Apr 2017 - 31 Dec 2017</span>
-                                                </td>
-                                                <td class="text-center">
-                                                    ธนาคารอาคารสงเคราะห์
+                                                    <a href="02_journals_detail.php" class="text-ci">ฉบับที่ 86 ปีที่ 22</a><br>
+                                                    <span class="colr-minor tg-offset">กรกฎาคม - กันยายน 2559</span>
                                                 </td>
                                                 <td class="text-center nowrap">
-                                                    กฏหมาย
+                                                    Q3/2559
+                                                </td>
+                                                <td class="text-center nowrap">วารสาร ธอส.</td>
+                                                <td class="text-center nowrap">
+                                                    846
                                                 </td>
                                                 <td class="text-center nowrap">
-                                                    Q2/2560
+                                                    63
                                                 </td>
-                                                <td class="text-center">
-                                                    <a href="dat/pdf-sample.pdf" class="text-ci" target="_blank" download="AT17M01.pdf"><i class="icon-file-pdf txt-upsize"></i></a>
+                                                <td class="text-center nowrap">
+                                                    <span class="colr-minor tg-offset">N/A</span>
                                                 </td>
                                                 <td class="text-center">
                                                     Anna Thompson<br>
-                                                    <span class="colr-minor tg-offset">2 Apr 2017</span>
+                                                    <span class="colr-minor tg-offset">28 Apr 2017</span>
                                                 </td>
                                                 <td class="text-center"><span class="label label-fit label-success">Enabled</span></td>
                                                 <td class="text-right">
@@ -306,9 +302,7 @@
                                                                 <i class="icon-menu9"></i>
                                                             </a>
                                                             <ul class="dropdown-menu dropdown-menu-right">
-                                                                <li><a href="#" data-toggle="modal" data-target="#action-Recommend"><i class="icon-pushpin"></i> Publish Recommend</a></li>
-                                                                <li class="divider"></li>
-                                                                <li><a href="dat/pdf-sample.pdf" download="AT17M01.pdf"><i class="icon-file-download"></i> Download PDF</a></li>
+                                                                <li><a href="dat/pdf-sample.pdf" download="JN16U.pdf"><i class="icon-file-download"></i> Download PDF</a></li>
                                                                 <li class="divider"></li>
                                                                 <li><a href="#"><i class="icon-eye"></i> View</a></li>
                                                                 <li><a href="#"><i class="icon-checkmark4"></i> Enable</a></li>
@@ -324,32 +318,34 @@
                                                 <td class="text-left">
                                                     <label><input type="checkbox" class="styled fxcond-bulk-check" value="-1"></label>
                                                 </td>
-                                                <td><a href="03_articles_detail.php" class="text-ci">AT17H02</a></td>
-                                                <td class="text-center px-imgfill">
+                                                <td><a href="02_journals_detail.php" class="text-ci">JN16M</a></td>
+                                                <td class="text-center px-imgfill bigImg">
                                                     <div class="px-tb-image">
-                                                        <a href="dat/hlx-02.jpg" data-popup="lightbox"><img src="dat/hlx-02.jpg"></a>
+                                                        <a href="dat/img-js03.jpg" data-popup="lightbox"><img src="dat/img-js03.jpg"></a>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <a href="03_articles_detail.php" class="text-ci">หลักเกณฑ์และเงื่อนไขการให้สินเชื่อรายย่อย (Post-Finance) โครงการบ้านเอื้ออาทร</a><br>
-                                                </td>
-                                                <td class="text-center">
-                                                    พัลลภ กฤตยานวัช
+                                                    <a href="02_journals_detail.php" class="text-ci">ฉบับที่ 85 ปีที่ 22</a><br>
+                                                    <span class="colr-minor tg-offset">เมษายน - มิถุนายน 2559</span>
                                                 </td>
                                                 <td class="text-center nowrap">
-                                                    สินเชื่อ
+                                                    Q2/2559
+                                                </td>
+                                                <td class="text-center nowrap">วารสาร ธอส.</td>
+                                                <td class="text-center nowrap">
+                                                    1,293
                                                 </td>
                                                 <td class="text-center nowrap">
-                                                    Q1/2560
+                                                    205
+                                                </td>
+                                                <td class="text-center nowrap">
+                                                    <span class="colr-minor tg-offset">N/A</span>
                                                 </td>
                                                 <td class="text-center">
-                                                    &nbsp;
+                                                    Anna Thompson<br>
+                                                    <span class="colr-minor tg-offset">28 Apr 2017</span>
                                                 </td>
-                                                <td class="text-center">
-                                                    Carl Matthews<br>
-                                                    <span class="colr-minor tg-offset">16 Mar 2017</span>
-                                                </td>
-                                                <td class="text-center"><span class="label label-fit bg-orange">Drafted</span></td>
+                                                <td class="text-center"><span class="label label-fit label-success">Enabled</span></td>
                                                 <td class="text-right">
                                                     <ul class="icons-list">
                                                         <li class="dropdown dropup">
@@ -357,7 +353,11 @@
                                                                 <i class="icon-menu9"></i>
                                                             </a>
                                                             <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="dat/pdf-sample.pdf" download="JN16M.pdf"><i class="icon-file-download"></i> Download PDF</a></li>
+                                                                <li class="divider"></li>
                                                                 <li><a href="#"><i class="icon-eye"></i> View</a></li>
+                                                                <li><a href="#"><i class="icon-checkmark4"></i> Enable</a></li>
+                                                                <li><a href="#"><i class="icon-cross2"></i> Disable</a></li>
                                                                 <li class="divider"></li>
                                                                 <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
                                                             </ul>
@@ -369,33 +369,34 @@
                                                 <td class="text-left">
                                                     <label><input type="checkbox" class="styled fxcond-bulk-check" value="-1"></label>
                                                 </td>
-                                                <td><a href="03_articles_detail.php" class="text-ci">AT17H01</a></td>
-                                                <td class="text-center px-imgfill">
+                                                <td><a href="02_journals_detail.php" class="text-ci">JN16H</a></td>
+                                                <td class="text-center px-imgfill bigImg">
                                                     <div class="px-tb-image">
-                                                        <a href="dat/hlx-03.jpg" data-popup="lightbox"><img src="dat/hlx-03.jpg"></a>
+                                                        <a href="dat/img-js04.jpg" data-popup="lightbox"><img src="dat/img-js04.jpg"></a>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <a href="03_articles_detail.php" class="text-ci">คุณเพียงใจ หาญพาณิชย์ หญิงเหล็ก...นักพัฒนาที่ดินรุ่นลายครามของไทย</a><br>
-                                                </td>
-                                                <td class="text-center">
-                                                    พัลลภ กฤตยานวัช,<br>
-                                                    สืบสิริ ศรีธัญญารัตน์ ภ.สก.ม.
+                                                    <a href="02_journals_detail.php" class="text-ci">ฉบับที่ 84 ปีที่ 22</a><br>
+                                                    <span class="colr-minor tg-offset">มกราคม - มีนาคม 2559</span>
                                                 </td>
                                                 <td class="text-center nowrap">
-                                                    <span class="text-danger">N/A</span>
+                                                    Q1/2559
+                                                </td>
+                                                <td class="text-center nowrap">วารสาร ธอส.</td>
+                                                <td class="text-center nowrap">
+                                                    975
                                                 </td>
                                                 <td class="text-center nowrap">
-                                                    Q1/2560
+                                                    32
+                                                </td>
+                                                <td class="text-center nowrap">
+                                                    87
                                                 </td>
                                                 <td class="text-center">
-                                                    <a href="dat/pdf-sample.pdf" class="text-ci" target="_blank" download="AT17H01.pdf"><i class="icon-file-pdf txt-upsize"></i></a>
+                                                    Anna Thompson<br>
+                                                    <span class="colr-minor tg-offset">28 Apr 2017</span>
                                                 </td>
-                                                <td class="text-center">
-                                                    Carl Matthews<br>
-                                                    <span class="colr-minor tg-offset">15 Feb 2017</span>
-                                                </td>
-                                                <td class="text-center"><span class="label label-fit label-danger">Unsigned*</span></td>
+                                                <td class="text-center"><span class="label label-fit label-success">Enabled</span></td>
                                                 <td class="text-right">
                                                     <ul class="icons-list">
                                                         <li class="dropdown dropup">
@@ -403,9 +404,11 @@
                                                                 <i class="icon-menu9"></i>
                                                             </a>
                                                             <ul class="dropdown-menu dropdown-menu-right">
-                                                                <li><a href="dat/pdf-sample.pdf" download="AT17H01.pdf"><i class="icon-file-download"></i> Download PDF</a></li>
+                                                                <li><a href="dat/pdf-sample.pdf" download="JN16H.pdf"><i class="icon-file-download"></i> Download PDF</a></li>
                                                                 <li class="divider"></li>
                                                                 <li><a href="#"><i class="icon-eye"></i> View</a></li>
+                                                                <li><a href="#"><i class="icon-checkmark4"></i> Enable</a></li>
+                                                                <li><a href="#"><i class="icon-cross2"></i> Disable</a></li>
                                                                 <li class="divider"></li>
                                                                 <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
                                                             </ul>
@@ -417,32 +420,34 @@
                                                 <td class="text-left">
                                                     <label><input type="checkbox" class="styled fxcond-bulk-check" value="-1"></label>
                                                 </td>
-                                                <td><a href="03_articles_detail.php" class="text-ci">AT16Z06</a></td>
-                                                <td class="text-center px-imgfill">
+                                                <td><a href="02_journals_detail.php" class="text-ci">JN15Z</a></td>
+                                                <td class="text-center px-imgfill bigImg">
                                                     <div class="px-tb-image">
-                                                        <a href="dat/hlx-04.jpg" data-popup="lightbox"><img src="dat/hlx-04.jpg"></a>
+                                                        <a href="dat/img-js05.jpg" data-popup="lightbox"><img src="dat/img-js05.jpg"></a>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <a href="03_articles_detail.php" class="text-ci">Evolution of accommodations and facilities in Thailand's National Parks</a><br>
+                                                    <a href="02_journals_detail.php" class="text-ci">ฉบับที่ 83 ปีที่ 21</a><br>
+                                                    <span class="colr-minor tg-offset">ตุลาคม - ธันวาคม 2558</span>
+                                                </td>
+                                                <td class="text-center nowrap">
+                                                    Q4/2558
+                                                </td>
+                                                <td class="text-center nowrap">วารสาร ธอส.</td>
+                                                <td class="text-center nowrap">
+                                                    1,579
+                                                </td>
+                                                <td class="text-center nowrap">
+                                                    421
+                                                </td>
+                                                <td class="text-center nowrap">
+                                                    180
                                                 </td>
                                                 <td class="text-center">
-                                                    พัลลภ กฤตยานวัช
+                                                    Anna Thompson<br>
+                                                    <span class="colr-minor tg-offset">28 Apr 2017</span>
                                                 </td>
-                                                <td class="text-center nowrap">
-                                                    ธนาคารอาคารสงเคราะห์
-                                                </td>
-                                                <td class="text-center nowrap">
-                                                    Q4/2559
-                                                </td>
-                                                <td class="text-center nowrap">
-                                                    &nbsp;
-                                                </td>
-                                                <td class="text-center">
-                                                    Carl Matthews<br>
-                                                    <span class="colr-minor tg-offset">9 Nov 2016</span>
-                                                </td>
-                                                <td class="text-center"><span class="label label-fit label-default">Disabled</span></td>
+                                                <td class="text-center"><span class="label label-fit label-success">Enabled</span></td>
                                                 <td class="text-right">
                                                     <ul class="icons-list">
                                                         <li class="dropdown dropup">
@@ -450,6 +455,110 @@
                                                                 <i class="icon-menu9"></i>
                                                             </a>
                                                             <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="dat/pdf-sample.pdf" download="JN15Z.pdf"><i class="icon-file-download"></i> Download PDF</a></li>
+                                                                <li class="divider"></li>
+                                                                <li><a href="#"><i class="icon-eye"></i> View</a></li>
+                                                                <li><a href="#"><i class="icon-checkmark4"></i> Enable</a></li>
+                                                                <li><a href="#"><i class="icon-cross2"></i> Disable</a></li>
+                                                                <li class="divider"></li>
+                                                                <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-left">
+                                                    <label><input type="checkbox" class="styled fxcond-bulk-check" value="-1"></label>
+                                                </td>
+                                                <td><a href="02_journals_detail.php" class="text-ci">JN13ZAPHJ</a></td>
+                                                <td class="text-center px-imgfill bigImg">
+                                                    <div class="px-tb-image">
+                                                        <a href="dat/img-js06.jpg" data-popup="lightbox"><img src="dat/img-js06.jpg"></a>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="02_journals_detail.php" class="text-ci">No. 25 Volume 7</a><br>
+                                                    <span class="colr-minor tg-offset">October - November 2013</span>
+                                                </td>
+                                                <td class="text-center nowrap">
+                                                    Q4/2013
+                                                </td>
+                                                <td class="text-center nowrap">APHJ</td>
+                                                <td class="text-center nowrap">
+                                                    1,579
+                                                </td>
+                                                <td class="text-center nowrap">
+                                                    421
+                                                </td>
+                                                <td class="text-center nowrap">
+                                                    180
+                                                </td>
+                                                <td class="text-center">
+                                                    Anna Thompson<br>
+                                                    <span class="colr-minor tg-offset">28 Apr 2017</span>
+                                                </td>
+                                                <td class="text-center"><span class="label label-fit label-success">Enabled</span></td>
+                                                <td class="text-right">
+                                                    <ul class="icons-list">
+                                                        <li class="dropdown dropup">
+                                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                                <i class="icon-menu9"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="dat/pdf-sample.pdf" download="JN13ZAPHJ.pdf"><i class="icon-file-download"></i> Download PDF</a></li>
+                                                                <li class="divider"></li>
+                                                                <li><a href="#"><i class="icon-eye"></i> View</a></li>
+                                                                <li><a href="#"><i class="icon-checkmark4"></i> Enable</a></li>
+                                                                <li><a href="#"><i class="icon-cross2"></i> Disable</a></li>
+                                                                <li class="divider"></li>
+                                                                <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-left">
+                                                    <label><input type="checkbox" class="styled fxcond-bulk-check" value="-1"></label>
+                                                </td>
+                                                <td><a href="02_journals_detail.php" class="text-ci">JN15U</a></td>
+                                                <td class="text-center px-imgfill bigImg">
+                                                    <div class="px-tb-image">
+                                                        <a href="dat/img-720x1005.png" data-popup="lightbox"><img src="dat/img-720x1005.png"></a>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="02_journals_detail.php" class="text-ci">ฉบับที่ 82 ปีที่ 21</a><br>
+                                                    <span class="colr-minor tg-offset">กรกฏาคม - กันยายน 2558</span>
+                                                </td>
+                                                <td class="text-center nowrap">
+                                                    Q3/2559
+                                                </td>
+                                                <td class="text-center nowrap">วารสาร ธอส.</td>
+                                                <td class="text-center nowrap">
+                                                    118
+                                                </td>
+                                                <td class="text-center nowrap">
+                                                    12
+                                                </td>
+                                                <td class="text-center nowrap">
+                                                    <span class="colr-minor tg-offset">N/A</span>
+                                                </td>
+                                                <td class="text-center">
+                                                    Anna Thompson<br>
+                                                    <span class="colr-minor tg-offset">28 Apr 2017</span>
+                                                </td>
+                                                <td class="text-center"><span class="label label-fit label-success">Enabled</span></td>
+                                                <td class="text-right">
+                                                    <ul class="icons-list">
+                                                        <li class="dropdown dropup">
+                                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                                <i class="icon-menu9"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="dat/pdf-sample.pdf" download="JN16Z.pdf"><i class="icon-file-download"></i> Download PDF</a></li>
+                                                                <li class="divider"></li>
                                                                 <li><a href="#"><i class="icon-eye"></i> View</a></li>
                                                                 <li><a href="#"><i class="icon-checkmark4"></i> Enable</a></li>
                                                                 <li><a href="#"><i class="icon-cross2"></i> Disable</a></li>
@@ -464,7 +573,7 @@
                                     </table>
                                 </div>
                                 <div class="px-tb-footer clearfix">
-                                    <div class="dataTables_info" role="status" >Showing 1 to 5 of 30 entries</div>
+                                    <div class="dataTables_info" role="status" >Showing 1 to 6 of 30 entries</div>
                                     <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
                                         <a href="#" class="paginate_button previous disabled" tabindex="0" >←</a>
                                         <span>

@@ -19,27 +19,7 @@
 	<!-- /global stylesheets -->
 
 	<!-- Core JS files -->
-	<script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
-	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
-	<!-- /core JS files -->
-
-	<!-- Theme JS files -->
-	<script type="text/javascript" src="assets/js/plugins/media/fancybox.min.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>
-	<script type="text/javascript" src="assets/js/core/libraries/jasny_bootstrap.min.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/forms/selects/select2.min.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/forms/validation/validate.min.js"></script>
-    <script type="text/javascript" src="assets/js/plugins/uploaders/fileinput.min.js"></script>
-    <script type="text/javascript" src="assets/js/plugins/pickers/pickadate/picker.js"></script>
-    <script type="text/javascript" src="assets/js/plugins/pickers/pickadate/picker.date.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/pickers/pickadate/picker.time.js"></script>
-    <script type="text/javascript" src="assets/js/plugins/extensions/cookie.js"></script>
-
-	<script type="text/javascript" src="assets/js/core/app.js"></script>
-	<script type="text/javascript" src="assets/js/pages/11_users_detail.js"></script>
-	<!-- /theme JS files -->
+	<?php include 'ssi/js-detail.php'; ?>
 
 </head>
 

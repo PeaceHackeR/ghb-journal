@@ -19,10 +19,7 @@
 	<!-- /global stylesheets -->
 
 	<!-- Core JS files -->
-	<?php include 'ssi/js-form.php'; ?>
-	
-	<script type="text/javascript" src="assets/js/pages/11_user_form_edit.js"></script>
-	<!-- /theme JS files -->
+	<?php include "ssi/js-form.php"; ?>
 
 </head>
 

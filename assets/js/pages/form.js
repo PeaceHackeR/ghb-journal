@@ -1,3 +1,28 @@
+$.fn.extend({
+    insertAtCaret: function (myValue) {
+        return this.each(function (i) {
+            if (document.selection) {
+                this.focus();
+                var sel = document.selection.createRange();
+                sel.text = myValue;
+                this.focus();
+            } else if (this.selectionStart || this.selectionStart == '0') {
+                var startPos = this.selectionStart;
+                var endPos = this.selectionEnd;
+                var scrollTop = this.scrollTop;
+                this.value = this.value.substring(0, startPos) + myValue + this.value.substring(endPos, this.value.length);
+                this.focus();
+                this.selectionStart = startPos + myValue.length;
+                this.selectionEnd = startPos + myValue.length;
+                this.scrollTop = scrollTop;
+            } else {
+                this.value += myValue;
+                this.focus();
+            }
+        });
+    }
+});
+
 String.prototype.shuffle = function () {
     var a = this.split(""),
         n = a.length;
@@ -12,7 +37,7 @@ String.prototype.shuffle = function () {
 }
 //
 moment.locale('en', {
-    months : [
+    months: [
         'January', 'February', 'March', 'April', 'May', 'June',
         'July', 'August', 'September', 'October', 'November', 'December'
     ]
@@ -20,6 +45,11 @@ moment.locale('en', {
 
 //
 $(function () {
+    // Lightbox
+    $('[data-popup="lightbox"]').fancybox({
+        padding: 3
+    });
+
     // Form
     $('.select').select2({
         minimumResultsForSearch: "-1"
@@ -27,6 +57,7 @@ $(function () {
     $('.styled').uniform({
         radioClass: 'choice'
     });
+
     function iconFormat(state) {
         var originalOption = state.element;
         return "<i class='icon-" + $(originalOption).data('icon') + "'></i>" + state.text;
@@ -65,14 +96,14 @@ $(function () {
     /* Date Picker */
     $('.pickadate').pickadate({
         formatSubmit: 'dd/mm/yyyy',
-        format : 'd mmmm yyyy'
+        format: 'd mmmm yyyy'
     });
     $('.pickatime').pickatime({
         format: 'HH:i',
         formatSubmit: 'HH:i',
         formatLabel: 'HH:i'
     });
-    
+
     /* UPLOAD */
     $('.file-input-custom').fileinput({
         previewFileType: 'image',
@@ -82,7 +113,7 @@ $(function () {
         removeLabel: '',
         removeClass: '',
         removeIcon: '<i class="icon-cancel-square"></i> ',
-        showRemove : !1,
+        showRemove: !1,
         uploadLabel: '',
         uploadClass: 'btn btn-default btn-icon',
         uploadIcon: '<i class="icon-file-upload"></i> ',
@@ -90,27 +121,45 @@ $(function () {
             caption: '<div tabindex="-1" class="form-control file-caption {class}">\n' + '<span class="icon-file-plus kv-caption-icon"></span><div class="file-caption-name"></div>\n' + '</div>'
         },
         initialCaption: "Please select image",
-        allowedFileExtensions: ["jpg", "png"]
+        allowedFileExtensions: ["jpg", "png"],
+        overwriteInitial: true
     });
-    
+
     // Multiple Tags
-    $(".select-multiple-tags").each(function(){
+    $(".select-multiple-tags").each(function () {
         var _tag = ($(this).data('defaultTags')).split(",");
         $(this).select2({
             width: '100%',
-            tags:_tag
+            tags: _tag
         });
     });
-    
+
     // SEO URL //
-    if($("#fx-urlinput").length){
+    if ($("#fx-urlinput").length) {
         var _url = $("#fx-urlsample"),
             _keyIntervalID = null;
-        
-        $("#fx-urlinput").keyup(function(){
-            var _str = (this.value).replace(/[^\w\d\-\s]/ig,"").replace(/\s+/ig,"-")
+
+        $("#fx-urlinput").keyup(function () {
+            var _str = (this.value).toLowerCase().replace(/[^\w\d\-\s]/ig, "").replace(/\s+/ig, "-")
             _url.text(_str);
         })
     }
     
+    // Password Generator //
+    $("#px-passGen").click(function(e){
+        e.preventDefault();
+        $("#fx-passuser")[0].value = generatePassword(8, false);
+    })
+    
+    // Permission//
+    $(".px-checkAll").each(function(){
+        var _list = $(this).closest('tr').find("input:not(.px-checkAll)");
+        $(this).change(function(){
+            if(this.checked){
+                _list.prop('checked',true).attr('disabled',true).parent().addClass("checked").parent().addClass("disabled");
+            }else{
+                _list.prop('checked',false).attr('disabled',false).parent().removeClass("checked").parent().removeClass("disabled");
+            }
+        })
+    })
 });

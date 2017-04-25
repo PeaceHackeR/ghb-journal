@@ -19,10 +19,7 @@
 	<!-- /global stylesheets -->
 
 	<!-- Core JS files -->
-    <?php include 'ssi/js-list.php'; ?>
-    
-	<script type="text/javascript" src="assets/js/pages/11_group_member_list.js"></script>
-	<!-- /theme JS files -->
+	<?php include 'ssi/js-list.php'; ?>
 
 </head>
 
@@ -102,11 +99,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="heading-elements">
-                                        <a id="px-addMore" href="11_group_member_add.php" class="btn btn-default">
-                                            <i class="icon-user-plus position-left"></i> Edit Members
-                                        </a>
-                                    </div>
                                 </div>
                                 <div class="px-datatable-filters">
                                     <!-- ** Filters ** -->
@@ -141,18 +133,18 @@
                     <!-- /Control Table -->
                     
                     <!-- Bulk Action -->
-                    <div class="row">
-                        <div class="form-group col-md-3">
-                            <select data-placeholder="Please select" class="select">
+                    <div id="px-bulk-Action" class="row">
+                        <div class="form-group col-sm-3">
+                            <select data-placeholder="- Bulk Action -" class="select px-input" disabled>
                                 <option></option>
-                                <option disabled>Please select</option>
+                                <option disabled>- Bulk Action -</option>
                                 <option value="">Enable</option>
                                 <option value="">Disable</option>
                                 <option value="">Delete</option>
                             </select>
                         </div>
-                        <div class="form-group col-md-2">
-                            <button class="btn btn-default" type="button">Apply</button>
+                        <div class="form-group col-sm-2">
+                            <button class="btn btn-default px-input" type="button" disabled>Apply</button>
                         </div>
                     </div>
                     <!-- /bulk Action -->

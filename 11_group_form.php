@@ -20,10 +20,7 @@
     <!-- /global stylesheets -->
 
     <!-- Core JS files -->
-    <?php include 'ssi/js-form.php'; ?>
-
-    <script type="text/javascript" src="assets/js/pages/11_group_form.js"></script>
-    <!-- /theme JS files -->
+	<?php include "ssi/js-form.php"; ?>
 
 </head>
 
@@ -325,7 +322,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td><span class="px-iconicbox-sub">&nbsp;</span>Writers</td>
+                                                    <td><span class="px-iconicbox-sub">&nbsp;</span>Authors</td>
                                                     <td class="text-center">
                                                         <input type="checkbox" class="styled px-checkAll">
                                                     </td>

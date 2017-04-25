@@ -73,7 +73,7 @@
                                 <div class="panel-heading border-bottom">
                                     <h4><span class="text-semibold">{{ Category ID }}</span></h4>
                                     <div class="heading-elements">
-                                        <a href="04_category_edit.php" class="btn btn-default btn-xs heading-btn"><i class="icon-pencil position-left"></i> Edit</a>
+                                        <a href="03_category_edit.php" class="btn btn-default btn-xs heading-btn"><i class="icon-pencil position-left"></i> Edit</a>
                                     </div>
                                 </div>
                                 <div class="panel-body">
@@ -82,7 +82,7 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="h-field">Name</div>
-                                            <p>ข่าวสาร ธอส.</p>
+                                            <p>ธนาคารอาคารสงเคราะห์</p>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="h-field">URL Name</div>

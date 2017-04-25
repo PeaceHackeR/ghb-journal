@@ -22,9 +22,6 @@
     <!-- Core JS files -->
     <?php include "ssi/js-form.php"; ?>
 
-    <script type="text/javascript" src="assets/js/pages/04_news_gallery.js"></script>
-    <!-- /theme JS files -->
-
 </head>
 
 <body>
@@ -116,9 +113,8 @@
                                                 <img src="dat/img-720x480.png" alt="">
                                                 <div class="caption-overflow">
                                                     <span>
-                                                    <a href="assets/images/placeholder.jpg" data-popup="lightbox" class="btn border-white text-white btn-flat btn-icon btn-rounded"><i class="icon-plus3"></i></a>
-                                                    <a href="#" class="btn border-white text-white btn-flat btn-icon btn-rounded ml-5"><i class="icon-link2"></i></a>
-                                                </span>
+                                                        <a href="assets/images/placeholder.jpg" data-popup="lightbox" class="btn border-white text-white btn-flat btn-icon btn-rounded"><i class="icon-plus3"></i></a>
+                                                    </span>
                                                 </div>
                                             </div>
 
@@ -134,7 +130,6 @@
                                                 <div class="caption-overflow">
                                                     <span>
                                                     <a href="assets/images/placeholder.jpg" data-popup="lightbox" class="btn border-white text-white btn-flat btn-icon btn-rounded"><i class="icon-plus3"></i></a>
-                                                    <a href="#" class="btn border-white text-white btn-flat btn-icon btn-rounded ml-5"><i class="icon-link2"></i></a>
                                                 </span>
                                                 </div>
                                             </div>
@@ -151,7 +146,6 @@
                                                 <div class="caption-overflow">
                                                     <span>
                                                     <a href="assets/images/placeholder.jpg" data-popup="lightbox" class="btn border-white text-white btn-flat btn-icon btn-rounded"><i class="icon-plus3"></i></a>
-                                                    <a href="#" class="btn border-white text-white btn-flat btn-icon btn-rounded ml-5"><i class="icon-link2"></i></a>
                                                 </span>
                                                 </div>
                                             </div>
@@ -168,7 +162,6 @@
                                                 <div class="caption-overflow">
                                                     <span>
                                                     <a href="assets/images/placeholder.jpg" data-popup="lightbox" class="btn border-white text-white btn-flat btn-icon btn-rounded"><i class="icon-plus3"></i></a>
-                                                    <a href="#" class="btn border-white text-white btn-flat btn-icon btn-rounded ml-5"><i class="icon-link2"></i></a>
                                                 </span>
                                                 </div>
                                             </div>
@@ -185,7 +178,6 @@
                                                 <div class="caption-overflow">
                                                     <span>
                                                     <a href="assets/images/placeholder.jpg" data-popup="lightbox" class="btn border-white text-white btn-flat btn-icon btn-rounded"><i class="icon-plus3"></i></a>
-                                                    <a href="#" class="btn border-white text-white btn-flat btn-icon btn-rounded ml-5"><i class="icon-link2"></i></a>
                                                 </span>
                                                 </div>
                                             </div>
@@ -202,7 +194,6 @@
                                                 <div class="caption-overflow">
                                                     <span>
                                                     <a href="assets/images/placeholder.jpg" data-popup="lightbox" class="btn border-white text-white btn-flat btn-icon btn-rounded"><i class="icon-plus3"></i></a>
-                                                    <a href="#" class="btn border-white text-white btn-flat btn-icon btn-rounded ml-5"><i class="icon-link2"></i></a>
                                                 </span>
                                                 </div>
                                             </div>
@@ -219,7 +210,6 @@
                                                 <div class="caption-overflow">
                                                     <span>
                                                     <a href="assets/images/placeholder.jpg" data-popup="lightbox" class="btn border-white text-white btn-flat btn-icon btn-rounded"><i class="icon-plus3"></i></a>
-                                                    <a href="#" class="btn border-white text-white btn-flat btn-icon btn-rounded ml-5"><i class="icon-link2"></i></a>
                                                 </span>
                                                 </div>
                                             </div>
@@ -236,7 +226,6 @@
                                                 <div class="caption-overflow">
                                                     <span>
                                                     <a href="assets/images/placeholder.jpg" data-popup="lightbox" class="btn border-white text-white btn-flat btn-icon btn-rounded"><i class="icon-plus3"></i></a>
-                                                    <a href="#" class="btn border-white text-white btn-flat btn-icon btn-rounded ml-5"><i class="icon-link2"></i></a>
                                                 </span>
                                                 </div>
                                             </div>

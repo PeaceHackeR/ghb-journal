@@ -24,3 +24,4 @@
 <script type="text/javascript" src="assets/js/plugins/password/password-generator.min.js"></script>
 
 <script type="text/javascript" src="assets/js/core/app.js"></script>
+<script type="text/javascript" src="assets/js/pages/form.js"></script>

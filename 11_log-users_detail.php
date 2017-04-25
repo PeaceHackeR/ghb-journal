@@ -20,9 +20,6 @@
 
 	<!-- Core JS files -->
 	<?php include 'ssi/js-detail.php'; ?>
-	
-	<script type="text/javascript" src="assets/js/pages/11_users_detail.js"></script>
-	<!-- /theme JS files -->
 
 </head>
 

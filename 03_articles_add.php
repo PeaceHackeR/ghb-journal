@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Add News - GHB Journals</title>
+	<title>Add Articles - GHB Journals</title>
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<!-- Global stylesheets -->
@@ -60,7 +60,7 @@
                 <div class="page-header">
                     <div class="page-header-content">
                         <div class="page-title">
-                            <h4><a href="javascript:window.history.back();"><i class="icon-arrow-left52 position-left"></i></a> <span class="text-semibold">Add News</span></h4>
+                            <h4><a href="javascript:window.history.back();"><i class="icon-arrow-left52 position-left"></i></a> <span class="text-semibold">Add Articles</span></h4>
                         </div>
 
                         <div class="heading-elements">
@@ -83,33 +83,79 @@
                             <fieldset class="content-group">
                                
                                 <div class="row">
-                                    <div class="form-group col-md-9">
+                                    <div class="form-group col-md-12">
                                         <label class="control-label">Title</label>
                                         <input type="text" class="form-control" placeholder="- Title -">
                                     </div>
+                                    <div class="form-group col-xs-6 col-md-3">
+                                        <label class="control-label">No. of Issue <span class="txt-colrMinor">(optional)</span></label>
+                                        <input type="text" class="form-control" placeholder="- Issue -">
+                                    </div>
+                                    <div class="form-group col-xs-6 col-md-3">
+                                        <label class="control-label">Year <span class="txt-colrMinor">(optional)</span></label>
+                                        <input type="text" class="form-control" placeholder="- Year -">
+                                    </div>
                                     
-                                    <div class="form-group col-md-3">
-                                        <label class="control-label">Event Date</label>
-                                        <div class="input-group">
-                                            <span class="input-group-addon"><i class="icon-calendar22"></i></span>
-                                            <input type="text" class="form-control pickadate" placeholder="Pick a date&hellip;">
-                                        </div>
+                                    <div class="form-group col-md-6">
+                                        <label class="control-label">Date</label>
+                                        <select class="select">
+                                            <option value="">Q1&nbsp;&nbsp;|&nbsp;&nbsp;มกราคม - มีนาคม</option>
+                                            <option value="">Q2&nbsp;&nbsp;|&nbsp;&nbsp;เมษายน - มิถุนายน</option>
+                                            <option value="">Q3&nbsp;&nbsp;|&nbsp;&nbsp;กรกฏาคม - กันยายน</option>
+                                            <option value="">Q4&nbsp;&nbsp;|&nbsp;&nbsp;ตุลาคม - ธันวาคม</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-group col-md-6">
                                         <label class="control-label">Category</label>
-                                        <select data-cond="brand" class="select">
-                                            <option value="">ข่าวสาร ธอส.</option>
-                                            <option value="">กิจกรรมเพื่อสังคม</option>
-                                            <option value="">ข่าวจัดซื้อจัดจ้าง</option>
+                                        <select class="select">
+                                            <option value="">ธนาคารอาคารสงเคราะห์</option>
+                                            <option value="">บ้าน</option>
+                                            <option value="">กฏหมาย</option>
                                             <option value="">** Metadata **</option>
                                         </select>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label class="control-label">Subcategory</label>
-                                        <input type="text" class="form-control" placeholder="- Subtitle -">
+                                        <input type="text" class="form-control" placeholder="- Subcategory -">
                                     </div>
+                                    <div class="form-group col-md-6">
+                                        <label class="control-label">Author 1</label>
+                                        <select class="select" data-placeholder="- Please select -">
+                                            <option></option>
+                                            <optgroup label="- หน่วยงาน -">
+                                                <option value="">ธนาคารอาคารสงเคราะห์</option>
+                                                <option value="">สำนักผังเมือง กรุงเทพมหานคร</option>
+                                                <option value="">กองบรรณาธิการ วาสาร ธอส.</option>
+                                            </optgroup>
+                                            <optgroup label="- บุคคล -">
+                                                <option value="">พัลลภ กฤตยานวัช</option>
+                                                <option value="">ดร. ดนัย ทายตะคุ</option>
+                                                <option value="">สืบสิริ ศรีธัญญารัตน์ ภ.สก.ม.</option>
+                                            </optgroup>
+                                            <option value="">** Metadata **</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label class="control-label">Author 2 <span class="txt-colrMinor">(optional)</span></label>
+                                        <select class="select">
+                                            <option value="" selected>N/A</option>
+                                            <optgroup label="- หน่วยงาน -">
+                                                <option value="">ธนาคารอาคารสงเคราะห์</option>
+                                                <option value="">สำนักผังเมือง กรุงเทพมหานคร</option>
+                                                <option value="">กองบรรณาธิการ วาสาร ธอส.</option>
+                                            </optgroup>
+                                            <optgroup label="- บุคคล -">
+                                                <option value="">พัลลภ กฤตยานวัช</option>
+                                                <option value="">ดร. ดนัย ทายตะคุ</option>
+                                                <option value="">สืบสิริ ศรีธัญญารัตน์ ภ.สก.ม.</option>
+                                            </optgroup>
+                                            <option value="">** Metadata **</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
                                     <div class="form-group col-md-12">
                                         <div class="px-editor">
                                             <div class="px-editor-tools clearfix">

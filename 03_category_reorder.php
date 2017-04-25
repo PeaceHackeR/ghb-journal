@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Manage Recommended News - GHB Journals</title>
+    <title>Articles Category - GHB Journals</title>
     <link rel="shortcut icon" href="favicon.ico">
 
     <!-- Global stylesheets -->
@@ -57,7 +56,7 @@
                 <div class="page-header">
                     <div class="page-header-content">
                         <div class="page-title">
-                            <h4><a href="javascript:window.history.back();"><i class="icon-arrow-left52 position-left"></i></a> <span class="text-semibold">Manage Recommended News</span></h4>
+                            <h4><a href="javascript:window.history.back();"><i class="icon-arrow-left52 position-left"></i></a> <span class="text-semibold">Reorder On Top Category</span></h4>
                         </div>
 
                         <div class="heading-elements">
@@ -82,62 +81,62 @@
                                         <thead class="px-tb-headpad">
                                             <tr>
                                                 <th class="text-center">Order</th>
-                                                <th class="text-center">ID</th>
-                                                <th class="text-center">Thumbnail</th>
+                                                <th>ID</th>
                                                 <th data-toggle="true">Title</th>
-                                                <th class="text-center" data-hide="phone">Start Date</th>
-                                                <th class="text-center" data-hide="phone">End Date</th>
+                                                <th data-toggle="true">URL Name</th>
+                                                <th class="text-center" data-hide="phone">Total article</th>
                                                 <th class="text-center">Drag to re-order</th>
                                             </tr>
                                         </thead>
                                         <tbody class="tb-valign-mid">
                                             <tr>
                                                 <td class="text-center px-tb-order" data-id="a1">1</td>
-                                                <td><a href="04_news_detail.php" class="text-ci">NEWS17J4</a></td>
-                                                <td class="text-center px-imgfill">
-                                                    <div class="px-tb-image">
-                                                        <a href="04_news_detail.php"><img src="dat/hlx-01.jpg"></a>
-                                                    </div>
+                                                <td><a href="03_articles_detail.php" class="text-center text-ci">AT-CT-5</a></td>
+                                                <td>
+                                                    ธนาคารอาคารสงเคราะห์
                                                 </td>
                                                 <td>
-                                                    <a href="04_news_detail.php" class="text-ci">ธอส. ออกมาตรการใหม่ด้านสินเชื่อและการประนอมหนี้</a><br>
-                                                    <span class="colr-minor tg-offset">ข่าวสาร ธอส.</span>
+                                                    /ghbank
                                                 </td>
-                                                <td class="text-center nowrap">
-                                                    1 Jun 2017
-                                                </td>
-                                                <td class="text-center nowrap">
-                                                    30 Nov 2017
+                                                <td class="text-center">
+                                                    118
                                                 </td>
                                                 <td class="text-center"><i class="icon-menu8"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="text-center px-tb-order" data-id="a2">2</td>
-                                                <td><a href="04_news_detail.php" class="text-ci">NEWS17J3</a></td>
-                                                <td class="text-center px-imgfill">
-                                                    <div class="px-tb-image">
-                                                        <a href="04_news_detail.php"><img src="dat/hlx-06.jpg"></a>
-                                                    </div>
+                                                <td><a href="03_articles_detail.php" class="text-center text-ci">AT-CT-4</a></td>
+                                                <td>
+                                                    บ้าน
                                                 </td>
                                                 <td>
-                                                    <a href="04_news_detail.php" class="text-ci"> ธอส. ส่งมอบโครงการ CSR ปรับปรุงภูมิทัศน์และพัฒนาแหล่งเรียนรู้ ให้แก่โรงเรียนเทศบาลปลายบางวัดโบสถ์ จ.นนทบุรี</a><br>
-                                                    <span class="colr-minor tg-offset">กิจกรรมเพื่อสังคม</span>
+                                                    /home
                                                 </td>
-                                                <td class="text-center nowrap">
-                                                    3 Apr 2017
-                                                </td>
-                                                <td class="text-center nowrap">
-                                                    31 Dec 2017
+                                                <td class="text-center">
+                                                    57
                                                 </td>
                                                 <td class="text-center"><i class="icon-menu8"></i></td>
                                             </tr>
-
+                                            <tr>
+                                                <td class="text-center px-tb-order" data-id="a3">3</td>
+                                                <td><a href="03_articles_detail.php" class="text-center text-ci">AT-CT-3</a></td>
+                                                <td>
+                                                    กฏหมาย
+                                                </td>
+                                                <td>
+                                                    /law
+                                                </td>
+                                                <td class="text-center">
+                                                    19
+                                                </td>
+                                                <td class="text-center"><i class="icon-menu8"></i></td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
                                 <div class="px-tb-footer clearfix">
                                     <input id="fx-ordering" type="hidden" value="" name="order">
-                                    <div class="dataTables_info" role="status">Showing 2 entries</div>
+                                    <div class="dataTables_info" role="status">Showing 3 entries</div>
                                     <div class="dataTables_paginate">
                                         <button type="butmit" class="btn btn-primary">Submit</button>
                                         <button type="butmit" class="btn btn-primary" onclick="window.history.back();">Cancle</button>

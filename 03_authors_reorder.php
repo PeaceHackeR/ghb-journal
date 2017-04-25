@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Manage Recommended News - GHB Journals</title>
+    <title>Manage Recommended Article - GHB Journals</title>
     <link rel="shortcut icon" href="favicon.ico">
 
     <!-- Global stylesheets -->
@@ -57,7 +57,7 @@
                 <div class="page-header">
                     <div class="page-header-content">
                         <div class="page-title">
-                            <h4><a href="javascript:window.history.back();"><i class="icon-arrow-left52 position-left"></i></a> <span class="text-semibold">Manage Recommended News</span></h4>
+                            <h4><a href="javascript:window.history.back();"><i class="icon-arrow-left52 position-left"></i></a> <span class="text-semibold">Manage Recommended Article</span></h4>
                         </div>
 
                         <div class="heading-elements">
@@ -83,8 +83,9 @@
                                             <tr>
                                                 <th class="text-center">Order</th>
                                                 <th class="text-center">ID</th>
-                                                <th class="text-center">Thumbnail</th>
-                                                <th data-toggle="true">Title</th>
+                                                <th class="text-center">Image</th>
+                                                <th data-toggle="true">Name</th>
+                                                <th class="text-center" data-hide="phone" >Author</th>
                                                 <th class="text-center" data-hide="phone">Start Date</th>
                                                 <th class="text-center" data-hide="phone">End Date</th>
                                                 <th class="text-center">Drag to re-order</th>
@@ -93,15 +94,18 @@
                                         <tbody class="tb-valign-mid">
                                             <tr>
                                                 <td class="text-center px-tb-order" data-id="a1">1</td>
-                                                <td><a href="04_news_detail.php" class="text-ci">NEWS17J4</a></td>
+                                                <td><a href="04_news_detail.php" class="text-ci">AT17M02</a></td>
                                                 <td class="text-center px-imgfill">
                                                     <div class="px-tb-image">
                                                         <a href="04_news_detail.php"><img src="dat/hlx-01.jpg"></a>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <a href="04_news_detail.php" class="text-ci">ธอส. ออกมาตรการใหม่ด้านสินเชื่อและการประนอมหนี้</a><br>
-                                                    <span class="colr-minor tg-offset">ข่าวสาร ธอส.</span>
+                                                    <a href="04_news_detail.php" class="text-ci">"Proxy or nominee" property - purchase policies clarified by government</a><br>
+                                                    <span class="colr-minor tg-offset">บ้าน</span>
+                                                </td>
+                                                 <td class="text-center">
+                                                    ธนาคารอาคารสงเคราะห์
                                                 </td>
                                                 <td class="text-center nowrap">
                                                     1 Jun 2017
@@ -113,15 +117,18 @@
                                             </tr>
                                             <tr>
                                                 <td class="text-center px-tb-order" data-id="a2">2</td>
-                                                <td><a href="04_news_detail.php" class="text-ci">NEWS17J3</a></td>
+                                                <td><a href="04_news_detail.php" class="text-ci">AT17M01</a></td>
                                                 <td class="text-center px-imgfill">
                                                     <div class="px-tb-image">
                                                         <a href="04_news_detail.php"><img src="dat/hlx-06.jpg"></a>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <a href="04_news_detail.php" class="text-ci"> ธอส. ส่งมอบโครงการ CSR ปรับปรุงภูมิทัศน์และพัฒนาแหล่งเรียนรู้ ให้แก่โรงเรียนเทศบาลปลายบางวัดโบสถ์ จ.นนทบุรี</a><br>
-                                                    <span class="colr-minor tg-offset">กิจกรรมเพื่อสังคม</span>
+                                                    <a href="04_news_detail.php" class="text-ci">ธอส. ออกมาตรการใหม่ด้านสินเชื่อและการประนอมหนี้</a><br>
+                                                    <span class="colr-minor tg-offset">กฏหมาย</span>
+                                                </td>
+                                                 <td class="text-center">
+                                                    ธนาคารอาคารสงเคราะห์
                                                 </td>
                                                 <td class="text-center nowrap">
                                                     3 Apr 2017
