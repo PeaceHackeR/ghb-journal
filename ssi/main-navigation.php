@@ -3,7 +3,7 @@
         <ul class="navigation navigation-main navigation-accordion">
             <!-- Contact Us -->
             <li>
-                <a href="00_actions_table.php" >
+                <a href="00_dashboard.php" >
                     <i class="icon-grid5"></i> <span> Dashboard</span>
                 </a>
             </li>
@@ -19,18 +19,21 @@
                     <li>
                         <a href="#">About Us</a>
                         <ul>
-                            <li class="disabled">
-                                <a href="#">History</a>
+                            <li>
+                                <a href="01_history_list.php">History</a>
                             </li>
-                            <li class="disabled">
-                                <a href="#">Providers</a>
+                            <li>
+                                <a href="01_providers_list.php">Providers</a>
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="01_link_list.php">Related Link</a>
-                    </li>
                 </ul>
+            </li>
+            <!-- 03 Authors -->
+            <li>
+                <a href="03_authors_list.php">
+                    <i class="icon-user"></i> <span> Authors</span>
+                </a>
             </li>
             <!-- 02 Journals -->
             <li>
@@ -38,9 +41,11 @@
                     <i class="icon-reading"></i> <span> Journals</span>
                 </a>
                 <ul>
+<!--
                     <li>
                         <a href="#">Overview</a>
                     </li>
+-->
                     <li>
                         <a href="02_journals_list.php">Post</a>
                     </li>
@@ -52,14 +57,13 @@
                     <i class="icon-quill4"></i> <span> Articles</span>
                 </a>
                 <ul>
+<!--
                     <li>
                         <a href="#">Overview</a>
                     </li>
+-->
                     <li>
                         <a href="03_articles_list.php">Post</a>
-                    </li>
-                    <li>
-                        <a href="03_authors_list.php">Authors</a>
                     </li>
                     <li>
                         <a href="03_category_list.php">Category Management</a>
@@ -72,9 +76,11 @@
                     <i class="icon-newspaper"></i> <span> News</span>
                 </a>
                 <ul>
+<!--
                     <li>
                         <a href="#">Overview</a>
                     </li>
+-->
                     <li>
                         <a href="04_news_list.php">Post</a>
                     </li>
@@ -89,17 +95,19 @@
                     <i class="icon-price-tags"></i> <span> Tags</span>
                 </a>
                 <ul>
+<!--
                     <li>
                         <a href="#">Overview</a>
                     </li>
+-->
                     <li>
-                        <a href="#">All</a>
+                        <a href="05_tag_list.php">All</a>
                     </li>
                     <li>
-                        <a href="#">By Section</a>
+                        <a href="#">Re-order Highlight Tags</a>
                         <ul>
                             <li>
-                                <a href="#">Articles</a>
+                                <a href="05_tag-articles_reorder.php">Articles</a>
                             </li>
                             <li>
                                 <a href="#">News</a>
@@ -108,10 +116,17 @@
                     </li>
                 </ul>
             </li>
+            
             <!-- Contact Us -->
             <li>
-                <a href="#" >
+                <a href="06_contact_list.php" >
                     <i class="icon-bubble-dots4"></i> <span> Contact Us<span class="label bg-success">12 NEW</span></span>
+                </a>
+            </li>
+            <!-- Related Link -->
+            <li>
+                <a href="07_link_list.php" >
+                    <i class="icon-link2"></i> <span> Related Link</span>
                 </a>
             </li>
             <!-- System -->

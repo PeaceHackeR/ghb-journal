@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Article Detail - GHB Journals</title>
+	<title>Member Details - GHB Journals</title>
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<!-- Global stylesheets -->
@@ -57,7 +57,7 @@
                 <div class="page-header">
                     <div class="page-header-content">
                         <div class="page-title">
-                            <h4><a href="#" onclick="window.history.back();"><i class="icon-arrow-left52 position-left"></i></a> <span class="text-semibold">Article Details</span></h4>
+                            <h4><a href="#" onclick="window.history.back();"><i class="icon-arrow-left52 position-left"></i></a> <span class="text-semibold">Related Link Members Details</span></h4>
                         </div>
                     </div>
                 </div>
@@ -70,11 +70,9 @@
                         <div class="col-md-12 float-md-left">
                             <div class="panel panel-flat">
                                 <div class="panel-heading border-bottom">
-                                    <h4><span class="text-semibold">{{ Authors ID }}</span></h4>
+                                    <h4><span class="text-semibold">{{ Related Link Members ID }}</span></h4>
                                     <div class="heading-elements">
-                                        <a href="#" class="btn btn-default btn-xs heading-btn"><i class="icon-file-eye position-left"></i> Preview</a>
-                                        <span>&nbsp;&nbsp;&nbsp;</span>
-                                        <a href="03_authors_add.php" class="btn btn-default btn-xs heading-btn"><i class="icon-pencil position-left"></i> Edit</a>
+                                        <a href="07_link-personal_add.php" class="btn btn-default btn-xs heading-btn"><i class="icon-pencil position-left"></i> Edit</a>
                                     </div>
                                 </div>
                                 <div class="panel-body">
@@ -89,35 +87,47 @@
                                             <div class="img-resp"><p><img src="dat/img-male.jpg" alt=""></p></div>
                                         </div>
                                         <div class="col-md-9">
-                                            <div class="h-title">Personal Information</div>
+                                           <div class="h-title">Personal Information</div>
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="h-field">Name</div>
-                                                    <p>ศาสตราจารย์กิตติคุณ เดชา บุญค้ำ</p>
+                                                    <p>คุณชาญณรงค์ บุริสตระกูล</p>
                                                 </div>
-                                                <div class="col-md-6">
-                                                    <div class="h-field">Name(EN)</div>
-                                                    <p>Prof. Decha Boonkum</p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="h-field">Position</div>
-                                                    <p>ประธานชมรมธุรกิจอสังหาริมทรัพย์จังหวัดขอนแก่น</p>
+                                                    <p>ประธานสมาคมวงการอสังหาริมทรัพย์ไทย</p>
                                                 </div>
                                             </div>
+                                            <br><br>
+                                            <div class="h-title">Association Information</div>
                                             <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="h-field">E-mail</div>
-                                                    <p>decha.boon@gmail.com</p>
+                                                <div class="col-md-12">
+                                                    <div class="h-field">Title</div>
+                                                    <p>ชมรมผู้ค้าอสังหาริมทรัพย์จังหวัดขอนแก่น</p>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="h-field">Telephone</div>
                                                     <p>08-1234-5678</p>
                                                 </div>
+                                                <div class="col-md-6">
+                                                    <div class="h-field">Fax</div>
+                                                    <p>043-337955</p>
+                                                </div>
                                             </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="h-field">Address</div>
+                                                    <p>เลขที่ 11 ถ. พิมพสุต ต. ในเมือง อ.เมือง จ.ขอนแก่น 40000</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="h-field">Link</div>
+                                                    <p><a href="http://newhome@pimangroup.com" target="_blank"><u>http://newhome@pimangroup.com</u></a></p>
+                                                </div>
+                                            </div>
+                                            
                                         </div>
                                     </div>
+                                    
                                     <br><br>
                                     <div class="h-title">Publish Status</div>
                                     <div class="row">
@@ -138,29 +148,7 @@
                                             <p>Tyler Lawrencen.</p>
                                         </div>
                                     </div>
-                                    
-                                    <br><br><br>
-                                    <div class="h-title">Publish Spolight</div>
-                                    <fieldset class="content-group">
-                                        <div class="row">
-                                            <div class="form-group col-md-6 clearfix">
-                                                <label class="control-label">Set to spolight</label>
-                                                <div class="input-group">
-                                                    <label class="radio-inline">
-                                                        <input value="1" type="radio" name="fx-template" class="styled"> Yes
-                                                    </label>
-                                                    <label class="radio-inline">
-                                                        <input value="0" type="radio" name="fx-template" class="styled" checked> No
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-                                    <div class="row">
-                                        <div class="form-group col-md-12">
-                                            <button type="butmit" class="btn btn-primary">Submit</button>
-                                        </div>
-                                    </div>
+
                                 </div>
                                 <div style="padding-top:40px;">&nbsp;</div>
                             </div>

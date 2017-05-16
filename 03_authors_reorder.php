@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Manage Recommended Article - GHB Journals</title>
+    <title>Manage Authors Spotlight - GHB Journals</title>
     <link rel="shortcut icon" href="favicon.ico">
 
     <!-- Global stylesheets -->
@@ -85,56 +85,35 @@
                                                 <th class="text-center">ID</th>
                                                 <th class="text-center">Image</th>
                                                 <th data-toggle="true">Name</th>
-                                                <th class="text-center" data-hide="phone" >Author</th>
-                                                <th class="text-center" data-hide="phone">Start Date</th>
-                                                <th class="text-center" data-hide="phone">End Date</th>
                                                 <th class="text-center">Drag to re-order</th>
                                             </tr>
                                         </thead>
                                         <tbody class="tb-valign-mid">
                                             <tr>
                                                 <td class="text-center px-tb-order" data-id="a1">1</td>
-                                                <td><a href="04_news_detail.php" class="text-ci">AT17M02</a></td>
-                                                <td class="text-center px-imgfill">
+                                                <td class="text-center"><a href="03_authors_detail.php" class="text-ci">AUTH-5</a></td>
+                                                <td class="px-imgfill text-center">
                                                     <div class="px-tb-image">
-                                                        <a href="04_news_detail.php"><img src="dat/hlx-01.jpg"></a>
+                                                        <a href="dat/img-ghbank.jpg" data-popup="lightbox" class="box-imgCirc"><img src="dat/img-ghbank.jpg"></a>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <a href="04_news_detail.php" class="text-ci">"Proxy or nominee" property - purchase policies clarified by government</a><br>
-                                                    <span class="colr-minor tg-offset">บ้าน</span>
-                                                </td>
-                                                 <td class="text-center">
-                                                    ธนาคารอาคารสงเคราะห์
-                                                </td>
-                                                <td class="text-center nowrap">
-                                                    1 Jun 2017
-                                                </td>
-                                                <td class="text-center nowrap">
-                                                    30 Nov 2017
+                                                    <a href="03_authors_detail.php" class="text-ci">ธนาคารอาคารสงเคราะห์</a><br>
+                                                    <span class="colr-minor tg-offset">G H BANK</span>
                                                 </td>
                                                 <td class="text-center"><i class="icon-menu8"></i></td>
                                             </tr>
                                             <tr>
                                                 <td class="text-center px-tb-order" data-id="a2">2</td>
-                                                <td><a href="04_news_detail.php" class="text-ci">AT17M01</a></td>
-                                                <td class="text-center px-imgfill">
+                                                <td class="text-center"><a href="03_authors_detail.php" class="text-ci">AUTH-4</a></td>
+                                                <td class="px-imgfill text-center">
                                                     <div class="px-tb-image">
-                                                        <a href="04_news_detail.php"><img src="dat/hlx-06.jpg"></a>
+                                                        <a href="dat/img-male.jpg" data-popup="lightbox" class="box-imgCirc"><img src="dat/img-male.jpg"></a>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <a href="04_news_detail.php" class="text-ci">ธอส. ออกมาตรการใหม่ด้านสินเชื่อและการประนอมหนี้</a><br>
-                                                    <span class="colr-minor tg-offset">กฏหมาย</span>
-                                                </td>
-                                                 <td class="text-center">
-                                                    ธนาคารอาคารสงเคราะห์
-                                                </td>
-                                                <td class="text-center nowrap">
-                                                    3 Apr 2017
-                                                </td>
-                                                <td class="text-center nowrap">
-                                                    31 Dec 2017
+                                                    <a href="03_authors_detail.php" class="text-ci">พัลลภ กฤตยานวัช</a><br>
+                                                    <span class="colr-minor tg-offset">Mr.Panlop Krittayawatcha</span>
                                                 </td>
                                                 <td class="text-center"><i class="icon-menu8"></i></td>
                                             </tr>

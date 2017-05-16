@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Authors - GHB Journals</title>
+	<title>Related Link - GHB Journals</title>
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<!-- Global stylesheets -->
@@ -56,7 +56,7 @@
                 <div class="page-header">
                     <div class="page-header-content">
                         <div class="page-title">
-                            <h4><span class="text-semibold">Authors</span></h4>
+                            <h4><span class="text-semibold">Related Link</span></h4>
                         </div>
 
                         <div class="heading-elements">
@@ -92,10 +92,12 @@
                                         </div>
                                     </div>
                                     <div class="heading-elements">
-                                        <a href="03_authors_reorder.php" class="btn btn-primary">
-                                            <i class="icon-sort-numeric-asc position-left"></i> Manage Spotlight
+<!--
+                                        <a href="01_highlight_reorder.php" class="btn btn-primary">
+                                            <i class="icon-sort-numeric-asc position-left"></i> Publish re-order
                                         </a>
-                                        <a id="px-addMore" href="03_authors_add.php" class="btn btn-primary">
+-->
+                                        <a id="px-addMore" href="07_link_add.php" class="btn btn-primary">
                                             <i class="icon-plus3 position-left"></i> Add
                                         </a>
                                     </div>
@@ -112,18 +114,6 @@
                                             </div>
                                             <div class="row">
                                                 <div class="form-group col-md-3 col-sm-6">
-                                                    <label class="control-label text-bold">Category</label>
-                                                    <select data-cond="brand" class="select">
-                                                        <option disabled>- Category -</option>
-                                                        <option value="" selected>All</option>
-                                                        <option value="">ธนาคารอาคารสงเคราะห์</option>
-                                                        <option value="">บ้าน</option>
-                                                        <option value="">กฏหมาย</option>
-                                                        <option value="">** Metadata **</option>
-                                                        <option value="">N/A</option>
-                                                    </select>
-                                                </div>
-                                                <div class="form-group col-md-3 col-sm-6">
                                                     <label class="control-label text-bold">Status</label>
                                                     <select data-cond="brand" class="select">
                                                         <option disabled>- Status -</option>
@@ -131,7 +121,6 @@
                                                         <option value="">Drafted</option>
                                                         <option value="">Enabled</option>
                                                         <option value="">Disabled</option>
-                                                        <option value="">Unsigned*</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -183,42 +172,31 @@
                                                 <th class="px-tb-bulkcheck text-left">
                                                     <label><input type="checkbox" class="styled fxcond-bulk-all" value="-1"></label>&nbsp;
                                                 </th>
-                                                <th data-hide="phone" class="text-center">ID</th>
-                                                <th class="text-center" style="width:80px;">Image</th>
-                                                <th data-toggle="true">Name</th>
-                                                <th class="text-center" data-hide="phone,tablet">Post</th>
-                                                <th class="text-center" data-hide="phone,tablet">Spotlight</th>
+                                                <th>ID</th>
+                                                <th data-toggle="true">Title</th>
+                                                <th>URL Name</th>
+                                                <th>Type</th>
+                                                <th class="text-center" data-toggle="true">Members</th>
                                                 <th class="text-center" data-hide="phone,tablet">Created</th>
                                                 <th class="text-center" data-hide="phone">Status</th>
                                                 <th class="text-right" data-hide="phone" data-name="Action"><i class="icon-cog7"></i>&nbsp;&nbsp;</th>
                                             </tr>
                                         </thead>
 										<tbody class="tb-valign-mid">
-                                            <tr>
+                                           <tr>
                                                 <td class="text-left">
                                                     <label><input type="checkbox" class="styled fxcond-bulk-check" value="-1"></label>
                                                 </td>
-                                                <td class="text-center">
-                                                    <a href="03_authors_detail.php" class="text-ci">AUTH-5</a>
-                                                </td>
-                                                <td class="px-imgfill text-center">
-                                                    <div class="px-tb-image">
-                                                        <a href="dat/img-ghbank.jpg" data-popup="lightbox" class="box-imgCirc"><img src="dat/img-ghbank.jpg"></a>
-                                                    </div>
-                                                </td>
+                                                <td><a href="07_link_detail.php" class="text-ci">RLINK-6</a></td>
                                                 <td>
-                                                    <a href="03_authors_detail.php" class="text-ci">ธนาคารอาคารสงเคราะห์</a><br>
-                                                    <span class="colr-minor tg-offset">G H BANK</span>
+                                                    <a href="07_link-company_list.php" class="text-ci"><u>เว็บไซต์ข้อมูลอสังหาริมทรัพย์</u></a>
                                                 </td>
-                                                <td class="text-center">
-                                                    <a href="03_articles_list.php" class="text-ci"><u>89</u></a>
-                                                </td>
-                                                <td class="text-center">
-                                                    <div class="circ-num bg-ci"><i class="text-white icon-checkmark"></i></div>
-                                                </td>
+                                                <td>/weblink-1</td>
+                                                <td>Company</td>
+                                                <td class="text-center">1</td>
                                                 <td class="text-center">
                                                     Anna Thompson<br>
-                                                    <span class="colr-minor tg-offset">2 Apr 2017</span>
+                                                    <span class="colr-minor tg-offset">28 Apr 2017</span>
                                                 </td>
                                                 <td class="text-center"><span class="label label-fit label-success">Enabled</span></td>
                                                 <td class="text-right">
@@ -228,53 +206,7 @@
                                                                 <i class="icon-menu9"></i>
                                                             </a>
                                                             <ul class="dropdown-menu dropdown-menu-right">
-                                                                <li><a href="#" data-toggle="modal" data-target="#action-Recommend"><i class="icon-pushpin"></i> Publish Spotlight</a></li>
-                                                                <li class="divider"></li>
-                                                                <li><a href="#"><i class="icon-eye"></i> View</a></li>
-                                                                <li><a href="#"><i class="icon-checkmark4"></i> Enable</a></li>
-                                                                <li><a href="#"><i class="icon-cross2"></i> Disable</a></li>
-                                                                <li class="divider"></li>
-                                                                <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                               <td class="text-left">
-                                                    <label><input type="checkbox" class="styled fxcond-bulk-check" value="-1"></label>
-                                                </td>
-                                                <td class="text-center">
-                                                    <a href="03_authors_detail.php" class="text-ci">AUTH-4</a>
-                                                </td>
-                                                <td class="px-imgfill text-center">
-                                                    <div class="px-tb-image">
-                                                        <a href="dat/img-male.jpg" data-popup="lightbox" class="box-imgCirc"><img src="dat/img-male.jpg"></a>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <a href="03_authors_detail.php" class="text-ci">พัลลภ กฤตยานวัช</a><br>
-                                                    <span class="colr-minor tg-offset">Mr.Panlop Krittayawatcha</span>
-                                                </td>
-                                                <td class="text-center">
-                                                    <a href="03_articles_list.php" class="text-ci"><u>117</u></a>
-                                                </td>
-                                                <td class="text-center">
-                                                    <div class="circ-num bg-ci"><i class="text-white icon-checkmark"></i></div>
-                                                </td>
-                                                <td class="text-center">
-                                                    Anna Thompson<br>
-                                                    <span class="colr-minor tg-offset">2 Apr 2017</span>
-                                                </td>
-                                                <td class="text-center"><span class="label label-fit label-success">Enabled</span></td>
-                                                <td class="text-right">
-                                                    <ul class="icons-list">
-                                                        <li class="dropdown dropup">
-                                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                                                <i class="icon-menu9"></i>
-                                                            </a>
-                                                            <ul class="dropdown-menu dropdown-menu-right">
-                                                                <li><a href="#" data-toggle="modal" data-target="#action-Recommend"><i class="icon-pushpin"></i> Publish Spotlight</a></li>
+                                                                <li><a href="07_link-company_list.php"><i class="icon-users4"></i> Member list</a></li>
                                                                 <li class="divider"></li>
                                                                 <li><a href="#"><i class="icon-eye"></i> View</a></li>
                                                                 <li><a href="#"><i class="icon-checkmark4"></i> Enable</a></li>
@@ -290,27 +222,16 @@
                                                 <td class="text-left">
                                                     <label><input type="checkbox" class="styled fxcond-bulk-check" value="-1"></label>
                                                 </td>
-                                                <td class="text-center">
-                                                    <a href="03_authors_detail.php" class="text-ci">AUTH-3</a>
-                                                </td>
-                                                <td class="px-imgfill text-center">
-                                                    <div class="px-tb-image">
-                                                        <a href="dat/img-female.jpg" data-popup="lightbox" class="box-imgCirc"><img src="dat/img-female.jpg"></a>
-                                                    </div>
-                                                </td>
+                                                <td><a href="07_link_detail.php" class="text-ci">RLINK-5</a></td>
                                                 <td>
-                                                    <a href="03_authors_detail.php" class="text-ci">สืบสิริ ศรีธัญญารัตน์ ภ.สถ.ม.</a><br>
-                                                    <span class="colr-minor tg-offset">Ms. Soobhsiri Srithanyarath M.L.A.</span>
+                                                    <a href="07_link-personal_list.php" class="text-ci"><u>สมาคมวงการอสังหาริมทรัพย์ไทย</u></a>
                                                 </td>
-                                                <td class="text-center">
-                                                    <a href="03_articles_list.php" class="text-ci"><u>21</u></a>
-                                                </td>
-                                                <td class="text-center">
-                                                    &nbsp;
-                                                </td>
+                                                <td>/weblink-2</td>
+                                                <td>Personal</td>
+                                                <td class="text-center">14</td>
                                                 <td class="text-center">
                                                     Anna Thompson<br>
-                                                    <span class="colr-minor tg-offset">2 Apr 2017</span>
+                                                    <span class="colr-minor tg-offset">28 Apr 2017</span>
                                                 </td>
                                                 <td class="text-center"><span class="label label-fit label-success">Enabled</span></td>
                                                 <td class="text-right">
@@ -320,7 +241,7 @@
                                                                 <i class="icon-menu9"></i>
                                                             </a>
                                                             <ul class="dropdown-menu dropdown-menu-right">
-                                                                <li><a href="#" data-toggle="modal" data-target="#action-Recommend"><i class="icon-pushpin"></i> Publish Spotlight</a></li>
+                                                                <li><a href="07_link-personal_list.php"><i class="icon-users4"></i> Member list</a></li>
                                                                 <li class="divider"></li>
                                                                 <li><a href="#"><i class="icon-eye"></i> View</a></li>
                                                                 <li><a href="#"><i class="icon-checkmark4"></i> Enable</a></li>
@@ -336,27 +257,16 @@
                                                 <td class="text-left">
                                                     <label><input type="checkbox" class="styled fxcond-bulk-check" value="-1"></label>
                                                 </td>
-                                                <td class="text-center">
-                                                    <a href="03_authors_detail.php" class="text-ci">AUTH-2</a>
-                                                </td>
-                                                <td class="px-imgfill text-center">
-                                                    <div class="px-tb-image">
-                                                        <a href="dat/img-ss01.jpg" data-popup="lightbox" class="box-imgCirc"><img src="dat/img-ss01.jpg"></a>
-                                                    </div>
-                                                </td>
+                                                <td><a href="07_link_detail.php" class="text-ci">RLINK-4</a></td>
                                                 <td>
-                                                    <a href="03_authors_detail.php" class="text-ci">สำนักผังเมือง กรุงเทพมหานคร</a><br>
-                                                    <span class="colr-minor tg-offset">Department of City Planning</span>
+                                                    <a href="07_link-company_list.php" class="text-ci"><u>บริษัทตัวแทน-นายหน้า</u></a>
                                                 </td>
-                                                <td class="text-center">
-                                                    <a href="03_articles_list.php" class="text-ci"><u>6</u></a>
-                                                </td>
-                                                <td class="text-center">
-                                                    &nbsp;
-                                                </td>
+                                                <td>/weblink-3</td>
+                                                <td>Company</td>
+                                                <td class="text-center">5</td>
                                                 <td class="text-center">
                                                     Anna Thompson<br>
-                                                    <span class="colr-minor tg-offset">2 Apr 2017</span>
+                                                    <span class="colr-minor tg-offset">28 Apr 2017</span>
                                                 </td>
                                                 <td class="text-center"><span class="label label-fit label-default">Disabled</span></td>
                                                 <td class="text-right">
@@ -366,6 +276,8 @@
                                                                 <i class="icon-menu9"></i>
                                                             </a>
                                                             <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="07_link-company_list.php"><i class="icon-users4"></i> Member list</a></li>
+                                                                <li class="divider"></li>
                                                                 <li><a href="#"><i class="icon-eye"></i> View</a></li>
                                                                 <li><a href="#"><i class="icon-checkmark4"></i> Enable</a></li>
                                                                 <li><a href="#"><i class="icon-cross2"></i> Disable</a></li>
@@ -380,29 +292,18 @@
                                                 <td class="text-left">
                                                     <label><input type="checkbox" class="styled fxcond-bulk-check" value="-1"></label>
                                                 </td>
-                                                <td class="text-center">
-                                                    <a href="03_authors_detail.php" class="text-ci">AUTH-1</a>
-                                                </td>
-                                                <td class="px-imgfill text-center">
-                                                    <div class="px-tb-image">
-                                                        <a href="dat/img-male.jpg" data-popup="lightbox" class="box-imgCirc"><img src="dat/img-male.jpg"></a>
-                                                    </div>
-                                                </td>
+                                                <td><a href="07_link_detail.php" class="text-ci">RLINK-3</a></td>
                                                 <td>
-                                                    <a href="03_authors_detail.php" class="text-ci">ศาสตราจารย์กิตติคุณ เดชา บุญค้ำ</a><br>
-                                                    <span class="colr-minor tg-offset">Prof. Decha Boonkum</span>
+                                                    <a href="07_link-company_list.php" class="text-ci"><u>กลุ่มธุรกิจอาคารชุด</u></a>
                                                 </td>
-                                                <td class="text-center">
-                                                    <a href="03_articles_list.php" class="text-ci"><u>4</u></a>
-                                                </td>
-                                                <td class="text-center">
-                                                    &nbsp;
-                                                </td>
+                                                <td>/weblink-4</td>
+                                                <td>Company</td>
+                                                <td class="text-center">2</td>
                                                 <td class="text-center">
                                                     Anna Thompson<br>
-                                                    <span class="colr-minor tg-offset">2 Apr 2017</span>
+                                                    <span class="colr-minor tg-offset">28 Apr 2017</span>
                                                 </td>
-                                                <td class="text-center"><span class="label label-fit bg-orange">Drafted</span></td>
+                                                <td class="text-center"><span class="label label-fit label-success">Enabled</span></td>
                                                 <td class="text-right">
                                                     <ul class="icons-list">
                                                         <li class="dropdown dropup">
@@ -410,7 +311,81 @@
                                                                 <i class="icon-menu9"></i>
                                                             </a>
                                                             <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="07_link-company_list.php"><i class="icon-users4"></i> Member list</a></li>
+                                                                <li class="divider"></li>
                                                                 <li><a href="#"><i class="icon-eye"></i> View</a></li>
+                                                                <li><a href="#"><i class="icon-checkmark4"></i> Enable</a></li>
+                                                                <li><a href="#"><i class="icon-cross2"></i> Disable</a></li>
+                                                                <li class="divider"></li>
+                                                                <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-left">
+                                                    <label><input type="checkbox" class="styled fxcond-bulk-check" value="-1"></label>
+                                                </td>
+                                                <td><a href="07_link_detail.php" class="text-ci">RLINK-2</a></td>
+                                                <td>
+                                                    <a href="07_link-company_list.php" class="text-ci"><u>กลุ่มธุรกิจบ้านจัดสรร</u></a>
+                                                </td>
+                                                <td>/weblink-6</td>
+                                                <td>Company</td>
+                                                <td class="text-center">18</td>
+                                                <td class="text-center">
+                                                    Anna Thompson<br>
+                                                    <span class="colr-minor tg-offset">28 Apr 2017</span>
+                                                </td>
+                                                <td class="text-center"><span class="label label-fit label-success">Enabled</span></td>
+                                                <td class="text-right">
+                                                    <ul class="icons-list">
+                                                        <li class="dropdown dropup">
+                                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                                <i class="icon-menu9"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="07_link-company_list.php"><i class="icon-users4"></i> Member list</a></li>
+                                                                <li class="divider"></li>
+                                                                <li><a href="#"><i class="icon-eye"></i> View</a></li>
+                                                                <li><a href="#"><i class="icon-checkmark4"></i> Enable</a></li>
+                                                                <li><a href="#"><i class="icon-cross2"></i> Disable</a></li>
+                                                                <li class="divider"></li>
+                                                                <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-left">
+                                                    <label><input type="checkbox" class="styled fxcond-bulk-check" value="-1"></label>
+                                                </td>
+                                                <td><a href="07_link_detail.php" class="text-ci">RLINK-1</a></td>
+                                                <td>
+                                                    <a href="07_link-company_list.php" class="text-ci"><u>บริษัทออกแบบ-สร้างบ้าน</u></a>
+                                                </td>
+                                                <td>/weblink-5</td>
+                                                <td>Company</td>
+                                                <td class="text-center">0</td>
+                                                <td class="text-center">
+                                                    Anna Thompson<br>
+                                                    <span class="colr-minor tg-offset">28 Apr 2017</span>
+                                                </td>
+                                                <td class="text-center"><span class="label label-fit label-success">Enabled</span></td>
+                                                <td class="text-right">
+                                                    <ul class="icons-list">
+                                                        <li class="dropdown dropup">
+                                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                                <i class="icon-menu9"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="07_link-company_list.php"><i class="icon-users4"></i> Member list</a></li>
+                                                                <li class="divider"></li>
+                                                                <li><a href="#"><i class="icon-eye"></i> View</a></li>
+                                                                <li><a href="#"><i class="icon-checkmark4"></i> Enable</a></li>
+                                                                <li><a href="#"><i class="icon-cross2"></i> Disable</a></li>
                                                                 <li class="divider"></li>
                                                                 <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
                                                             </ul>
@@ -422,7 +397,7 @@
                                     </table>
                                 </div>
                                 <div class="px-tb-footer clearfix">
-                                    <div class="dataTables_info" role="status" >Showing 1 to 5 of 30 entries</div>
+                                    <div class="dataTables_info" role="status" >Showing 1 to 6 of 30 entries</div>
                                     <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
                                         <a href="#" class="paginate_button previous disabled" tabindex="0" >←</a>
                                         <span>
@@ -454,37 +429,5 @@
 	</div>
 	<!-- /page container -->
 
-    <!-- ACTION MODAL -->
-    <div id="action-Recommend" class="modal fade" data-backdrop="static" data-keyboard="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header bg-primary">
-                    <button type="button" class="close" data-dismiss="modal">×</button>
-                    <h6 class="modal-title">Publish Spotlight</h6>
-                </div>
-
-                <div class="modal-body">
-                        <div class="row">
-                            <div class="form-group col-md-12 clearfix">
-                                <label class="control-label">Set to spotlight</label>
-                                <div class="input-group">
-                                    <label class="radio-inline">
-                                        <input value="1" type="radio" name="fx-template" class="styled"> Yes
-                                    </label>
-                                    <label class="radio-inline">
-                                        <input value="0" type="radio" name="fx-template" class="styled" checked> No
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-
-               <div class="modal-footer text-center">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
-                    <button type="button" class="btn btn-link" data-dismiss="modal">Cancle</button>
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 </html>

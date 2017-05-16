@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Add Author - GHB Journals</title>
+	<title>Add History - GHB Journals</title>
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<!-- Global stylesheets -->
@@ -60,7 +60,7 @@
                 <div class="page-header">
                     <div class="page-header-content">
                         <div class="page-title">
-                            <h4><a href="javascript:window.history.back();"><i class="icon-arrow-left52 position-left"></i></a> <span class="text-semibold">Add Author</span></h4>
+                            <h4><a href="javascript:window.history.back();"><i class="icon-arrow-left52 position-left"></i></a> <span class="text-semibold">Add History</span></h4>
                         </div>
 
                         <div class="heading-elements">
@@ -76,47 +76,23 @@
                     <!-- Form -->
                     <div class="panel panel-flat">
                         <div class="panel-heading border-bottom">
-                            <h4 class="panel-title">Author Information</h4>
+                            <h4 class="panel-title">History Content</h4>
                         </div>
                         <div class="panel-body">
                             <br><br>
                             <fieldset class="content-group">
-                                <legend class="text-bold">Personal Information</legend>
+                               
                                 <div class="row">
-                                    <div class="form-group col-md-6">
-                                        <label class="control-label">Name TH</label>
-                                        <input type="text" class="form-control" placeholder="- Name TH -">
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <label class="control-label">Name EN</label>
-                                        <input type="text" class="form-control" placeholder="- Name EN -">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="form-group col-md-6">
-                                        <label class="control-label">Position <span class="txt-colrMinor">(optional)</span></label>
+                                    <div class="form-group col-md-12">
+                                        <label class="control-label">Template Name</label>
                                         <input type="text" class="form-control" placeholder="- Title -">
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="form-group col-md-6">
-                                        <label class="control-label">E-mail <span class="txt-colrMinor">(optional)</span></label>
-                                        <input type="text" class="form-control" placeholder="- Title -">
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <label class="control-label">Telephone <span class="txt-colrMinor">(optional)</span></label>
-                                        <input type="text" class="form-control" placeholder="- Title -">
-                                    </div>
-                                </div>
-                                
-                            </fieldset>
-                            <fieldset class="content-group">
-                                <legend class="text-bold">History Profile</legend>
                                 <div class="row">
                                     <div class="form-group col-md-12">
                                         <div class="px-editor">
                                             <div class="px-editor-tools clearfix">
-                                                <label class="">Detail <span class="txt-colrMinor">(optional)</span></label>
+                                                <label class="">Detail</label>
                                                 <div class="pull-right">
                                                     <button type="button" class="btn btn-default btn-md px-editor-viewsource"><i class="icon-embed position-left"></i> View source</button>
                                                     <button type="button" class="btn btn-default btn-md px-editor-norm"><i class="icon-gallery position-left"></i> Visual</button>
@@ -136,16 +112,6 @@
                                                 <span class="help-block">* Image width migth be larger than 750 px for best view.</span>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </fieldset>
-                            <fieldset class="content-group">
-                                <legend class="text-bold">Image</legend>
-                                <div class="row">
-                                    <div class="form-group col-md-6">
-                                        <label class="control-label">Upload</label>
-                                        <input type="file" class="file-input-custom" accept="image/*" data-show-upload="false">
-                                        <span class="help-block">JPEG, PNG at 240x240 px.</span>
                                     </div>
                                 </div>
                             </fieldset>

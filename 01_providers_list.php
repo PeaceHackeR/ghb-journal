@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Related Link - GHB Journals</title>
+	<title>Providers - GHB Journals</title>
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<!-- Global stylesheets -->
@@ -56,7 +56,7 @@
                 <div class="page-header">
                     <div class="page-header-content">
                         <div class="page-title">
-                            <h4><span class="text-semibold">Highlight</span></h4>
+                            <h4><span class="text-semibold">Providers</span></h4>
                         </div>
 
                         <div class="heading-elements">
@@ -92,10 +92,10 @@
                                         </div>
                                     </div>
                                     <div class="heading-elements">
-                                        <a href="01_highlight_reorder.php" class="btn btn-primary">
+                                        <a href="01_providers_reorder.php" class="btn btn-primary">
                                             <i class="icon-sort-numeric-asc position-left"></i> Publish re-order
                                         </a>
-                                        <a id="px-addMore" href="01_highlight_add.php" class="btn btn-primary">
+                                        <a id="px-addMore" href="01_providers_add.php" class="btn btn-primary">
                                             <i class="icon-plus3 position-left"></i> Add
                                         </a>
                                     </div>
@@ -180,10 +180,8 @@
                                                     <label><input type="checkbox" class="styled fxcond-bulk-all" value="-1"></label>&nbsp;
                                                 </th>
                                                 <th>ID</th>
-                                                <th data-toggle="true">Title</th>
-                                                <th class="text-center">Type</th>
-                                                <th class="text-center nowrap" data-hide="phone,tablet">Start</th>
-                                                <th class="text-center" data-hide="phone,tablet">End</th>
+                                                <th data-toggle="true" style="width:370px;">Position</th>
+                                                <th>Name</th>
                                                 <th class="text-center" data-hide="phone,tablet">Created</th>
                                                 <th class="text-center" data-hide="phone">Status</th>
                                                 <th class="text-right" data-hide="phone" data-name="Action"><i class="icon-cog7"></i>&nbsp;&nbsp;</th>
@@ -194,22 +192,152 @@
                                                 <td class="text-left">
                                                     <label><input type="checkbox" class="styled fxcond-bulk-check" value="-1"></label>
                                                 </td>
-                                                <td><a href="01_highlight_detail.php" class="text-ci">RL-1</a></td>
+                                                <td><a href="01_providers_detail.php" class="text-ci">MD-5</a></td>
+                                                
                                                 <td>
-                                                    <a href="01_highlight_detail.php" class="text-ci">โครงการส่งเสริมธุรกิจตลาดบ้านมือสองสำหรับผู้ประกอบการ</a>
+                                                    ผู้ช่วยผู้อำนวยการฝ่ายวิชาการและเผยแพร่ และรักษาการผู้อำนวยการฝ่ายวิชาการและเผยแพร่ ผู้ช่วยบรรณาธิการบริหาร
+                                                </td>
+                                                <td>
+                                                    นางชนิดา ทิพยรัตน์<br>
+                                                    นางสาวอภิสุดา เผือกขาวผ่อง
+                                                </td>
+                                                <td class="text-center nowrap">
+                                                    30 Nov 2017<br>
+                                                    <span class="colr-minor tg-offset">16:30</span>
+                                                </td>
+                                                <td class="text-center"><span class="label label-fit label-success">Enabled</span></td>
+                                                <td class="text-right">
+                                                    <ul class="icons-list">
+                                                        <li class="dropdown dropup">
+                                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                                <i class="icon-menu9"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="#"><i class="icon-eye"></i> View</a></li>
+                                                                <li><a href="#"><i class="icon-checkmark4"></i> Enable</a></li>
+                                                                <li><a href="#"><i class="icon-cross2"></i> Disable</a></li>
+                                                                <li class="divider"></li>
+                                                                <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-left">
+                                                    <label><input type="checkbox" class="styled fxcond-bulk-check" value="-1"></label>
+                                                </td>
+                                                <td><a href="01_providers_detail.php" class="text-ci">MD-4</a></td>
+                                                
+                                                <td>
+                                                    ประธานที่ปรึกษา
+                                                </td>
+                                                <td>
+                                                    นายฉัตรชัย ศิริไล
+                                                </td>
+                                                <td class="text-center nowrap">
+                                                    30 Nov 2017<br>
+                                                    <span class="colr-minor tg-offset">16:30</span>
+                                                </td>
+                                                <td class="text-center"><span class="label label-fit label-success">Enabled</span></td>
+                                                <td class="text-right">
+                                                    <ul class="icons-list">
+                                                        <li class="dropdown dropup">
+                                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                                <i class="icon-menu9"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="#"><i class="icon-eye"></i> View</a></li>
+                                                                <li><a href="#"><i class="icon-checkmark4"></i> Enable</a></li>
+                                                                <li><a href="#"><i class="icon-cross2"></i> Disable</a></li>
+                                                                <li class="divider"></li>
+                                                                <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-left">
+                                                    <label><input type="checkbox" class="styled fxcond-bulk-check" value="-1"></label>
+                                                </td>
+                                                <td><a href="01_providers_detail.php" class="text-ci">MD-3</a></td>
+                                                
+                                                <td>
+                                                    กรรมการผู้จัดการที่ปรึกษา
+                                                </td>
+                                                <td class="nowrap">
+                                                    นายวิทยา แสนภักดี
                                                 </td>
                                                 <td class="text-center">
-                                                    Page
+                                                    30 Nov 2017<br>
+                                                    <span class="colr-minor tg-offset">16:30</span>
+                                                </td>
+                                                <td class="text-center"><span class="label label-fit label-default">Disabled</span></td>
+                                                <td class="text-right">
+                                                    <ul class="icons-list">
+                                                        <li class="dropdown dropup">
+                                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                                <i class="icon-menu9"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="#"><i class="icon-eye"></i> View</a></li>
+                                                                <li><a href="#"><i class="icon-checkmark4"></i> Enable</a></li>
+                                                                <li><a href="#"><i class="icon-cross2"></i> Disable</a></li>
+                                                                <li class="divider"></li>
+                                                                <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-left">
+                                                    <label><input type="checkbox" class="styled fxcond-bulk-check" value="-1"></label>
+                                                </td>
+                                                <td><a href="01_providers_detail.php" class="text-ci">MD-2</a></td>
+                                                
+                                                <td>
+                                                    ผู้ช่วยกรรมการผู้จัดการ สายงานกลยุทธ์ 1และรักษาการรองกรรมการผู้จัดการ กลุ่มงานกลยุทธ์องค์กร
+                                                </td>
+                                                <td>
+                                                    นายวิชัย วิรัตกพันธ์
                                                 </td>
                                                 <td class="text-center">
-                                                    1 Jun 2017
+                                                    30 Nov 2017<br>
+                                                    <span class="colr-minor tg-offset">16:30</span>
+                                                </td>
+                                                <td class="text-center"><span class="label label-fit bg-orange">Drafted</span></td>
+                                                <td class="text-right">
+                                                    <ul class="icons-list">
+                                                        <li class="dropdown dropup">
+                                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                                <i class="icon-menu9"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="#"><i class="icon-eye"></i> View</a></li>
+                                                                <li class="divider"></li>
+                                                                <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-left">
+                                                    <label><input type="checkbox" class="styled fxcond-bulk-check" value="-1"></label>
+                                                </td>
+                                                <td><a href="01_providers_detail.php" class="text-ci">MD-1</a></td>
+                                                
+                                                <td>
+                                                    บรรณาธิการ
+                                                </td>
+                                                <td>
+                                                    นายวิชิต ว่อง
                                                 </td>
                                                 <td class="text-center">
-                                                    30 Nov 2017
-                                                </td>
-                                                <td class="text-center">
-                                                    Anna Thompson<br>
-                                                    <span class="colr-minor tg-offset">28 Apr 2017</span>
+                                                    12 Oct 2017<br>
+                                                    <span class="colr-minor tg-offset">17:22</span>
                                                 </td>
                                                 <td class="text-center"><span class="label label-fit label-success">Enabled</span></td>
                                                 <td class="text-right">

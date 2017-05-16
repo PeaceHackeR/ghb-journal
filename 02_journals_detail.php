@@ -126,36 +126,48 @@
                                                     <tr>
                                                         <th class="text-center" style="width: 80px;">No.</th>
                                                         <th >Title</th>
+                                                        <th>Author</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
                                                         <td>&nbsp;</td>
-                                                        <td>Topic</td>
+                                                        <td colspan="2">Topic</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="text-center">1</td>
                                                         <td><a class="text-ci">Page title</a></td>
+                                                        <td>Author Name&nbsp;<a href="03_authors_detail.php" class="text-ci">(Author ID)</a></td>
                                                     </tr>
                                                     <tr>
                                                         <td class="text-center">2</td>
                                                         <td><a class="text-ci">Page title</a></td>
+                                                        <td>
+                                                            Author Name&nbsp;<a href="03_authors_detail.php" class="text-ci">(Author ID)</a><br>
+                                                            Author Name 2&nbsp;<a href="03_authors_detail.php" class="text-ci">(Author ID)</a>
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <td class="text-center">3</td>
                                                         <td><a class="text-ci">Page title</a></td>
+                                                        <td>Author Name&nbsp;<a href="03_authors_detail.php" class="text-ci">(Author ID)</a></td>
                                                     </tr>
                                                     <tr>
                                                         <td>&nbsp;</td>
-                                                        <td>Topic</td>
+                                                        <td colspan="2">Topic</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="text-center">4</td>
                                                         <td><a class="text-ci">Page title</a></td>
+                                                        <td>Author Name&nbsp;<a href="03_authors_detail.php" class="text-ci">(Author ID)</a></td>
                                                     </tr>
                                                     <tr>
                                                         <td class="text-center">5</td>
                                                         <td><a class="text-ci">Page title</a></td>
+                                                        <td>
+                                                            Author Name&nbsp;<a href="03_authors_detail.php" class="text-ci">(Author ID)</a><br>
+                                                            Author Name2&nbsp;<a href="03_authors_detail.php" class="text-ci">(Author ID)</a>
+                                                        </td>
                                                     </tr>
                                                 </tbody>
                                             </table>

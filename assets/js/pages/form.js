@@ -104,7 +104,7 @@ $(function () {
         formatLabel: 'HH:i'
     });
 
-    /* UPLOAD */
+    /* UPLOAD IMAGE */
     $('.file-input-custom').fileinput({
         previewFileType: 'image',
         browseLabel: '',
@@ -124,9 +124,37 @@ $(function () {
         allowedFileExtensions: ["jpg", "png"],
         overwriteInitial: true
     });
+    
+    /* UPLOAD PDF */
+    $('.file-input-pdf').fileinput({
+        previewFileType: 'image',
+        browseLabel: '',
+        browseClass: 'btn bg-grey-300',
+        browseIcon: '<i class="icon-file-upload2"></i> ',
+        removeLabel: '',
+        removeClass: '',
+        removeIcon: '<i class="icon-cancel-square"></i> ',
+        showRemove: !1,
+        uploadLabel: '',
+        uploadClass: 'btn btn-default btn-icon',
+        uploadIcon: '<i class="icon-file-upload"></i> ',
+        layoutTemplates: {
+            caption: '<div tabindex="-1" class="form-control file-caption {class}">\n' + '<span class="icon-file-plus kv-caption-icon"></span><div class="file-caption-name"></div>\n' + '</div>'
+        },
+        initialCaption: "Please select file",
+        allowedFileExtensions: ["pdf"],
+        overwriteInitial: true
+    });
 
     // Multiple Tags
     $(".select-multiple-tags").each(function () {
+        var _tag = ($(this).data('defaultTags')).split(",");
+        $(this).select2({
+            width: '100%',
+            tags: _tag
+        });
+    });
+    $(".select-multiple-selects").each(function () {
         var _tag = ($(this).data('defaultTags')).split(",");
         $(this).select2({
             width: '100%',
@@ -161,5 +189,26 @@ $(function () {
                 _list.prop('checked',false).attr('disabled',false).parent().removeClass("checked").parent().removeClass("disabled");
             }
         })
-    })
+    });
+    
+    
+    // CHECK ARTICLES TYPE
+    if ($("#form-contentType").length) {
+       (function($){
+           var _radio = $("#form-contentType").find("input[name='fx-type']"),
+               _mux = $("#form-contentType-input"),
+               _input = _mux.find("input"),
+               _sel = _mux.find("select");
+               
+           _radio.change(function(){
+               if(this.value != "journals"){
+                   _mux.hide();
+                   _input.val("");
+                   _sel.val("").trigger('change');
+               }else{
+                   _mux.show();
+               }
+           })
+       })(jQuery)
+    }
 });

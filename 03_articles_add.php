@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -81,29 +80,53 @@
                         <div class="panel-body">
                             <br><br>
                             <fieldset class="content-group">
-                               
                                 <div class="row">
                                     <div class="form-group col-md-12">
                                         <label class="control-label">Title</label>
                                         <input type="text" class="form-control" placeholder="- Title -">
                                     </div>
-                                    <div class="form-group col-xs-6 col-md-3">
-                                        <label class="control-label">No. of Issue <span class="txt-colrMinor">(optional)</span></label>
-                                        <input type="text" class="form-control" placeholder="- Issue -">
+                                </div>
+                                <div class="row">
+                                    <div id="form-contentType" class="form-group col-md-6 clearfix">
+                                        <label class="display-block">Content Type</label>
+                                        <label class="radio-inline">
+                                            <input value="journals" type="radio" name="fx-type" class="styled" checked> Jounals&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input value="content" type="radio" name="fx-type" class="styled" > Content&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        </label>
                                     </div>
-                                    <div class="form-group col-xs-6 col-md-3">
-                                        <label class="control-label">Year <span class="txt-colrMinor">(optional)</span></label>
-                                        <input type="text" class="form-control" placeholder="- Year -">
+                                </div>
+                                <div id="form-contentType-input" class="row">
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="form-group col-xs-6 col-md-4">
+                                                <label class="control-label">No. of Issue</label>
+                                                <input type="text" class="form-control" placeholder="- Issue -">
+                                            </div>
+                                            <div class="form-group col-xs-6 col-md-4">
+                                                <label class="control-label">Volume</label>
+                                                <input type="text" class="form-control" placeholder="- Volume -">
+                                            </div>
+                                            <div class="form-group col-xs-12 col-md-4">
+                                                <label class="control-label">Year</label>
+                                                <input type="text" class="form-control" placeholder="- Year -">
+                                            </div>
+                                        </div>
                                     </div>
-                                    
-                                    <div class="form-group col-md-6">
-                                        <label class="control-label">Date</label>
-                                        <select class="select">
-                                            <option value="">Q1&nbsp;&nbsp;|&nbsp;&nbsp;มกราคม - มีนาคม</option>
-                                            <option value="">Q2&nbsp;&nbsp;|&nbsp;&nbsp;เมษายน - มิถุนายน</option>
-                                            <option value="">Q3&nbsp;&nbsp;|&nbsp;&nbsp;กรกฏาคม - กันยายน</option>
-                                            <option value="">Q4&nbsp;&nbsp;|&nbsp;&nbsp;ตุลาคม - ธันวาคม</option>
-                                        </select>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="form-group col-md-12">
+                                                <label class="control-label">Date</label>
+                                                <select id="xxa" class="select" data-placeholder="- Please select quarter -">
+                                                    <option></option>
+                                                    <option value="1">Q1&nbsp;&nbsp;|&nbsp;&nbsp;มกราคม - มีนาคม</option>
+                                                    <option value="2">Q2&nbsp;&nbsp;|&nbsp;&nbsp;เมษายน - มิถุนายน</option>
+                                                    <option value="3">Q3&nbsp;&nbsp;|&nbsp;&nbsp;กรกฏาคม - กันยายน</option>
+                                                    <option value="4">Q4&nbsp;&nbsp;|&nbsp;&nbsp;ตุลาคม - ธันวาคม</option>
+                                                </select>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -120,40 +143,19 @@
                                         <label class="control-label">Subcategory</label>
                                         <input type="text" class="form-control" placeholder="- Subcategory -">
                                     </div>
-                                    <div class="form-group col-md-6">
-                                        <label class="control-label">Author 1</label>
-                                        <select class="select" data-placeholder="- Please select -">
+                                    <div class="form-group col-md-12">
+										<label>Authors</label>
+										<select multiple="multiple" class="select" data-placeholder="- Please select -">
                                             <option></option>
-                                            <optgroup label="- หน่วยงาน -">
-                                                <option value="">ธนาคารอาคารสงเคราะห์</option>
-                                                <option value="">สำนักผังเมือง กรุงเทพมหานคร</option>
-                                                <option value="">กองบรรณาธิการ วาสาร ธอส.</option>
-                                            </optgroup>
-                                            <optgroup label="- บุคคล -">
-                                                <option value="">พัลลภ กฤตยานวัช</option>
-                                                <option value="">ดร. ดนัย ทายตะคุ</option>
-                                                <option value="">สืบสิริ ศรีธัญญารัตน์ ภ.สก.ม.</option>
-                                            </optgroup>
-                                            <option value="">** Metadata **</option>
+                                            <option value="1">ธนาคารอาคารสงเคราะห์</option>
+                                            <option value="2">สำนักผังเมือง กรุงเทพมหานคร</option>
+                                            <option value="3">กองบรรณาธิการ วาสาร ธอส.</option>
+                                            <option value="4">พัลลภ กฤตยานวัช</option>
+                                            <option value="5">ดร. ดนัย ทายตะคุ</option>
+                                            <option value="6">สืบสิริ ศรีธัญญารัตน์ ภ.สก.ม.</option>
+                                            <option value="7">** Metadata **</option>
                                         </select>
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <label class="control-label">Author 2 <span class="txt-colrMinor">(optional)</span></label>
-                                        <select class="select">
-                                            <option value="" selected>N/A</option>
-                                            <optgroup label="- หน่วยงาน -">
-                                                <option value="">ธนาคารอาคารสงเคราะห์</option>
-                                                <option value="">สำนักผังเมือง กรุงเทพมหานคร</option>
-                                                <option value="">กองบรรณาธิการ วาสาร ธอส.</option>
-                                            </optgroup>
-                                            <optgroup label="- บุคคล -">
-                                                <option value="">พัลลภ กฤตยานวัช</option>
-                                                <option value="">ดร. ดนัย ทายตะคุ</option>
-                                                <option value="">สืบสิริ ศรีธัญญารัตน์ ภ.สก.ม.</option>
-                                            </optgroup>
-                                            <option value="">** Metadata **</option>
-                                        </select>
-                                    </div>
+									</div>
                                 </div>
                                 <div class="row">
                                     <div class="form-group col-md-12">
@@ -180,6 +182,14 @@
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label class="control-label">Upload PDF <span class="txt-colrMinor">(optional)</span></label>
+                                        <input type="file" class="file-input-pdf" accept="application/pdf" data-show-upload="false">
+                                    </div>
+                                </div>
+                                <div class="row">
                                     <div class="form-group col-md-12">
                                         <label class="control-label">Tags</label>
                                         <input type="hidden" class="select-multiple-tags" value="" data-default-tags="บ้าน,กฏหมาย,สินเชื่อ,ออมทรัพย์,โปรโมชั่น,**Metadata**">

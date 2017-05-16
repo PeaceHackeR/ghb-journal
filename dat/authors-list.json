@@ -1,0 +1,32 @@
+{
+    "update": "05/05/2017",
+    "config": {
+        "count":6
+    },
+    "data": {
+        "AUTH1": {
+            "th": "ศาสตราจารย์กิตติคุณ เดชา บุญค้ำ",
+            "en": "Prof. Decha Boonkum"
+        },
+        "AUTH2": {
+            "th": "สำนักผังเมือง กรุงเทพมหานคร",
+            "en": "Department of City Planning"
+        },
+        "AUTH3": {
+            "th": "สืบสิริ ศรีธัญญารัตน์ ภ.สถ.ม.",
+            "en": "Ms. Soobhsiri Srithanyarath M.L.A."
+        },
+        "AUTH4": {
+            "th": "พัลลภ กฤตยานวัช",
+            "en": "Mr.Panlop Krittayawatcha"
+        },
+        "AUTH5": {
+            "th": "ธนาคารอาคารสงเคราะห์",
+            "en": "G H BANK"
+        },
+        "AUTH6": {
+            "th": "กองบรรณาธิการ วารสาร ธอส.",
+            "en": "GHBank"
+        }
+    }
+}

@@ -89,18 +89,18 @@
                                 <div class="row">
                                     <div class="form-group col-md-12">
                                         <label class="control-label">Page List</label>
-<textarea id="input-list" rows="10"  class="form-control" placeholder="" style="resize: vertical;">
+<textarea id="input-list" rows="10"  class="form-control" placeholder="" style="resize: vertical;" data-authors="dat/authors-list.json">
 >> Topic **
-1 || Page title **
-2 || Page title **
-3 || Page title **
+1 || Page title || AuthorId **
+2 || Page title || AUTH1, AUTH2 **
+3 || Page title || **
 >> Topic **
-4 || Page title **
-5 || Page title **
+4 || Page title || AUTH6 **
+5 || Page title || AUTH3, AUTH5 **
 </textarea>
                                         <span class="help-block">
                                             <u>Topic</u>&nbsp;&nbsp;&nbsp;>> Topic **<br>
-                                            <u>Page</u>&nbsp;&nbsp;&nbsp;2 || Page title **
+                                            <u>Page</u>&nbsp;&nbsp;&nbsp;Index page || Page title || Author ID (optional) **
                                         </span>
                                     </div>
                                 </div>
@@ -108,6 +108,34 @@
                                 <div class="form-group col-md-12">
                                     <button type="butmit" class="btn btn-primary" data-toggle="modal" data-target="#action-Pagelist">Preview Page List</button>
                                 </div>
+                                <script>
+                                    $(function(){
+                                        
+                                        var _host = $("#input-list"),
+                                            _preview = $("#preview-list").find("tbody"),
+                                            authors_list = null;
+                                        
+                                        $("#action-Pagelist").on("show.bs.modal",function(){
+                                            var _str = _host.val();
+                                            _str = _str.replace(/(AUTH\d{1,})/igm, function(s){return authors_list[s].th;});
+                                            var _plist = _str.replace(/[\r\n]+/g,"").split("**");
+                                            _plist.pop();
+                                            var _tr = "";
+                                            _plist.forEach(function(el){
+                                                var _str = el.replace(/(\s+)?\|\|(\s+)?/g,"||");
+                                                _tr += _str
+                                                    .replace(/(.*)\|\|(.*)\|\|(.*)/,'<tr><td>$1</td><td><h4><a href="#">$2</a></h4><a href="#" class="writer-link">$3</a></td></tr>')
+                                                    .replace('<a href="#" class="writer-link"></a>',"")
+                                                    .replace(/\>\>(.*)/,'<tr class="topic"><td>&nbsp;</td><td><h3>$1</h3></td></tr>');
+                                            })
+                                            _preview.html(_tr);
+                                        });
+                                        
+                                         $.getJSON(_host.data('authors'), function (resp) {
+                                             authors_list = resp.data
+                                         });
+                                    })
+                                </script>
                             </div>
                             </fieldset>
                             <fieldset class="content-group">
@@ -171,7 +199,41 @@
                         .table {
                             width: initial;
                             font-family: 'maledpan-bold', Helvetica, Arial, sans-serif;
-                        } 
+                            color: #555;
+                        }
+                        .table a {
+                            color: #555;
+                        }
+                        .table h2 { 
+                            font-size: 24px;
+                            color: #333;
+                            margin: 0px;
+                            line-height: 1.2;
+                            letter-spacing:normal;
+                        }
+                        .table h3 { color: #ff850d; }
+                        .table h4 {
+                            font-size: inherit;
+                            letter-spacing: normal;
+                            margin: 0;
+                        }
+                        .table h4 a {
+                            line-height: 1.2;
+                        }
+                        .table tr.topic td {
+                            padding-top: 15px;
+                        }
+                        .table tr th {
+                            padding-bottom: 20px;
+                        }
+                        .table a.writer-link, .table span { 
+                            font-family: 'maledpan-regular', Helvetica, Arial, sans-serif;
+                            font-size: 13px;
+                            font-style: italic;
+                            color: #ff850d;
+                            position: relative;
+                            top: -4px;
+                        }
                         .table .txt-head { 
                             font-size: 24px;
                             color: #333;
@@ -181,8 +243,10 @@
                             border: none;
                             font-size: 16px;
                             text-align: left;
-                            padding: 5px 15px 5px 0;
+                            padding: 5px 15px 0px 0;
+                            vertical-align: baseline;
                         }
+                        
                         @media (min-width: 769px) {
                             .modal-dialog {
                                 width: 80vw;
@@ -195,38 +259,13 @@
                                     <table class="table">
                                         <thead>
                                             <tr>
-                                                <th colspan="2" align="left" class="txt-head">สารบัญ</th>
+                                                <th colspan="2" align="left">
+                                                    <h2>สารบัญ</h2>
+                                                </th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td>&nbsp;</td>
-                                                <td class="txt-head-title">Topic</td>
-                                            </tr>
-                                            <tr>
-                                                <td>1</td>
-                                                <td><a href="#">Page title</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td><a href="#">Page title</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td><a href="#">Page title</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>&nbsp;</td>
-                                                <td class="txt-head-title">Topic</td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td><a href="#">Page title</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>5</td>
-                                                <td><a href="#">Page title</a></td>
-                                            </tr>
+                                            
                                         </tbody>
                                     </table>
                                 </div>

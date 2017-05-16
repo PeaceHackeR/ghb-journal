@@ -621,6 +621,10 @@ legend {
     padding-top: 8px;
     overflow: hidden;
     text-align: center;
+/*
+    float: left;
+    margin-right: 10px;
+*/
 }
 
 
