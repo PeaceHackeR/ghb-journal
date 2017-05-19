@@ -12,319 +12,27 @@ $(function () {
     });
 
 
-
-
-    // Daterange picker
-    // ------------------------------
-
-    $('.daterange-ranges').daterangepicker({
-            startDate: moment().subtract('days', 29),
-            endDate: moment(),
-            minDate: '01/01/2012',
-            maxDate: '12/31/2016',
-            dateLimit: {
-                days: 60
-            },
-            ranges: {
-                'Today': [moment(), moment()],
-                'Yesterday': [moment().subtract('days', 1), moment().subtract('days', 1)],
-                'Last 7 Days': [moment().subtract('days', 6), moment()],
-                'Last 30 Days': [moment().subtract('days', 29), moment()],
-                'This Month': [moment().startOf('month'), moment().endOf('month')],
-                'Last Month': [moment().subtract('month', 1).startOf('month'), moment().subtract('month', 1).endOf('month')]
-            },
-            opens: 'left',
-            applyClass: 'btn-small bg-slate-600 btn-block',
-            cancelClass: 'btn-small btn-default btn-block',
-            format: 'MM/DD/YYYY'
-        },
-        function (start, end) {
-            $('.daterange-ranges span').html(start.format('MMMM D') + ' - ' + end.format('MMMM D'));
-        }
-    );
-
-    $('.daterange-ranges span').html(moment().subtract('days', 29).format('MMMM D') + ' - ' + moment().format('MMMM D'));
-
-
-
-
-    // Sparklines
-    // ------------------------------
-
-    // Initialize chart
-    sparkline("#server-load", "area", 48, 50, "basis", 750, 2000, "rgba(255,255,255,0.5)");
-
-    // Chart setup
-    function sparkline(element, chartType, qty, height, interpolation, duration, interval, color) {
-
-
-        // Basic setup
-        // ------------------------------
-
-        // Define main variables
-        var d3Container = d3.select(element),
-            margin = {
-                top: 0,
-                right: 0,
-                bottom: 0,
-                left: 0
-            },
-            width = d3Container.node().getBoundingClientRect().width - margin.left - margin.right,
-            height = height - margin.top - margin.bottom;
-
-
-        // Generate random data (for demo only)
-        var data = [];
-        for (var i = 0; i < qty; i++) {
-            data.push(Math.floor(Math.random() * qty) + 5)
-        }
-
-
-
-        // Construct scales
-        // ------------------------------
-
-        // Horizontal
-        var x = d3.scale.linear().range([0, width]);
-
-        // Vertical
-        var y = d3.scale.linear().range([height - 5, 5]);
-
-
-
-        // Set input domains
-        // ------------------------------
-
-        // Horizontal
-        x.domain([1, qty - 3])
-
-        // Vertical
-        y.domain([0, qty])
-
-
-
-        // Construct chart layout
-        // ------------------------------
-
-        // Line
-        var line = d3.svg.line()
-            .interpolate(interpolation)
-            .x(function (d, i) {
-                return x(i);
-            })
-            .y(function (d, i) {
-                return y(d);
-            });
-
-        // Area
-        var area = d3.svg.area()
-            .interpolate(interpolation)
-            .x(function (d, i) {
-                return x(i);
-            })
-            .y0(height)
-            .y1(function (d) {
-                return y(d);
-            });
-
-
-
-        // Create SVG
-        // ------------------------------
-
-        // Container
-        var container = d3Container.append('svg');
-
-        // SVG element
-        var svg = container
-            .attr('width', width + margin.left + margin.right)
-            .attr('height', height + margin.top + margin.bottom)
-            .append("g")
-            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-
-
-        // Add mask for animation
-        // ------------------------------
-
-        // Add clip path
-        var clip = svg.append("defs")
-            .append("clipPath")
-            .attr('id', function (d, i) {
-                return "load-clip-" + element.substring(1)
-            })
-
-        // Add clip shape
-        var clips = clip.append("rect")
-            .attr('class', 'load-clip')
-            .attr("width", 0)
-            .attr("height", height);
-
-        // Animate mask
-        clips
-            .transition()
-            .duration(1000)
-            .ease('linear')
-            .attr("width", width);
-
-
-
-        //
-        // Append chart elements
-        //
-
-        // Main path
-        var path = svg.append("g")
-            .attr("clip-path", function (d, i) {
-                return "url(#load-clip-" + element.substring(1) + ")"
-            })
-            .append("path")
-            .datum(data)
-            .attr("transform", "translate(" + x(0) + ",0)");
-
-        // Add path based on chart type
-        if (chartType == "area") {
-            path.attr("d", area).attr('class', 'd3-area').style("fill", color); // area
-        } else {
-            path.attr("d", line).attr("class", "d3-line d3-line-medium").style('stroke', color); // line
-        }
-
-        // Animate path
-        path
-            .style('opacity', 0)
-            .transition()
-            .duration(750)
-            .style('opacity', 1);
-
-
-
-        // Set update interval. For demo only
-        // ------------------------------
-
-        setInterval(function () {
-
-            // push a new data point onto the back
-            data.push(Math.floor(Math.random() * qty) + 5);
-
-            // pop the old data point off the front
-            data.shift();
-
-            update();
-
-        }, interval);
-
-
-
-        // Update random data. For demo only
-        // ------------------------------
-
-        function update() {
-
-            // Redraw the path and slide it to the left
-            path
-                .attr("transform", null)
-                .transition()
-                .duration(duration)
-                .ease("linear")
-                .attr("transform", "translate(" + x(0) + ",0)");
-
-            // Update path type
-            if (chartType == "area") {
-                path.attr("d", area).attr('class', 'd3-area').style("fill", color)
-            } else {
-                path.attr("d", line).attr("class", "d3-line d3-line-medium").style('stroke', color);
-            }
-        }
-
-
-
-        // Resize chart
-        // ------------------------------
-
-        // Call function on window resize
-        $(window).on('resize', resizeSparklines);
-
-        // Call function on sidebar width change
-        $('.sidebar-control').on('click', resizeSparklines);
-
-        // Resize function
-        // 
-        // Since D3 doesn't support SVG resize by default,
-        // we need to manually specify parts of the graph that need to 
-        // be updated on window resize
-        function resizeSparklines() {
-
-            // Layout variables
-            width = d3Container.node().getBoundingClientRect().width - margin.left - margin.right;
-
-
-            // Layout
-            // -------------------------
-
-            // Main svg width
-            container.attr("width", width + margin.left + margin.right);
-
-            // Width of appended group
-            svg.attr("width", width + margin.left + margin.right);
-
-            // Horizontal range
-            x.range([0, width]);
-
-
-            // Chart elements
-            // -------------------------
-
-            // Clip mask
-            clips.attr("width", width);
-
-            // Line
-            svg.select(".d3-line").attr("d", line);
-
-            // Area
-            svg.select(".d3-area").attr("d", area);
-        }
-    }
-
-
-
-
     // Daily revenue line chart
     // ------------------------------
 
-    dailyRevenue('#today-revenue', 50); // initialize chart
+    dailyRevenue('#monthly-visitors', 50, 30); // initialize chart
 
     // Chart setup
-    function dailyRevenue(element, height) {
+    function dailyRevenue(element, height, day) {
 
 
         // Basic setup
         // ------------------------------
 
         // Add data set
-        var dataset = [
-            {
-                "date": "04/13/14",
-                "alpha": "60"
-            }, {
-                "date": "04/14/14",
-                "alpha": "35"
-            }, {
-                "date": "04/15/14",
-                "alpha": "65"
-            }, {
-                "date": "04/16/14",
-                "alpha": "50"
-            }, {
-                "date": "04/17/14",
-                "alpha": "65"
-            }, {
-                "date": "04/18/14",
-                "alpha": "20"
-            }, {
-                "date": "04/19/14",
-                "alpha": "60"
-            }
-        ];
+        var dataset = [];
+        for (var i = 0; i < day; i++) {
+            var _date = moment().subtract(i, "days").format("DD/MM/YY");
+            dataset.push({
+                "date": _date,
+                "visitor": Math.round(250 * Math.random()) + 40
+            })
+        }
 
         // Main variables
         var d3Container = d3.select(element),
@@ -339,22 +47,21 @@ $(function () {
             padding = 20;
 
         // Format date
-        var parseDate = d3.time.format("%m/%d/%y").parse,
+        var parseDate = d3.time.format("%d/%m/%y").parse,
             formatDate = d3.time.format("%a, %B %e");
 
 
 
         // Add tooltip
         // ------------------------------
-
         var tooltip = d3.tip()
             .attr('class', 'd3-tip')
             .html(function (d) {
-                return "<ul class='list-unstyled mb-5'>" +
-                    "<li>" + "<div class='text-size-base mt-5 mb-5'><i class='icon-check2 position-left'></i>" + formatDate(d.date) + "</div>" + "</li>" +
-                    "<li>" + "Sales: &nbsp;" + "<span class='text-semibold pull-right'>" + d.alpha + "</span>" + "</li>" +
-                    "<li>" + "Revenue: &nbsp; " + "<span class='text-semibold pull-right'>" + "$" + (d.alpha * 25).toFixed(2) + "</span>" + "</li>" +
-                    "</ul>";
+                return "<div class='text-center'>" +
+                    "<h6 class='no-margin'>" + (d.visitor - 40) + "</h6>" +
+                    "<span class='text-size-small'>Visitors</span>" +
+                    "<div class='text-size-small'>" + moment(d.date).format("MMM D") + "</div>" +
+                    "</div>"
             });
 
 
@@ -380,7 +87,7 @@ $(function () {
 
         dataset.forEach(function (d) {
             d.date = parseDate(d.date);
-            d.alpha = +d.alpha;
+            d.visitor = +d.visitor;
         });
 
 
@@ -408,7 +115,7 @@ $(function () {
 
         // Vertical
         y.domain([0, d3.max(dataset, function (d) {
-            return Math.max(d.alpha);
+            return Math.max(d.visitor);
         })]);
 
 
@@ -422,7 +129,7 @@ $(function () {
                 return x(d.date);
             })
             .y(function (d) {
-                return y(d.alpha)
+                return y(d.visitor)
             });
 
 
@@ -511,7 +218,7 @@ $(function () {
                 return i * 150;
             })
             .attr('y2', function (d, i) {
-                return y(d.alpha);
+                return y(d.visitor);
             });
 
 
@@ -528,9 +235,9 @@ $(function () {
             .attr('class', 'd3-line-circle d3-line-circle-medium')
             .attr("cx", line.x())
             .attr("cy", line.y())
-            .attr("r", 3)
+            .attr("r", 2)
             .style('stroke', '#fff')
-            .style('fill', '#29B6F6');
+            .style('fill', '#FF850D');
 
 
 
@@ -550,7 +257,7 @@ $(function () {
                 tooltip.offset([-10, 0]).show(d);
 
                 // Animate circle radius
-                d3.select(this).transition().duration(250).attr('r', 4);
+                d3.select(this).transition().duration(250).attr('r', 3);
             })
 
             // Hide tooltip
@@ -558,7 +265,7 @@ $(function () {
                 tooltip.hide(d);
 
                 // Animate circle radius
-                d3.select(this).transition().duration(250).attr('r', 3);
+                d3.select(this).transition().duration(250).attr('r', 2);
             });
 
         // Change tooltip direction of first point
@@ -567,13 +274,13 @@ $(function () {
                 tooltip.offset([0, 10]).direction('e').show(d);
 
                 // Animate circle radius
-                d3.select(this).transition().duration(250).attr('r', 4);
+                d3.select(this).transition().duration(250).attr('r', 3);
             })
             .on("mouseout", function (d) {
                 tooltip.direction('n').hide(d);
 
                 // Animate circle radius
-                d3.select(this).transition().duration(250).attr('r', 3);
+                d3.select(this).transition().duration(250).attr('r', 2);
             });
 
         // Change tooltip direction of last point
@@ -582,13 +289,13 @@ $(function () {
                 tooltip.offset([0, -10]).direction('w').show(d);
 
                 // Animate circle radius
-                d3.select(this).transition().duration(250).attr('r', 4);
+                d3.select(this).transition().duration(250).attr('r', 3);
             })
             .on("mouseout", function (d) {
                 tooltip.direction('n').hide(d);
 
                 // Animate circle radius
-                d3.select(this).transition().duration(250).attr('r', 3);
+                d3.select(this).transition().duration(250).attr('r', 2);
             })
 
 
@@ -644,7 +351,7 @@ $(function () {
                     return x(d.date);
                 })
                 .attr('x2', function (d, i) {
-                    return x(d.date);
+                    return x(d.visitor);
                 });
         }
     }
@@ -655,33 +362,41 @@ $(function () {
     // ------------------------------
 
     // Initialize charts
-    generateBarChart("#members-online", 30, 50, true, "elastic", 1200, 50, "rgba(255,255,255,0.5)", "members");
+    generateBarChart("#journal-traffic", 12, 50, true, "elastic", 1200, 50, "rgba(255,255,255,0.5)");
 
     // Chart setup
-    function generateBarChart(element, barQty, height, animate, easing, duration, delay, color, tooltip) {
+    function generateBarChart(element, barQty, height, animate, easing, duration, delay, color) {
 
 
         // Basic setup
         // ------------------------------
 
         // Add data set
-        var bardata = [];
+        var bardata = [],
+            arr_visit = [];
+        
         for (var i = 0; i < barQty; i++) {
-            bardata.push(Math.round(Math.random() * 360))
+            var _n = Math.floor(200 * Math.random());
+            bardata.push({
+                "vol": 87 - i,
+                "year": 22,
+                "issue": "ตุลาคม - ธันวาคม 2559",
+                "visit": _n,
+                "ebook": Math.floor(_n * Math.random())
+            });
+            arr_visit.push(_n);
         }
-        console.log(bardata)
+
         // Main variables
         var d3Container = d3.select(element),
             width = d3Container.node().getBoundingClientRect().width;
-
-
 
         // Construct scales
         // ------------------------------
 
         // Horizontal
         var x = d3.scale.ordinal()
-            .rangeBands([0, width], 0.3)
+            .rangeBands([0, width], 0.2)
 
         // Vertical
         var y = d3.scale.linear()
@@ -696,7 +411,13 @@ $(function () {
         x.domain(d3.range(0, bardata.length))
 
         // Vertical
-        y.domain([0, d3.max(bardata)])
+        y.domain([0, d3.max(arr_visit)])
+        
+
+        // Vertical
+//        y.domain([0, d3.max(bardata, function (d) {
+//            return Math.max(+d.visitor);
+//        })]);
 
 
 
@@ -720,7 +441,7 @@ $(function () {
 
         // Bars
         var bars = svg.selectAll('rect')
-            .data(bardata)
+            .data(arr_visit)
             .enter()
             .append('rect')
             .attr('class', 'd3-random-bars')
@@ -735,27 +456,35 @@ $(function () {
         // Tooltip
         // ------------------------------
 
+//                var tip = d3.tip()
+//                    .attr('class', 'd3-tip')
+//                    .offset([-10, 0]);
+//                bars.call(tip)
+//                    .on('mouseover', tip.show)
+//                    .on('mouseout', tip.hide);
+//                tip.html(function (d, i) {
+//                    return "<div class='text-center'>" +
+//                        "<h6 class='no-margin'>" + d + "</h6>" +
+//                        "<span class='text-size-small'>Visitors</span>" +
+//                        "<div class='text-size-small'>" + moment().subtract(30 - i, "days").format("MMM D") + "</div>" +
+//                        "</div>"
+//                });
         var tip = d3.tip()
             .attr('class', 'd3-tip')
             .offset([-10, 0]);
-
-        // Show and hide
-        if (tooltip == "hours" || tooltip == "goal" || tooltip == "members") {
-            bars.call(tip)
-                .on('mouseover', tip.show)
-                .on('mouseout', tip.hide);
-        }
-
-        // Online members tooltip content
-        if (tooltip == "members") {
-            tip.html(function (d, i) {
-                return "<div class='text-center'>" +
-                    "<h6 class='no-margin'>" + d + "</h6>" +
-                    "<span class='text-size-small'>Visitors</span>" +
-                    "<div class='text-size-small'>" + moment().subtract(30-i, "days").format("MMM D") + "</div>" +
-                    "</div>"
-            });
-        }
+        
+        bars.call(tip)
+            .on('mouseover', tip.show)
+            .on('mouseout', tip.hide);
+        
+        tip.html(function (d) {
+            return "<ul class='list-unstyled mb-5'>" +
+                "<li>" + "<div class='text-size-base mt-5 mb-5'>ฉบับที่&nbsp;" + d.vol + "&nbsp;ปีที่&nbsp;" + d.year + "</div>" + "</li>" +
+                "<li>" + "<span class=''>" + d.issue + "</span>" + "</li>" +
+                "<li>" + "Visitors: &nbsp;" + "<span class='text-semibold pull-right'>" + d.visit + "</span>" + "</li>" +
+                "<li>" + "E-book: &nbsp; " + "<span class='text-semibold pull-right'>" + d.ebook + "</span>" + "</li>" +
+                "</ul>";
+        });
 
 
 

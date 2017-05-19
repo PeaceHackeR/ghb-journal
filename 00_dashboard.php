@@ -24,6 +24,12 @@
 </head>
 
 <body>
+    <style>
+        .circ-num {
+            float: left;
+            margin-right: 4px;
+        }
+    </style>
 
 	<!-- Main navbar -->
 	<?php include 'ssi/main-navbar.php'; ?>
@@ -77,9 +83,7 @@
                         </div>
 
                         <div class="breadcrumb-elements">
-                            <button type="button" class="btn btn-link daterange-ranges heading-btn text-semibold">
-                                            <span></span> <b class="caret"></b>
-                                        </button>
+                            
                         </div>
                     </div>
                     
@@ -95,30 +99,47 @@
                         <!-- Overall stats boxes -->
                         <div class="col-md-8 float-md-left">
                             <div class="px-box-overall row">
+                               
+                                <div class="col-lg-6">
 
-                                <div class="col-lg-4">
-                                    
-                                    <!-- Members online -->
+                                    <!-- Current server load -->
                                     <div class="panel bg-ci" >
                                         <div class="panel-body">
                                             <h3 class="no-margin">Monthly Visitors</h3>
+                                            
                                             <div class="txt-font-2em">5,312 <span class="txt-small">visitors</span></div>
                                             <div class="text-muted text-size-small">Avg. 142 visit/day </div>
                                         </div>
+                                        <div id="monthly-visitors"></div>
+                                    </div>
+                                    <!-- /current server load -->
+
+                                </div>
+                                
+                                <div class="col-lg-6">
+                                    
+                                    <!-- Members online -->
+                                    <div class="panel bg-blue-400">
+                                        <div class="panel-body">
+                                            <h3 class="no-margin">Journal Traffic</h3>
+                                            <div class="txt-font-2em">116 <span class="txt-small">UIP</span></div>
+                                            <div class="text-muted text-size-small">Avg. 3,314.65 / day</div>
+                                        </div>
                                         <div class="container-fluid">
-											<div id="members-online"></div>
+											<div id="journal-traffic"></div>
 										</div>
                                     </div>
                                     <!-- /members online -->
 
                                 </div>
                                 
+                                <?php /*
                                 <div class="col-lg-4">
                                     
                                     <!-- Members online -->
                                     <div class="panel bg-pink-400">
                                         <div class="panel-body">
-                                            <h3 class="no-margin">Server Load</h3>
+                                            <h3 class="no-margin">Contact Us</h3>
                                             <div class="txt-font-2em">24 <span class="txt-small">%</span></div>
                                             <div class="text-muted text-size-small">Of 5,312 visitors</div>
                                         </div>
@@ -127,21 +148,7 @@
                                     <!-- /members online -->
 
                                 </div>
-
-                                <div class="col-lg-4">
-
-                                    <!-- Current server load -->
-                                    <div class="panel bg-blue-400" >
-                                        <div class="panel-body">
-                                            <h3 class="no-margin">Journal Traffic</h3>
-                                            <div class="txt-font-2em">116 <span class="txt-small">UIP</span></div>
-                                            <div class="text-muted text-size-small">Avg. 3,314.65 / day</div>
-                                        </div>
-                                        <div id="today-revenue"></div>
-                                    </div>
-                                    <!-- /current server load -->
-
-                                </div>
+                                */ ?>
 
                             </div>
                             
@@ -204,7 +211,7 @@
                                                         <thead>
                                                             <tr>
                                                                 <th>Title</th>
-                                                                <th class="text-right">Impression/Day</th>
+                                                                <th class="text-right">Impression/Month</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
@@ -319,7 +326,7 @@
                                                         <thead>
                                                             <tr>
                                                                 <th>Title</th>
-                                                                <th class="text-right">Impression/Day</th>
+                                                                <th class="text-right">Impression/Month</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
@@ -378,136 +385,75 @@
                         </div>
                         <!-- Recent activities -->
                         <div class="col-md-8 float-md-left car-recently">
-                           <div class="row hide">
-                                <div class="col-lg-6">
+                           <div class="row">
+                                <div class="col-lg-12">
                                     <div class="panel panel-flat">
                                         <div class="panel-heading border-bottom">
-                                            <h4 class="panel-title">Policy - Top 5</h4>
+                                            <h4 class="panel-title">Recent Contact Us</h4>
                                         </div>
                                         <div class="table-responsive">
                                             <!-- text-nowrap -->
                                             <table class="table">
                                                 <thead>
                                                     <tr>
-                                                        <th>Plan</th>
-                                                        <th class="text-right">Budget</th>
+                                                        <th class="text-left">Date</th>
+                                                        <th>Name</th>
+                                                        <th>Subject</th>
+                                                        <th class="text-center">Status</th>
+                                                        <th class="text-right" data-hide="phone" data-name="Action"><i class="icon-cog7"></i>&nbsp;&nbsp;</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
+                                                        <td>May 18, 12:30</td>
                                                         <td>
-                                                            <div class="circ-num bg-ci">1</div>
-                                                            Auto Smile Gold
-                                                            <br><span class="colr-minor tg-offset">232 users</span>
+                                                            Sara Morrison
                                                         </td>
-                                                        <td class="v-top text-right"><span class="text-bold">฿ 2,325,000.00</span></td>
+                                                        <td>Topic 04</td>
+                                                        <td class="text-center"><span class="label label-fit label-warning">New</span></td>
+                                                        <td class="text-right">
+                                                            <ul class="icons-list">
+                                                                <li class="dropdown dropup">
+                                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                                        <i class="icon-menu9"></i>
+                                                                    </a>
+                                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                                        <li><a href="06_contact_detail.php"><i class="icon-eye"></i> View Details</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
                                                     </tr>
                                                     <tr>
+                                                        <td>May 9, 17:22</td>
                                                         <td>
-                                                            <div class="circ-num bg-ci">2</div>
-                                                            Smile 2+ Extra
-                                                            <br><span class="colr-minor tg-offset">180 users</span>
+                                                            Tyler Lawrence
                                                         </td>
-                                                        <td class="v-top text-right"><span class="text-bold">฿ 1,073,000.00</span></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="circ-num bg-ci">3</div>
-                                                            Smile 3+
-                                                            <br><span class="colr-minor tg-offset">122 users</span>
+                                                        <td>Topic 03</td>
+                                                        <td class="text-center"><span class="label label-fit label-default">Opened</span></td>
+                                                        <td class="text-right">
+                                                            <ul class="icons-list">
+                                                                <li class="dropdown dropup">
+                                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                                        <i class="icon-menu9"></i>
+                                                                    </a>
+                                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                                        <li><a href="06_contact_detail.php"><i class="icon-eye"></i> View Details</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
                                                         </td>
-                                                        <td class="v-top text-right"><span class="text-bold">฿ 856,000.00</span></td>
                                                     </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="circ-num bg-grey">4</div>
-                                                            Smile 3+ Extra
-                                                            <br><span class="colr-minor tg-offset">96 users</span>
-                                                        </td>
-                                                        <td class="v-top text-right"><span class="text-bold">฿ 643,000.00</span></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="circ-num bg-grey">5</div>
-                                                            Smile 2+ Flood
-                                                            <br><span class="colr-minor tg-offset">77 users</span>
-                                                        </td>
-                                                        <td class="v-top text-right"><span class="text-bold">฿ 211,000.00</span></td>
-                                                    </tr>
-                                                    
                                                 </tbody>
                                             </table>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="panel panel-flat">
-                                        <div class="panel-heading border-bottom">
-                                            <h4 class="panel-title">Car Model - Top 5</h4>
-                                        </div>
-                                        <div class="table-responsive">
-                                            <!-- text-nowrap -->
-                                            <table class="table">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Model</th>
-                                                        <th class="text-center">Quantity</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="circ-num bg-ci">1</div>
-                                                            Civic 1.8ES
-                                                            <br><span class="colr-minor tg-offset">Honda</span>
-                                                        </td>
-                                                        <td class="v-top text-center"><span class="text-bold">36</span></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="circ-num bg-ci">2</div>
-                                                            Vios 1.5 J M/T
-                                                            <br><span class="colr-minor tg-offset">Toyota</span>
-                                                        </td>
-                                                        <td class="v-top text-center"><span class="text-bold">28</span></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="circ-num bg-ci">3</div>
-                                                            Camry 2.0G
-                                                            <br><span class="colr-minor tg-offset">Toyota</span>
-                                                        </td>
-                                                        <td class="v-top text-center"><span class="text-bold">15</span></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="circ-num bg-grey">4</div>
-                                                            D-Max Cab 4
-                                                            <br><span class="colr-minor tg-offset">Isuzu</span>
-                                                        </td>
-                                                        <td class="v-top text-center"><span class="text-bold">9</span></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="circ-num bg-grey">5</div>
-                                                            Avanza 1.5S AT
-                                                            <br><span class="colr-minor tg-offset">Toyota</span>
-                                                        </td>
-                                                        <td class="v-top text-center"><span class="text-bold">8</span></td>
-                                                    </tr>
-                                                    
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                             </div>
                             <div class="panel panel-flat">
                                 <div class="panel-heading border-bottom">
-                                    <h4 class="panel-title">Call Back</h4>
-                                    <div class="heading-elements">
-                                        <span class="heading-text"><a class="text-ci" href="03_callback_list.php">View all</a></span>
-                                    </div>
+                                    <h4 class="panel-title">Recent Activity Module</h4>
                                 </div>
                                 <div class="table-responsive">
                                     <!-- text-nowrap -->
@@ -515,18 +461,29 @@
                                         <thead>
                                             <tr>
                                                <th data-toggle="true" class="text-center" style="width:120px;">Date</th>
-                                               <th data-hide="phone">Name</th>
-                                               <th>Title</th>
+                                               <th data-hide="phone">Module</th>
+                                               <th>By</th>
+                                               <th>Action</th>
+                                               <th>Ref. Module ID</th>
                                                <th class="text-right" data-hide="phone" data-name="Action"><i class="icon-cog7"></i>&nbsp;&nbsp;</th>
                                             </tr>
                                         </thead>
 										<tbody>
-											<tr class="active border-double"><td class="text-center">Today</td><td colspan="3">&nbsp;</td></tr>
+											<tr class="active border-double"><td class="text-center">Today</td><td colspan="5">&nbsp;</td></tr>
                                             <tr>
-                                                <td class="text-center">1<br><span class="colr-minor tg-offset">hour</span></td>
-                                                <td>ปัญญา สามไทยสงค์<br><span class="colr-minor">08-1234-5678</span></td>
+                                                <td class="text-center">18:24:01</td>
+                                                <td>
+                                                    <strong>Highlight</strong><br>
+                                                    <span class="colr-minor tg-offset small">Website Content</span>
+                                                </td>
                                                 <td class="v-top">
-                                                    <span>[RQ-57341289]</span> Car modification more than 50,000 baht.
+                                                    Carl Matthews
+                                                </td>
+                                                <td class="v-top">
+                                                    Created
+                                                </td>
+                                                <td class="v-top">
+                                                    HL17M02
                                                 </td>
                                                 <td class="text-right">
                                                     <ul class="icons-list">
@@ -535,20 +492,26 @@
                                                                 <i class="icon-menu9"></i>
                                                             </a>
                                                             <ul class="dropdown-menu dropdown-menu-right">
-                                                                <li><a href="03_callback_detail.php"><i class="icon-eye"></i> View</a></li>
-                                                                <li class="divider"></li>
-                                                                <li><a href="#"><i class="icon-checkmark4"></i> Accept</a></li>
-                                                                <li><a href="#"><i class="icon-phone-hang-up"></i> Close</a></li>
+                                                                <li><a href="11_log-activities_detail.php"><i class="icon-eye"></i> View Log</a></li>
                                                             </ul>
                                                         </li>
                                                     </ul>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="text-center">1<br><span class="colr-minor tg-offset">hour</span></td>
-                                                <td>ปัญญา สามไทยสงค์<br><span class="colr-minor">08-1234-5678</span></td>
+                                                <td class="text-center">14:19:33</td>
+                                                <td>
+                                                    <strong>Post</strong><br>
+                                                    <span class="colr-minor tg-offset small">Journals</span>
+                                                </td>
                                                 <td class="v-top">
-                                                    <span>[RQ-57341289]</span> Car modification more than 50,000 baht.
+                                                    Anna Thompson
+                                                </td>
+                                                <td class="v-top">
+                                                    Created
+                                                </td>
+                                                <td class="v-top">
+                                                    HL17M02
                                                 </td>
                                                 <td class="text-right">
                                                     <ul class="icons-list">
@@ -557,21 +520,27 @@
                                                                 <i class="icon-menu9"></i>
                                                             </a>
                                                             <ul class="dropdown-menu dropdown-menu-right">
-                                                                <li><a href="03_callback_detail.php"><i class="icon-eye"></i> View</a></li>
-                                                                <li class="divider"></li>
-                                                                <li><a href="#"><i class="icon-checkmark4"></i> Accept</a></li>
-                                                                <li><a href="#"><i class="icon-phone-hang-up"></i> Close</a></li>
+                                                                <li><a href="11_log-activities_detail.php"><i class="icon-eye"></i> View Log</a></li>
                                                             </ul>
                                                         </li>
                                                     </ul>
                                                 </td>
                                             </tr>
-                                            <tr class="active"><td class="text-center">Yesterday</td><td colspan="4">&nbsp;</td></tr>
+                                            <tr class="active"><td class="text-center">Wed, 18 May</td><td colspan="5">&nbsp;</td></tr>
                                             <tr>
-                                                <td class="text-center">1<br><span class="colr-minor tg-offset">hour</span></td>
-                                                <td>ปัญญา สามไทยสงค์<br><span class="colr-minor">08-1234-5678</span></td>
+                                                <td class="text-center">18:24:01</td>
+                                                <td>
+                                                    <strong>Highlight</strong><br>
+                                                    <span class="colr-minor tg-offset small">Website Content</span>
+                                                </td>
                                                 <td class="v-top">
-                                                    <span>[RQ-57341289]</span> Car modification more than 50,000 baht.
+                                                    Carl Matthews
+                                                </td>
+                                                <td class="v-top">
+                                                    Created
+                                                </td>
+                                                <td class="v-top">
+                                                    HL17M02
                                                 </td>
                                                 <td class="text-right">
                                                     <ul class="icons-list">
@@ -580,42 +549,26 @@
                                                                 <i class="icon-menu9"></i>
                                                             </a>
                                                             <ul class="dropdown-menu dropdown-menu-right">
-                                                                <li><a href="03_callback_detail.php"><i class="icon-eye"></i> View</a></li>
-                                                                <li class="divider"></li>
-                                                                <li><a href="#"><i class="icon-checkmark4"></i> Accept</a></li>
-                                                                <li><a href="#"><i class="icon-phone-hang-up"></i> Close</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center">1<br><span class="colr-minor tg-offset">hour</span></td>
-                                                <td>ปัญญา สามไทยสงค์<br><span class="colr-minor">08-1234-5678</span></td>
-                                                <td class="v-top">
-                                                    <span>[RQ-57341289]</span> Car modification more than 50,000 baht.
-                                                </td>
-                                                <td class="text-right">
-                                                    <ul class="icons-list">
-                                                        <li class="dropdown dropup">
-                                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                                                <i class="icon-menu9"></i>
-                                                            </a>
-                                                            <ul class="dropdown-menu dropdown-menu-right">
-                                                                <li><a href="03_callback_detail.php"><i class="icon-eye"></i> View</a></li>
-                                                                <li class="divider"></li>
-                                                                <li><a href="#"><i class="icon-checkmark4"></i> Accept</a></li>
-                                                                <li><a href="#"><i class="icon-phone-hang-up"></i> Close</a></li>
+                                                                <li><a href="11_log-activities_detail.php"><i class="icon-eye"></i> View Log</a></li>
                                                             </ul>
                                                         </li>
                                                     </ul>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="text-center">1<br><span class="colr-minor tg-offset">hour</span></td>
-                                                <td>ปัญญา สามไทยสงค์<br><span class="colr-minor">08-1234-5678</span></td>
+                                                <td class="text-center">14:19:33</td>
+                                                <td>
+                                                    <strong>Post</strong><br>
+                                                    <span class="colr-minor tg-offset small">Journals</span>
+                                                </td>
                                                 <td class="v-top">
-                                                    <span>[RQ-57341289]</span> Car modification more than 50,000 baht.
+                                                    Anna Thompson
+                                                </td>
+                                                <td class="v-top">
+                                                    Created
+                                                </td>
+                                                <td class="v-top">
+                                                    HL17M02
                                                 </td>
                                                 <td class="text-right">
                                                     <ul class="icons-list">
@@ -624,20 +577,26 @@
                                                                 <i class="icon-menu9"></i>
                                                             </a>
                                                             <ul class="dropdown-menu dropdown-menu-right">
-                                                                <li><a href="03_callback_detail.php"><i class="icon-eye"></i> View</a></li>
-                                                                <li class="divider"></li>
-                                                                <li><a href="#"><i class="icon-checkmark4"></i> Accept</a></li>
-                                                                <li><a href="#"><i class="icon-phone-hang-up"></i> Close</a></li>
+                                                                <li><a href="11_log-activities_detail.php"><i class="icon-eye"></i> View Log</a></li>
                                                             </ul>
                                                         </li>
                                                     </ul>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="text-center">1<br><span class="colr-minor tg-offset">hour</span></td>
-                                                <td>ปัญญา สามไทยสงค์<br><span class="colr-minor">08-1234-5678</span></td>
+                                                <td class="text-center">18:24:01</td>
+                                                <td>
+                                                    <strong>Highlight</strong><br>
+                                                    <span class="colr-minor tg-offset small">Website Content</span>
+                                                </td>
                                                 <td class="v-top">
-                                                    <span>[RQ-57341289]</span> Car modification more than 50,000 baht.
+                                                    Carl Matthews
+                                                </td>
+                                                <td class="v-top">
+                                                    Created
+                                                </td>
+                                                <td class="v-top">
+                                                    HL17M02
                                                 </td>
                                                 <td class="text-right">
                                                     <ul class="icons-list">
@@ -646,10 +605,92 @@
                                                                 <i class="icon-menu9"></i>
                                                             </a>
                                                             <ul class="dropdown-menu dropdown-menu-right">
-                                                                <li><a href="03_callback_detail.php"><i class="icon-eye"></i> View</a></li>
-                                                                <li class="divider"></li>
-                                                                <li><a href="#"><i class="icon-checkmark4"></i> Accept</a></li>
-                                                                <li><a href="#"><i class="icon-phone-hang-up"></i> Close</a></li>
+                                                                <li><a href="11_log-activities_detail.php"><i class="icon-eye"></i> View Log</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">14:19:33</td>
+                                                <td>
+                                                    <strong>Post</strong><br>
+                                                    <span class="colr-minor tg-offset small">Journals</span>
+                                                </td>
+                                                <td class="v-top">
+                                                    Anna Thompson
+                                                </td>
+                                                <td class="v-top">
+                                                    Created
+                                                </td>
+                                                <td class="v-top">
+                                                    HL17M02
+                                                </td>
+                                                <td class="text-right">
+                                                    <ul class="icons-list">
+                                                        <li class="dropdown dropup">
+                                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                                <i class="icon-menu9"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="11_log-activities_detail.php"><i class="icon-eye"></i> View Log</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr class="active"><td class="text-center">Tue, 17 May</td><td colspan="5">&nbsp;</td></tr>
+                                            <tr>
+                                                <td class="text-center">18:24:01</td>
+                                                <td>
+                                                    <strong>Highlight</strong><br>
+                                                    <span class="colr-minor tg-offset small">Website Content</span>
+                                                </td>
+                                                <td class="v-top">
+                                                    Carl Matthews
+                                                </td>
+                                                <td class="v-top">
+                                                    Created
+                                                </td>
+                                                <td class="v-top">
+                                                    HL17M02
+                                                </td>
+                                                <td class="text-right">
+                                                    <ul class="icons-list">
+                                                        <li class="dropdown dropup">
+                                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                                <i class="icon-menu9"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="11_log-activities_detail.php"><i class="icon-eye"></i> View Log</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">14:19:33</td>
+                                                <td>
+                                                    <strong>Post</strong><br>
+                                                    <span class="colr-minor tg-offset small">Journals</span>
+                                                </td>
+                                                <td class="v-top">
+                                                    Anna Thompson
+                                                </td>
+                                                <td class="v-top">
+                                                    Created
+                                                </td>
+                                                <td class="v-top">
+                                                    HL17M02
+                                                </td>
+                                                <td class="text-right">
+                                                    <ul class="icons-list">
+                                                        <li class="dropdown dropup">
+                                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                                <i class="icon-menu9"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="11_log-activities_detail.php"><i class="icon-eye"></i> View Log</a></li>
                                                             </ul>
                                                         </li>
                                                     </ul>

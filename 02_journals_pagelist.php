@@ -117,7 +117,10 @@
                                         
                                         $("#action-Pagelist").on("show.bs.modal",function(){
                                             var _str = _host.val();
-                                            _str = _str.replace(/(AUTH\d{1,})/igm, function(s){return authors_list[s].th;});
+                                            _str = _str.replace(/(AUTH\d{1,})/igm, function(s){
+                                                if(authors_list[s] == void 0) return s;
+                                                return authors_list[s].th;
+                                            });
                                             var _plist = _str.replace(/[\r\n]+/g,"").split("**");
                                             _plist.pop();
                                             var _tr = "";
