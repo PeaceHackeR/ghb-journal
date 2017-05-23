@@ -1,43 +1,159 @@
 {
     "update": "05/05/2017",
     "config": {},
-    data: {
-        journal: [
+    "journal": {
+        "total": 2403,
+        "today": 638,
+        "data": [
             {
                 "volume": 87,
                 "year": 22,
                 "issue": "ตุลาคม - ธันวาคม 2559",
-                "visit": 68
+                "visit": 268,
+                "ebook": 12
             }, {
                 "volume": 86,
                 "year": 22,
                 "issue": "กรกฎาคม - กันยายน 2559",
-                "visit": 240
+                "visit": 240,
+                "ebook": 80
             }, {
                 "volume": 85,
                 "year": 22,
                 "issue": "เมษายน - มิถุนายน 2559",
-                "visit": 483
+                "visit": 483,
+                "ebook": 23
             }, {
                 "volume": 84,
                 "year": 22,
                 "issue": "มกราคม - มีนาคม 2559",
-                "visit": 421
+                "visit": 421,
+                "ebook": 186
             }, {
                 "volume": 83,
                 "year": 21,
                 "issue": "ตุลาคม - ธันวาคม 2558",
-                "visit": 309
+                "visit": 309,
+                "ebook": 34
             }, {
                 "volume": 82,
                 "year": 21,
                 "issue": "กรกฏาคม - กันยายน 2558",
-                "visit": 863
+                "visit": 863,
+                "ebook": 235
             }, {
                 "volume": 81,
                 "year": 21,
-                "issue": "เมษายน - มิถุนายน 2559",
-                "visit": 68
+                "issue": "เมษายน - มิถุนายน 2558",
+                "visit": 68,
+                "ebook": 2
+            }, {
+                "volume": 80,
+                "year": 21,
+                "issue": "มกราคม - มีนาคม 2558",
+                "visit": 372,
+                "ebook": 40
+            }, {
+                "volume": 79,
+                "year": 20,
+                "issue": "ตุลาคม - ธันวาคม 2557",
+                "visit": 646,
+                "ebook": 109
+            }
+        ]
+    },
+    "totalvisitors": {
+        "data": [
+            {
+                "date": "21/05/17",
+                "visitor": 124
+            }, {
+                "date": "20/05/17",
+                "visitor": 535
+            }, {
+                "date": "19/05/17",
+                "visitor": 186
+            }, {
+                "date": "18/05/17",
+                "visitor": 423
+            }, {
+                "date": "17/05/17",
+                "visitor": 493
+            }, {
+                "date": "16/05/17",
+                "visitor": 80
+            }, {
+                "date": "15/05/17",
+                "visitor": 301
+            }, {
+                "date": "14/05/17",
+                "visitor": 9
+            }, {
+                "date": "13/05/17",
+                "visitor": 68
+            }, {
+                "date": "12/05/17",
+                "visitor": 587
+            }, {
+                "date": "11/05/17",
+                "visitor": 370
+            }, {
+                "date": "09/05/17",
+                "visitor": 387
+            }, {
+                "date": "08/05/17",
+                "visitor": 461
+            }, {
+                "date": "07/05/17",
+                "visitor": 459
+            }, {
+                "date": "06/05/17",
+                "visitor": 61
+            }, {
+                "date": "05/05/17",
+                "visitor": 124
+            }, {
+                "date": "04/05/17",
+                "visitor": 463
+            }, {
+                "date": "03/05/17",
+                "visitor": 344
+            }, {
+                "date": "02/05/17",
+                "visitor": 111
+            }, {
+                "date": "01/05/17",
+                "visitor": 591
+            }, {
+                "date": "30/04/17",
+                "visitor": 68
+            }, {
+                "date": "29/04/17",
+                "visitor": 509
+            }, {
+                "date": "28/04/17",
+                "visitor": 57
+            }, {
+                "date": "27/04/17",
+                "visitor": 232
+            }, {
+                "date": "26/04/17",
+                "visitor": 149
+            }, {
+                "date": "25/04/17",
+                "visitor": 352
+            }, {
+                "date": "24/04/17",
+                "visitor": 441
+            }, {
+                "date": "23/04/17",
+                "visitor": 479
+            }, {
+                "date": "22/04/17",
+                "visitor": 152
+            }, {
+                "date": "21/04/17",
+                "visitor": 435
             }
         ]
     }

@@ -61,7 +61,7 @@
 				<div class="content">
 
 					<!-- Simple login form -->
-					<form id="fx-login" action="00_actions_table.php" data-parsley-validate method="post">
+					<form id="fx-login" action="00_dashboard.php" data-parsley-validate method="post">
 						<div class="panel panel-body login-form">
 							<div class="text-center">
 								<div class="">

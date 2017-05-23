@@ -82,9 +82,9 @@
                             <span class="text-bold">Report as of</span>
                         </div>
 
-                        <div class="breadcrumb-elements">
-                            
-                        </div>
+                        <ul class="breadcrumb-elements">
+                            <li><a href="#"><i class="icon-calendar3 position-left"></i> Monday, 22 May 2017</a></li>
+                        </ul>
                     </div>
                     
                 </div>
@@ -98,7 +98,7 @@
                     <div class="row">
                         <!-- Overall stats boxes -->
                         <div class="col-md-8 float-md-left">
-                            <div class="px-box-overall row">
+                            <div id="widgetDashboard" class="px-box-overall row" data-json="dat/dashboard.json">
                                
                                 <div class="col-lg-6">
 
@@ -107,8 +107,8 @@
                                         <div class="panel-body">
                                             <h3 class="no-margin">Monthly Visitors</h3>
                                             
-                                            <div class="txt-font-2em">5,312 <span class="txt-small">visitors</span></div>
-                                            <div class="text-muted text-size-small">Avg. 142 visit/day </div>
+                                            <div class="txt-font-2em"><span class="opt-totolVisitors">0</span> <span class="txt-small">visitors</span></div>
+                                            <div class="text-muted text-size-small">Avg. <span class="opt-avgVisit">0</span> visit/day </div>
                                         </div>
                                         <div id="monthly-visitors"></div>
                                     </div>
@@ -122,8 +122,8 @@
                                     <div class="panel bg-blue-400">
                                         <div class="panel-body">
                                             <h3 class="no-margin">Journal Traffic</h3>
-                                            <div class="txt-font-2em">116 <span class="txt-small">UIP</span></div>
-                                            <div class="text-muted text-size-small">Avg. 3,314.65 / day</div>
+                                            <div class="txt-font-2em"><span class="opt-journallVisit">0</span> <span class="txt-small">today visitors</span></div>
+                                            <div class="text-muted text-size-small">Avg. <span class="opt-avgJournal">0</span> / Month</div>
                                         </div>
                                         <div class="container-fluid">
 											<div id="journal-traffic"></div>
@@ -268,7 +268,7 @@
                                                 <thead>
                                                     <tr>
                                                         <th>Title</th>
-                                                        <th class="text-center">Impression/Day</th>
+                                                        <th class="text-right">Impression/Day</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -278,7 +278,7 @@
                                                             ฉบับที่ 85 ปีที่ 22
                                                             <br><span class="colr-minor tg-offset">เมษายน - มิถุนายน 2559</span>
                                                         </td>
-                                                        <td class="v-top text-center"><span class="text-bold">36</span></td>
+                                                        <td class="v-top text-right"><span class="text-bold">36</span></td>
                                                     </tr>
                                                     <tr>
                                                         <td>
@@ -286,7 +286,7 @@
                                                             ฉบับที่ 86 ปีที่ 22
                                                             <br><span class="colr-minor tg-offset">กรกฎาคม - กันยายน 2559</span>
                                                         </td>
-                                                        <td class="v-top text-center"><span class="text-bold">28</span></td>
+                                                        <td class="v-top text-right"><span class="text-bold">28</span></td>
                                                     </tr>
                                                     <tr>
                                                         <td>
@@ -294,7 +294,7 @@
                                                             ฉบับที่ 87 ปีที่ 22
                                                             <br><span class="colr-minor tg-offset">ตุลาคม - ธันวาคม 2559</span>
                                                         </td>
-                                                        <td class="v-top text-center"><span class="text-bold">15</span></td>
+                                                        <td class="v-top text-right"><span class="text-bold">15</span></td>
                                                     </tr>
                                                     <tr>
                                                         <td>
@@ -302,7 +302,7 @@
                                                             No. 25 Volume 7
                                                             <br><span class="colr-minor tg-offset">October - November 2013</span>
                                                         </td>
-                                                        <td class="v-top text-center"><span class="text-bold">9</span></td>
+                                                        <td class="v-top text-right"><span class="text-bold">9</span></td>
                                                     </tr>
                                                     <tr>
                                                         <td>
@@ -310,7 +310,7 @@
                                                             ฉบับที่ 83 ปีที่ 21
                                                             <br><span class="colr-minor tg-offset">ตุลาคม - ธันวาคม 2558</span>
                                                         </td>
-                                                        <td class="v-top text-center"><span class="text-bold">8</span></td>
+                                                        <td class="v-top text-right"><span class="text-bold">8</span></td>
                                                     </tr>
                                                     
                                                 </tbody>
