@@ -129,6 +129,12 @@
                     <i class="icon-link2"></i> <span> Related Link</span>
                 </a>
             </li>
+            <!-- Related Link -->
+            <li>
+                <a href="08_rate_list.php" >
+                    <i class="icon-file-spreadsheet"></i> <span> Interest Page</span>
+                </a>
+            </li>
             <!-- System -->
             <li>
                 <a href="#"><i class="icon-gear"></i> <span> System</span></a>
