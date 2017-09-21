@@ -47,6 +47,66 @@
     </style>
 </head>
 
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Add News Interest Rate - GHB</title>
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Global stylesheets -->
+    <!--    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">-->
+
+    <!--    <link type="text/css" rel="stylesheet" href="https://docs.handsontable.com/pro/1.13.0/bower_components/handsontable-pro/dist/handsontable.full.css">-->
+
+    <link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/core.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/components.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/icweb.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+
+
+    <!-- OPTION JS -->
+    <!--	<script type="text/javascript" src="assets/js/plugins/tables/handsontable/handsontable.min.js"></script>-->
+
+    <script type="text/javascript" src="assets/js/plugins/tables/handsontable/handsontable.full.min.js"></script>
+
+    <!--  <script src="https://docs.handsontable.com/pro/1.13.0/bower_components/handsontable-pro/dist/handsontable.full.min.js"></script>-->
+
+    <!-- Core JS files -->
+    <!-- Core JS files -->
+    <script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+    <script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+
+    <!-- Theme JS files -->
+    <script type="text/javascript" src="assets/js/core/libraries/jquery_ui/widget.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/ui/moment/moment.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>
+    <script type="text/javascript" src="assets/js/core/libraries/jasny_bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/core/libraries/jquery_ui/interactions.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/selects/select2.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/uploaders/fileinput.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/validation/validate.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/pickers/pickadate/picker.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/pickers/pickadate/picker.date.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/pickers/pickadate/picker.time.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/uploaders/jquery.fileupload.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/editors/tinymce/tinymce.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/uploaders/jquery.fileupload.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/media/fancybox.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/password/password-generator.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/core/app.js"></script>
+    <script type="text/javascript" src="assets/js/pages/form.js"></script>
+
+    
+</head>
 
 <body>
 
