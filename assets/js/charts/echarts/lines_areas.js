@@ -447,7 +447,7 @@ $(function() {
 
                 // Add legend
                 legend: {
-                    data: [/*'New orders', 'In progress',*/ 'Closed deals']
+                    data: ['New orders', 'In progress', 'Closed deals']
                 },
 
 
@@ -475,8 +475,8 @@ $(function() {
                         type: 'line',
                         smooth: true,
                         itemStyle: {normal: {areaStyle: {type: 'default'}}},
-                        data: [10, 12, 21, 54, 260, 830, 580]
-                    }/*,
+                        data: [10, 12, 21, 54, 260, 830, 710]
+                    },
                     {
                         name: 'In progress',
                         type: 'line',
@@ -491,7 +491,6 @@ $(function() {
                         itemStyle: {normal: {areaStyle: {type: 'default'}}},
                         data: [1320, 1132, 601, 234, 120, 90, 20]
                     }
-                    */
                 ]
             };
 

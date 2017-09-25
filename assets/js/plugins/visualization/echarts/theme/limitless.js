@@ -1,26 +1,20 @@
 define(function() {
 
 var theme10 = {
-    /*
+    // 默认色板
     color: [
         '#2ec7c9','#b6a2de','#5ab1ef','#ffb980','#d87a80',
         '#8d98b3','#e5cf0d','#97b552','#95706d','#dc69aa',
         '#07a2a4','#9a7fd1','#588dd5','#f5994e','#c05050',
         '#59678c','#c9ab00','#7eb00a','#6f5553','#c14089'
     ],
-    */
-    color: [
-        '#001b54','#b6a2de','#50df5a','#ffb980','#d87a80',
-        '#8d98b3','#e5cf0d','#97b552','#95706d','#dc69aa',
-        '#07a2a4','#9a7fd1','#588dd5','#f5994e','#c05050',
-        '#59678c','#c9ab00','#7eb00a','#6f5553','#c14089'
-    ],
-    
+
+    // 图表标题
     title: {
         textStyle: {
             fontWeight: 'normal',
             fontSize: 17,
-            color: '#008acd'
+            color: '#008acd'          // 主标题文字颜色
         }
     },
     
@@ -54,20 +48,20 @@ var theme10 = {
         itemGap: 15
     },
 
-
+    // 提示框
     tooltip: {
-        backgroundColor: 'rgba(0,0,0,0.8)',
+        backgroundColor: 'rgba(0,0,0,0.8)',     // 提示背景颜色，默认为透明度为0.7的黑色
         padding: [8, 12, 8, 12],
-        axisPointer : {      
-            type : 'line',         // 'line' | 'shadow'
-            lineStyle : {  
+        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+            type : 'line',         // 默认为直线，可选为：'line' | 'shadow'
+            lineStyle : {          // 直线指示器样式设置
                 color: '#607D8B',
                 width: 1
             },
             crossStyle: {
                 color: '#607D8B'
             },
-            shadowStyle : { 
+            shadowStyle : {                     // 阴影指示器样式设置
                 color: 'rgba(200,200,200,0.2)'
             }
         },
@@ -79,7 +73,7 @@ var theme10 = {
     // 区域缩放控制器
     dataZoom: {
         dataBackgroundColor: '#eceff1',
-        fillerColor: 'rgba(96,125,139,0.1)',
+        fillerColor: 'rgba(96,125,139,0.1)',   // 填充颜色
         handleColor: '#607D8B',
         handleSize: 10
     },
@@ -91,14 +85,14 @@ var theme10 = {
 
     // 类目轴
     categoryAxis: {
-        axisLine: {          
-            lineStyle: {       
+        axisLine: {            // 坐标轴线
+            lineStyle: {       // 属性lineStyle控制线条样式
                 color: '#999',
                 width: 1
             }
         },
-        splitLine: {      
-            lineStyle: {       
+        splitLine: {           // 分隔线
+            lineStyle: {       // 属性lineStyle（详见lineStyle）控制线条样式
                 color: ['#eee']
             }
         },

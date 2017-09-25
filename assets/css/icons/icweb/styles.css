@@ -1,0 +1,131 @@
+/* ICWEB Logo Application */
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?ran22h');
+	src:url('fonts/icomoon.eot?#iefixran22h') format('embedded-opentype'),
+		url('fonts/icomoon.ttf?ran22h') format('truetype'),
+		url('fonts/icomoon.woff?ran22h') format('woff'),
+		url('fonts/icomoon.svg?ran22h#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.icon-ic:before { content: "\e601";}
+.icon-web:before { content: "\e600";}
+
+
+/* Tokiomarine FrontEnd Website */
+@font-face {
+    font-family: 'ico-tokiomarine';
+    src:    url('fonts/ico-tokiomarine.eot?ruzahg');
+    src:    url('fonts/ico-tokiomarine.eot?ruzahg#iefix') format('embedded-opentype'),
+        url('fonts/ico-tokiomarine.ttf?ruzahg') format('truetype'),
+        url('fonts/ico-tokiomarine.woff?ruzahg') format('woff'),
+        url('fonts/ico-tokiomarine.svg?ruzahg#ico-tokiomarine') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ic {
+    font-family: 'ico-tokiomarine' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ic-times:before {
+    content: "\e916";
+}
+.ic-refresh:before {
+    content: "\e910";
+}
+.ic-credit-card:before {
+    content: "\e900";
+}
+.ic-close:before {
+    content: "\e901";
+}
+.ic-user:before {
+    content: "\e902";
+}
+.ic-mobile:before {
+    content: "\e903";
+}
+.ic-envelope-o:before {
+    content: "\e904";
+}
+.ic-04:before {
+    content: "\e905";
+}
+.ic-05:before {
+    content: "\e906";
+}
+.ic-model-cars:before {
+    content: "\e907";
+}
+.ic-ins-plan:before {
+    content: "\e908";
+}
+.ic-insured:before {
+    content: "\e909";
+}
+.ic-insurance-mone:before {
+    content: "\e90a";
+}
+.ic-recommended:before {
+    content: "\e90b";
+}
+.ic-11:before {
+    content: "\e90c";
+}
+.ic-12:before {
+    content: "\e90d";
+}
+.ic-info:before {
+    content: "\e90e";
+}
+.ic-calendar:before {
+    content: "\e90f";
+}
+.ic-18:before {
+    content: "\e910";
+}
+.ic-service:before {
+    content: "\e911";
+}
+.ic-inspection-cars:before {
+    content: "\e912";
+}
+.ic-start-ins:before {
+    content: "\e913";
+}
+.ic-file-text-o:before {
+    content: "\e914";
+}
+.ic-download:before {
+    content: "\e915";
+}
+.ic-check:before {
+    content: "\e91c";
+}
+.ic-plus:before {
+    content: "\e91d";
+}
+.ic-arrow-up:before {
+    content: "\e91e";
+}
+.ic-arrow-left:before {
+    content: "\e91f";
+}
+.ic-arrow-right:before {
+    content: "\e920";
+}
+.ic-arrow-down:before {
+    content: "\e921";
+}
+
