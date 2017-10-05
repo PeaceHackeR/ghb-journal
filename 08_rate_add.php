@@ -92,6 +92,7 @@
                 <!-- /page header -->
 
                 <!-- Content area -->
+                <form id="dataForm" class="px-formEdit" action="outputdata.php" method="post" target="_blank">
                 <div class="content">
 
                     <!-- Form -->
@@ -109,24 +110,33 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-12">
+                                    <div class="form-group col-md-12">
                                         <div class="hot-container">
+                                            <input type="hidden" name="header[]" value='[1]'>
+                                            <input id="sendForm" type="hidden" name="sheetdata" value="">
                                             <div id="hot_headers"></div>
                                         </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-12">
+                                        <button type="button" class="btn btn-default"><i class="icon-pagebreak position-left"></i> Insert row</button>
                                     </div>
                                 </div>
                                 <script>
                                     $(function() {
                                         var rate_data = [
                                             ['h1', 'กระแสรายวัน', 0.375, 0.375, 0.375, 0, 0.375, 0, "-", "-", 0.375],
-                                            ['h2', 'ออมทรัพย์', null, null, null, null, null, null, null, null, null],
+                                            ['h1', 'ออมทรัพย์', null, null, null, null, null, null, null, null, null],
                                             ['sub', '- ต่ำกว่า 1 แสนบาท', 0.750, 0.750, 0.750, 0, 0.750, 0.750, 0.25, 0.50, 0.375],
                                             ['sub', '- ตั้งแต่ 1 แสนบาทขึ้นไป', 0.900, 0.9, 0.900, 0.750, 0, 1.00, 1.00, 0.375, 0.375, 1.00],
                                             ['h2', 'ธอส.รักการออม', 1, "---", "---", "---", "---", "---", "---", "---", "---", "---"],
                                             ['h1', 'ออมทรัพย์พิเศษ', 1, 1, 1, 0, 1, 1, 0.375, 0.375, 1],
                                             ['h2', 'ซุปเปอร์ออมทรัพย์พิเศษ (10,000 บาทขึ้นไป)', 1.500, "---", "---", "---", "---", "---", "---", "---", "---", "---"],
                                             ['h2', 'อัตราดอกเบี้ยเงินฝากสำหรับการเปิดสาขาใหม่และ/หรือยกระดับสาขาในปี 2560', null, "---", "---", "---", "---", "---", "---", "---", "---", "---"],
-                                            ['sub', 'บวกอัตราดอกเบี้ยพิเศษเป็นระยะเวลา 6 เดือน หลังจากนั้นใช้อัตราดอกเบี้ยซุปเปอร์ออมทรัพย์พิเศษ ตามประกาศปกติของธนาคาร ณ. ขณะนั้น', "อัตราดอกเบี้ยเท่ากับอัตราดอกเบี้ยเงินฝากซุปเปอร์ออมทรัพย์พิเศษที่ประกาศธนาคาร ณ.ขณะนั้น บวกเพิ่มร้อยละ 0.25", "---", "---", "---", "---", "---", "---", "---", "---", "---"]
+                                            ['sub', 'บวกอัตราดอกเบี้ยพิเศษเป็นระยะเวลา 6 เดือน หลังจากนั้นใช้อัตราดอกเบี้ยซุปเปอร์ออมทรัพย์พิเศษ ตามประกาศปกติของธนาคาร ณ. ขณะนั้น', "อัตราดอกเบี้ยเท่ากับอัตราดอกเบี้ยเงินฝากซุปเปอร์ออมทรัพย์พิเศษที่ประกาศธนาคาร ณ.ขณะนั้น บวกเพิ่มร้อยละ 0.25", "---", "---", "---", "---", "---", "---", "---", "---", "---"],
+                                            ['row','(กรณีอัตราดอกเบี้ยเงินฝากออมทรัพย์ที่ได้รับรวมทั้งปีไม่เกิน 20,000 บาท ได้รับการยกเว้นภาษีดอกเบี้ยเงินฝาก)<<หมายเหตุ อัตราดอกเบี้ยอาจมีการเปลี่ยนแปลงได้ตามประกาศอัตราดอกเบี้ยเงินฝากของธนาคาร ยกเว้นการรับเงินฝากสำหรับคณะบุคคลและห้างหุ้นส่วนสามัญ>>',"---", "---", "---", "---", "---", "---", "---", "---", "---"]
                                         ];
 
                                         // Define element
@@ -135,6 +145,34 @@
                                         // Initialize with options
                                         var hot_headers_init = new Handsontable(hot_headers, {
                                             data: rate_data,
+                                            contextMenu: {
+                                                callback:function(key,opt){
+
+                                                },
+                                                items: {
+                                                    "row_above":{},
+                                                    "row_below":{},
+                                                    "remove_row":{
+                                                        callback: function(key,opt){
+                                                            console.log(opt)
+                                                            var _st = opt.start.row,
+                                                                _count = opt.end.row-_st+1,
+                                                                cc = confirm("Are you sure to delete this "+_count+" row(s)?");
+                                                            if(cc){
+                                                                hot_headers_init.alter('remove_row', _st, _count);
+                                                            }
+                                                        }
+                                                    },
+                                                    "make_read_only":{},
+                                                    "getData":{
+                                                        name:"getData",
+                                                        callback: function(key,opt){
+                                                            var _dat = JSON.stringify(hot_headers_init.getData());
+                                                            $("#sendForm")[0].value = _dat;
+                                                        }
+                                                    }
+                                                }
+                                            },
                                             rowHeaders: true,
                                             columns: [{
                                                     type: 'dropdown',
@@ -170,7 +208,7 @@
                                                 }
                                             ],
                                             colHeaders: [
-                                                'ชนิดข้อมูล',
+                                                'สไตล์ข้อมูล',
                                                 'ประเภทเงินฝาก',
                                                 'กลุ่มที่ 1<br>บุคคล คณะบุคคล<br>ห้างหุ้นส่วนสามัญ<br>กลุ่ม 9<br>บุคคลที่ถิ่นฐาน<br>อยู่นอกประเทศ',
                                                 'กลุ่มที่ 2<br>สถาบันที่ไม่<br>แสวงหาผลกำไร',
@@ -185,7 +223,12 @@
                                             colWidths: [2, 8, 2, 2, 2, 2, 2, 2, 2, 2, 2],
                                             manualColumnMove: false,
                                             manualRowMove: true,
-                                            stretchH: 'all'
+                                            stretchH: 'all',
+                                            afterChange: function(chg,src){
+                                                console.log('action --> '+src);
+                                                console.log('change : ')
+                                                console.log(chg);
+                                            }
                                         });
                                     });
 
@@ -197,10 +240,10 @@
                                     <div class="form-group col-md-6 clearfix">
                                         <label class="display-block">Status</label>
                                         <label class="radio-inline">
-                                            <input value="1" type="radio" name="fx-r-01" class="styled" checked> Enable
+                                            <input value="1" type="radio" name="status" class="styled" value="1" checked> Enable
                                         </label>
                                         <label class="radio-inline">
-                                            <input value="0" type="radio" name="fx-r-01" class="styled"> Disable
+                                            <input value="0" type="radio" name="status" value="0" class="styled"> Disable
                                         </label>
                                     </div>
                                 </div>
@@ -219,6 +262,7 @@
                     <!-- /footer -->
 
                 </div>
+                </form>
                 <!-- /content area -->
 
             </div>
